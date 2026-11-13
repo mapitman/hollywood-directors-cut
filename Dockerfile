@@ -1,6 +1,4 @@
 FROM debian:trixie-slim
-ARG VCS_REF
-ARG BUILD_DATE
 LABEL maintainer="Mark Pitman <pitman.io>"
 ENV DEBIAN_FRONTEND=noninteractive \
     LANG=C.UTF-8
@@ -121,6 +119,10 @@ RUN mkdir -p /opt/hollywood/lib /opt/hollywood/share \
 
 COPY --chmod=755 entrypoint.sh /usr/local/bin/hollywood-entrypoint
 
+# Declare these two arguments here, not at the top. They change on every build, and a
+# declared argument invalidates the cache of every step after it.
+ARG VCS_REF
+ARG BUILD_DATE
 LABEL org.label-schema.build-date=$BUILD_DATE \
       org.label-schema.vcs-ref=$VCS_REF \
       org.label-schema.vcs-url="https://github.com/mapitman/hollywood-directors-cut"
