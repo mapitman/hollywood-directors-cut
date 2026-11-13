@@ -24,9 +24,15 @@ The image carries a copy of this file at `/usr/share/doc/hollywood/THIRD-PARTY.m
 - **Three widgets are replaced:** `mplayer`, `jp2a` and `map`. They are `mplayer-widget.sh`, `image-widget.sh` and
   `map-widget.sh`, with the renderers `soundwave-render.py` and `image-render.py`. Each script says it is based on
   the Hollywood widget it replaces.
-- **Two widgets are added:** `btop`, in `btop-widget.sh`, and `gping`, in `gping-widget.sh`. Hollywood has neither,
+- **Five widgets are added:** `btop`, in `btop-widget.sh`, `gping`, in `gping-widget.sh`, `mtr`, in `mtr-widget.sh`,
+  `cacafire`, in `cacafire-widget.sh`, and `nms`, in `nms-widget.sh`. Hollywood has none of them,
   so they are new and replace nothing. `btop` is a Debian package that is licensed under the Apache License 2.0.
   `gping` is a Debian package that is licensed under the MIT license. It runs the `ping` command from `iputils-ping`.
+  `mtr` (package `mtr-tiny`) is licensed under the GPL-2 or later. `cacafire` comes from the `caca-utils` package, which is licensed under
+  the WTFPL. `nms` is `no-more-secrets` by Brian Barto, which Debian does not package. The build compiles it from the upstream
+  source (<https://github.com/bartobri/no-more-secrets>, tag `v1.0.1`) under the GPL-3 license and keeps its license file at
+  `/usr/share/doc/no-more-secrets/copyright`.
+- **One widget is removed:** `figlet`. The `figlet` package is not installed.
 - **Everything else is unchanged:** the other widgets and the bundled `map.jpg` and `soundwave.mp4` are used as they are.
 
 ### Files in this repository that come from Hollywood
@@ -48,5 +54,5 @@ MIT license. The other files here, such as `entrypoint.sh`, `widget-guard.sh`, `
 ## Debian base image and packages
 
 The image starts from `debian:trixie-slim` and installs packages with `apt` (tmux, byobu, mplayer, atop, htop, btop,
-bmon, cmatrix, figlet and others). Each package's license is in `/usr/share/doc/<package>/copyright` in the
+bmon, cmatrix and others). Each package's license is in `/usr/share/doc/<package>/copyright` in the
 image, and its source is available with `apt-get source <package>`.
