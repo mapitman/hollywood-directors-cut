@@ -14,8 +14,8 @@ RUN rm -f /etc/dpkg/dpkg.cfg.d/docker* \
 RUN apt-get update \
     && apt-get -y install --no-install-recommends \
         byobu tmux procps ncurses-term \
-        apg atop bat bmon bsdextrautils btop ccze cmatrix figlet gping htop \
-        iputils-ping man-db manpages moreutils mplayer openssh-client pv python3 python3-pil python3-pygments \
+        apg atop bat bmon bsdextrautils btop ccze cmatrix gping htop \
+        caca-utils iputils-ping man-db manpages moreutils mplayer mtr-tiny openssh-client pv python3 python3-pil python3-pygments \
         speedometer tree \
     && apt-get -y --reinstall install coreutils findutils \
     && rm -rf /var/lib/apt/lists/*
@@ -84,6 +84,30 @@ COPY --chmod=755 btop-widget.sh /usr/lib/hollywood/btop
 
 # Add a gping widget. Hollywood has none. It needs gping, which is in the package list above.
 COPY --chmod=755 gping-widget.sh /usr/lib/hollywood/gping
+
+# Add a cacafire widget. Hollywood has none. It needs cacafire, which is in caca-utils in the package list above.
+COPY --chmod=755 cacafire-widget.sh /usr/lib/hollywood/cacafire
+
+# Add an mtr widget. Hollywood has none. It needs mtr, which is in the package list above.
+COPY --chmod=755 mtr-widget.sh /usr/lib/hollywood/mtr
+
+# Add an nms widget. Hollywood has none. Debian has no package for nms (no-more-secrets),
+# so build it from the upstream source at the commit tagged v1.0.1. The build tools are
+# removed again afterward.
+ADD https://github.com/bartobri/no-more-secrets.git#60ffa52f500dd30d5126e8e5fd21dad66d891f49 /usr/src/no-more-secrets
+RUN apt-get update \
+    && apt-get -y install --no-install-recommends gcc make libc6-dev \
+    && make -C /usr/src/no-more-secrets nms \
+    && install -D -m 755 /usr/src/no-more-secrets/bin/nms /usr/local/bin/nms \
+    && install -D -m 644 /usr/src/no-more-secrets/LICENSE /usr/share/doc/no-more-secrets/copyright \
+    && apt-get -y purge gcc make libc6-dev \
+    && apt-get -y autoremove \
+    && rm -rf /usr/src/no-more-secrets /var/lib/apt/lists/*
+COPY --chmod=755 nms-widget.sh /usr/lib/hollywood/nms
+
+# Remove the figlet widget. It only prints a random word such as HACKED in large letters,
+# which the other widgets show better. Its package is not installed.
+RUN rm /usr/lib/hollywood/figlet
 
 # Byobu asks which mode ctrl-a should use the first time you press it. Choose
 # GNU Screen mode (option 1) now so the question never appears.
