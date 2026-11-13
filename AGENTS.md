@@ -12,7 +12,7 @@ upstream commit and is not stored here.
 
 - `just build` builds the image `mapitman/hollywood-directors-cut`. The build is the main check, because there are no
   unit tests.
-- `just run` runs the image.
+- `just run` builds the image, then runs it.
 - To test one widget, override the entrypoint. The image entrypoint is `hollywood-entrypoint`, so any argument after the
   image name goes to Hollywood and not to the widget.
 
