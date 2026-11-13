@@ -294,7 +294,7 @@ just run
 ```
 
 `just build` tags the image with both of its names, `mapitman/hollywood-directors-cut` and `mapitman/hollywood`.
-`just run` names the container `hollywood`, so you can stop it with `docker stop hollywood`.
+`just run` builds the image first. It names the container `hollywood`, so you can stop it with `docker stop hollywood`.
 
 ## 🎙️ Director's commentary
 
