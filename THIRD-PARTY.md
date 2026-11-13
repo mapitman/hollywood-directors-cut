@@ -24,8 +24,9 @@ The image carries a copy of this file at `/usr/share/doc/hollywood/THIRD-PARTY.m
 - **Three widgets are replaced:** `mplayer`, `jp2a` and `map`. They are `mplayer-widget.sh`, `image-widget.sh` and
   `map-widget.sh`, with the renderers `soundwave-render.py` and `image-render.py`. Each script says it is based on
   the Hollywood widget it replaces.
-- **One widget is added:** `btop`, in `btop-widget.sh`. Hollywood has no `btop` widget, so this is new and replaces
-  nothing. `btop` itself is a Debian package that is licensed under the Apache License 2.0.
+- **Two widgets are added:** `btop`, in `btop-widget.sh`, and `gping`, in `gping-widget.sh`. Hollywood has neither,
+  so they are new and replace nothing. `btop` is a Debian package that is licensed under the Apache License 2.0.
+  `gping` is a Debian package that is licensed under the MIT license. It runs the `ping` command from `iputils-ping`.
 - **Everything else is unchanged:** the other widgets and the bundled `map.jpg` and `soundwave.mp4` are used as they are.
 
 ### Files in this repository that come from Hollywood

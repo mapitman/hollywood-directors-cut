@@ -16,8 +16,8 @@ RUN rm -f /etc/dpkg/dpkg.cfg.d/docker* \
 RUN apt-get update \
     && apt-get -y install --no-install-recommends \
         byobu tmux procps ncurses-term \
-        apg atop bat bmon bsdextrautils btop ccze cmatrix figlet htop \
-        man-db manpages moreutils mplayer openssh-client pv python3 python3-pil python3-pygments \
+        apg atop bat bmon bsdextrautils btop ccze cmatrix figlet gping htop \
+        iputils-ping man-db manpages moreutils mplayer openssh-client pv python3 python3-pil python3-pygments \
         speedometer tree \
     && apt-get -y --reinstall install coreutils findutils \
     && rm -rf /var/lib/apt/lists/*
@@ -83,6 +83,9 @@ COPY --chmod=755 image-render.py /usr/local/bin/hollywood-image-render
 
 # Add a btop widget. Hollywood has none. It needs btop, which is in the package list above.
 COPY --chmod=755 btop-widget.sh /usr/lib/hollywood/btop
+
+# Add a gping widget. Hollywood has none. It needs gping, which is in the package list above.
+COPY --chmod=755 gping-widget.sh /usr/lib/hollywood/gping
 
 # Byobu asks which mode ctrl-a should use the first time you press it. Choose
 # GNU Screen mode (option 1) now so the question never appears.
