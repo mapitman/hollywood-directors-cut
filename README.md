@@ -62,17 +62,18 @@ these:
 - The sound wave, the wallpapers and the world map use half blocks in color. Every cell shows two pixels. There are no
   random letters, and nothing scrolls. The image brings 171 wallpapers from the KDE Plasma set.
 - A widget that needs more room than its pane has gets swapped for one that fits.
-- The base is Debian 13 (stable), and Hollywood 1.25 comes from a pinned upstream commit. All 21 widgets work.
+- The base is Debian 13 (stable), and Hollywood 1.25 comes from a pinned upstream commit. All 22 widgets work.
 - Your terminal is reset when the show ends, and Byobu never asks about ctrl-a.
 - There is a new `btop` widget. It shows the CPU, memory, network and processes. In a small pane, it shrinks to just
   the CPU box.
+- There is a new `gping` widget. It graphs the ping time to several well-known sites.
 
 The details are under "Behind the scenes", and my reasons are under "Director's commentary".
 
 ## 🎭 The cast
 
 Hollywood opens a tmux session and fills it with panes. Each pane runs one widget, and each widget wraps an ordinary
-tool. There are 21 widgets. All of them play themselves.
+tool. There are 22 widgets. All of them play themselves.
 
 | Widget | Shows |
 |---|---|
@@ -85,6 +86,7 @@ tool. There are 21 widgets. All of them play themselves.
 | `code` | random C, C++, Java and Python files, highlighted with `pygmentize` |
 | `errno` | the list of error codes, in random order |
 | `figlet` | large ASCII words such as ACCESS GRANTED (needs 57 x 7) |
+| `gping` | live graph of the ping time to well-known sites (needs 40 x 8, see "The gping widget") |
 | `hexdump` | hex dumps of programs in `/usr/bin` |
 | `htop` | interactive process viewer |
 | `jp2a` | wallpaper photos in 256 colors, drawn with half blocks (see "Wallpapers") |
@@ -115,6 +117,7 @@ Every setting is an environment variable, because even directors take notes.
 | Crop filter for the `mplayer` widget (`scale` shows the whole video) | `HOLLYWOOD_MPLAYER_FILTERS` | `crop=128:64:0:16` |
 | Seconds the `jp2a` widget shows each picture | `HOLLYWOOD_IMAGE_SECONDS` | `3` |
 | Milliseconds between updates of the `btop` widget (`btop` accepts 100 or more) | `HOLLYWOOD_BTOP_UPDATE_MS` | `100` |
+| Hosts the `gping` widget pings, separated by spaces | `HOLLYWOOD_GPING_HOSTS` | `google.com cloudflare.com github.com wikipedia.org amazon.com 1.1.1.1 8.8.8.8` |
 
 ```sh
 docker run -it --rm -e HOLLYWOOD_CELLS_PER_PANE=1000 -e HOLLYWOOD_DELAY=60 mapitman/hollywood-directors-cut
@@ -205,6 +208,17 @@ docker run -it --rm --entrypoint /opt/hollywood/lib/hollywood/btop mapitman/holl
 
 Press `q` to leave `btop`. The widget then starts it again, so press ctrl-c to stop the widget.
 
+### The gping widget
+
+Hollywood has no `gping` widget, so the image adds one (`gping-widget.sh`). `gping` draws a live graph of the ping
+time to several hosts. By default it pings `google.com`, `cloudflare.com`, `github.com`, `wikipedia.org`,
+`amazon.com`, `1.1.1.1` and `8.8.8.8`. It needs a pane of at least 40 columns by 8 lines.
+
+Set `HOLLYWOOD_GPING_HOSTS` to a list of hosts, separated by spaces, to ping other sites. When the widget guard stops
+the widget, it puts your terminal back the way it was, because `gping` does not do that itself.
+
+`gping` runs the `ping` command, so the image includes `iputils-ping`. The container needs network access to reach the hosts. If your setup blocks ICMP, the graph stays empty.
+
 ### The mplayer widget
 
 The image replaces Hollywood's `mplayer` widget with two small files, `mplayer-widget.sh` and
@@ -288,7 +302,7 @@ Why I cut each scene the way I did.
 - **Debian stable base.** `debian:trixie-slim` is a named release, so the base does not change between builds except
   for security fixes. It has every tool the widgets need, including `mplayer`.
 - **Hollywood from the upstream source.** The Dockerfile fetches the commit tagged `1.25` (`4bfa297`), so the
-  Hollywood scripts do not change between builds. This version has all 21 widgets. Its launcher passes the values of
+  Hollywood scripts do not change between builds. This version has all 22 widgets. Its launcher passes the values of
   `-s` and `-d` to its own tmux session, which the entrypoint needs. Its `sshart` widget works with current OpenSSH.
 - **Pane count from terminal size.** Hollywood defaults to two panes per CPU. On an 8-CPU machine that is 16 panes,
   which are too small to read on a 1920x1080 screen. The entrypoint sizes the count to the terminal. Then it picks a
