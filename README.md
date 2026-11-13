@@ -173,6 +173,7 @@ guard stops the widget and starts a different one that fits.
 | `bmon` | 48 x 26, or 141 x 18 (it asks you to enlarge the window below this) |
 | `btop` | 60 x 8 (all four boxes need 80 x 24) |
 | `figlet` | 57 x 7 |
+| `gping` | 40 x 8 |
 | `sshart` | 20 x 12 |
 
 All other widgets run in any pane size. To change a minimum or add a widget, edit the `MIN_` tables and the
@@ -338,6 +339,10 @@ Why I cut each scene the way I did.
   allows, instead of every 2000 ms. That is twenty times as fast as the default. The faster updates cost about 3% of
   one core in a normal pane and 11% in a very large one. This includes the work that tmux does to draw them. The
   widget also uses 6 MB of memory.
+- **A `gping` widget.** Hollywood has no network widget that shows latency, and a hacking movie needs a graph that
+  moves. `gping` draws the ping time to several hosts as live lines. The widget pings seven well-known hosts by
+  default, so the graph has several lines to watch. `HOLLYWOOD_GPING_HOSTS` changes the list. `gping` runs the `ping`
+  command, so the image also installs `iputils-ping`. The widget needs only 40 x 8, so it fits in most panes.
 - **A new `mplayer` widget.** Hollywood plays the sound-wave video at 100 times normal speed. In a 100 x 18 pane
   that redraws the terminal about 950 times a second, which flickers. It also draws the video with libcaca, which
   puts a random-looking letter on every cell. The letters change on every frame. libcaca has no setting for
