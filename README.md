@@ -67,9 +67,14 @@ these:
 - There is a new `btop` widget. It shows the CPU, memory, network and processes. In a small pane, it shrinks to just
   the CPU box.
 - There is a new `gping` widget. It graphs the ping time to several well-known sites.
-- There are three more new widgets: `mtr` (a live route trace), `cacafire` (animated fire) and `nms` (text that
-  decrypts on the screen, as in *Sneakers*). The `figlet` widget is gone.
-- There are three more: `pipes` (animated pipes), `cbonsai` (a growing bonsai tree) and `nyancat` (the rainbow cat).
+- There are six more new widgets:
+  - `mtr` shows a live route trace.
+  - `cacafire` shows animated fire.
+  - `nms` decrypts text on the screen, as in *Sneakers*.
+  - `pipes` draws animated pipes.
+  - `cbonsai` grows a bonsai tree.
+  - `nyancat` shows the rainbow cat.
+- The `figlet` widget is gone. It only printed one word at a time, and the new widgets show more.
 
 The details are under "Behind the scenes", and my reasons are under "Director's commentary".
 
@@ -338,6 +343,10 @@ just run
 
 `just build` tags the image with both of its names, `mapitman/hollywood-directors-cut` and `mapitman/hollywood`.
 `just run` builds the image first. It names the container `hollywood`, so you can stop it with `docker stop hollywood`.
+
+Docker caches each build step, so a second `just build` with no changes takes about a second. The first build takes
+several minutes, because it installs the packages and compiles `nms` from source. A change to a widget script rebuilds
+only the steps after it. A change to the package list rebuilds everything after the package step.
 
 ## 🎙️ Director's commentary
 
