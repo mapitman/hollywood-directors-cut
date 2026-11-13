@@ -62,20 +62,21 @@ these:
 - The sound wave, the wallpapers and the world map use half blocks in color. Every cell shows two pixels. There are no
   random letters, and nothing scrolls. The image brings 171 wallpapers from the KDE Plasma set.
 - A widget that needs more room than its pane has gets swapped for one that fits.
-- The base is Debian 13 (stable), and Hollywood 1.25 comes from a pinned upstream commit. All 24 widgets work.
+- The base is Debian 13 (stable), and Hollywood 1.25 comes from a pinned upstream commit. All 27 widgets work.
 - Your terminal is reset when the show ends, and Byobu never asks about ctrl-a.
 - There is a new `btop` widget. It shows the CPU, memory, network and processes. In a small pane, it shrinks to just
   the CPU box.
 - There is a new `gping` widget. It graphs the ping time to several well-known sites.
 - There are three more new widgets: `mtr` (a live route trace), `cacafire` (animated fire) and `nms` (text that
   decrypts on the screen, as in *Sneakers*). The `figlet` widget is gone.
+- There are three more: `pipes` (animated pipes), `cbonsai` (a growing bonsai tree) and `nyancat` (the rainbow cat).
 
 The details are under "Behind the scenes", and my reasons are under "Director's commentary".
 
 ## 🎭 The cast
 
 Hollywood opens a tmux session and fills it with panes. Each pane runs one widget, and each widget wraps an ordinary
-tool. There are 24 widgets. All of them play themselves.
+tool. There are 27 widgets. All of them play themselves.
 
 | Widget | Shows |
 |---|---|
@@ -85,6 +86,7 @@ tool. There are 24 widgets. All of them play themselves.
 | `bmon` | network bandwidth monitor (needs 48 x 26, or 141 x 18) |
 | `btop` | resource monitor with CPU, memory, network and process boxes (needs 60 x 8, see "The btop widget") |
 | `cacafire` | animated fire, drawn with libcaca |
+| `cbonsai` | a bonsai tree that grows one branch at a time, then a new tree |
 | `cmatrix` | falling green characters, as in The Matrix |
 | `code` | random C, C++, Java and Python files, highlighted with `pygmentize` |
 | `errno` | the list of error codes, in random order |
@@ -97,7 +99,9 @@ tool. There are 24 widgets. All of them play themselves.
 | `map` | a map of the world in 256 colors, drawn once with half blocks (see "Wallpapers") |
 | `mplayer` | a sound-wave video in true color, drawn with half-block characters (see "The mplayer widget") |
 | `mtr` | live trace of the route to a well-known site, with the delay at each hop (needs 50 x 8) |
+| `nyancat` | the rainbow cat that flies across the screen |
 | `nms` | text from a random file that decrypts on the screen, as in *Sneakers* (see "The nms widget") |
+| `pipes` | animated pipes that grow across the screen |
 | `pv` | a fake file-transfer progress bar |
 | `speedometer` | network throughput graph |
 | `sshart` | random `ssh-keygen` key art (needs 20 x 12) |
@@ -247,6 +251,18 @@ compiles it from the upstream source (tag `v1.0.1`) and removes the compiler aga
 random text file from `/etc`, `/usr/share/doc` or `/var/log`, decrypts its first lines, waits 3 seconds and repeats.
 Set `HOLLYWOOD_NMS_COLOR` to change the color of the decrypted text.
 
+### The pipes, cbonsai and nyancat widgets
+
+Hollywood has no widgets for `pipes` (package `pipes-sh`), `cbonsai` or `nyancat`, so the image adds them
+(`pipes-widget.sh`, `cbonsai-widget.sh` and `nyancat-widget.sh`). All three run in any pane size.
+
+- `pipes` draws three pipes that grow across the screen, with random starting positions.
+- `cbonsai` grows a bonsai tree one branch at a time, waits, and grows another.
+- `nyancat` shows the rainbow cat, without the timer.
+
+Debian installs `pipes` and `cbonsai` in `/usr/games`, which is not in `PATH`, so the widgets use the full path.
+Each widget puts your terminal back the way it was when the guard stops it.
+
 ### The mplayer widget
 
 The image replaces Hollywood's `mplayer` widget with two small files, `mplayer-widget.sh` and
@@ -330,7 +346,7 @@ Why I cut each scene the way I did.
 - **Debian stable base.** `debian:trixie-slim` is a named release, so the base does not change between builds except
   for security fixes. It has every tool the widgets need, including `mplayer`.
 - **Hollywood from the upstream source.** The Dockerfile fetches the commit tagged `1.25` (`4bfa297`), so the
-  Hollywood scripts do not change between builds. This version has all 24 widgets. Its launcher passes the values of
+  Hollywood scripts do not change between builds. This version has all 27 widgets. Its launcher passes the values of
   `-s` and `-d` to its own tmux session, which the entrypoint needs. Its `sshart` widget works with current OpenSSH.
 - **Pane count from terminal size.** Hollywood defaults to two panes per CPU. On an 8-CPU machine that is 16 panes,
   which are too small to read on a 1920x1080 screen. The entrypoint sizes the count to the terminal. Then it picks a
@@ -374,6 +390,9 @@ Why I cut each scene the way I did.
   or ENABLED in large letters every 2 seconds. It showed nothing that moves, and the other widgets look more like a
   hacking movie. The three new widgets replace it. `mtr` shows a live route trace, `cacafire` shows animated fire, and
   `nms` decrypts real text on the screen, as in *Sneakers*. The `figlet` package is no longer installed.
+- **`pipes`, `cbonsai` and `nyancat` widgets.** They add motion without text. `pipes` and `nyancat` are easy to
+  recognize, and `cbonsai` is slow and calm, which gives the busy panes some contrast. They need no network, no
+  privileges and no pane size, so the guard never skips them.
 - **A new `mplayer` widget.** Hollywood plays the sound-wave video at 100 times normal speed. In a 100 x 18 pane
   that redraws the terminal about 950 times a second, which flickers. It also draws the video with libcaca, which
   puts a random-looking letter on every cell. The letters change on every frame. libcaca has no setting for
