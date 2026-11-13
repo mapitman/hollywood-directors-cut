@@ -14,8 +14,8 @@ RUN rm -f /etc/dpkg/dpkg.cfg.d/docker* \
 RUN apt-get update \
     && apt-get -y install --no-install-recommends \
         byobu tmux procps ncurses-term \
-        apg atop bat bmon bsdextrautils btop ccze cmatrix gping htop \
-        caca-utils iputils-ping man-db manpages moreutils mplayer mtr-tiny openssh-client pv python3 python3-pil python3-pygments \
+        apg atop bat bmon bsdextrautils btop cbonsai ccze cmatrix gping htop \
+        caca-utils iputils-ping man-db manpages moreutils mplayer mtr-tiny nyancat openssh-client pipes-sh pv python3 python3-pil python3-pygments \
         speedometer tree \
     && apt-get -y --reinstall install coreutils findutils \
     && rm -rf /var/lib/apt/lists/*
@@ -90,6 +90,13 @@ COPY --chmod=755 cacafire-widget.sh /usr/lib/hollywood/cacafire
 
 # Add an mtr widget. Hollywood has none. It needs mtr, which is in the package list above.
 COPY --chmod=755 mtr-widget.sh /usr/lib/hollywood/mtr
+
+# Add pipes, cbonsai and nyancat widgets. Hollywood has none. They need the packages pipes-sh,
+# cbonsai and nyancat from the package list above. Debian installs pipes and cbonsai in
+# /usr/games, which is not in PATH, so the widgets use the full path.
+COPY --chmod=755 pipes-widget.sh /usr/lib/hollywood/pipes
+COPY --chmod=755 cbonsai-widget.sh /usr/lib/hollywood/cbonsai
+COPY --chmod=755 nyancat-widget.sh /usr/lib/hollywood/nyancat
 
 # Add an nms widget. Hollywood has none. Debian has no package for nms (no-more-secrets),
 # so build it from the upstream source at the commit tagged v1.0.1. The build tools are
