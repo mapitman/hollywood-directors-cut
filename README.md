@@ -62,12 +62,12 @@ these:
 - The sound wave, the wallpapers and the world map use half blocks in color. Every cell shows two pixels. There are no
   random letters, and nothing scrolls. The image brings 171 wallpapers from the KDE Plasma set.
 - A widget that needs more room than its pane has gets swapped for one that fits.
-- The base is Debian 13 (stable), and Hollywood 1.25 comes from a pinned upstream commit. All 30 widgets work.
+- The base is Debian 13 (stable), and Hollywood 1.25 comes from a pinned upstream commit. All 29 widgets work.
 - Your terminal is reset when the show ends, and Byobu never asks about ctrl-a.
 - There is a new `btop` widget. It shows the CPU, memory, network and processes. In a small pane, it shrinks to just
   the CPU box.
 - There is a new `gping` widget. It graphs the ping time to several well-known sites.
-- There are nine more new widgets:
+- There are eight more new widgets:
   - `mtr` shows a live route trace.
   - `cacafire` shows animated fire.
   - `nms` decrypts text on the screen, as in *Sneakers*.
@@ -75,7 +75,6 @@ these:
   - `cbonsai` grows a bonsai tree.
   - `nyancat` shows the rainbow cat.
   - `lolcat` colors text in animated rainbow colors.
-  - `sl` drives a steam locomotive across the screen.
   - `tty-clock` shows a large digital clock.
 - The `figlet` widget is gone. It only printed one word at a time, and the new widgets show more.
 
@@ -84,7 +83,7 @@ The details are under "Behind the scenes", and my reasons are under "Director's 
 ## 🎭 The cast
 
 Hollywood opens a tmux session and fills it with panes. Each pane runs one widget, and each widget wraps an ordinary
-tool. There are 30 widgets. All of them play themselves.
+tool. There are 29 widgets. All of them play themselves.
 
 | Widget | Shows |
 |---|---|
@@ -112,7 +111,6 @@ tool. There are 30 widgets. All of them play themselves.
 | `nms` | text from a random file that decrypts on the screen, as in *Sneakers* (see "The nms widget") |
 | `pipes` | animated pipes that grow across the screen |
 | `pv` | a fake file-transfer progress bar |
-| `sl` | a steam locomotive that drives across the screen, sometimes small, in an accident or flying |
 | `speedometer` | network throughput graph |
 | `sshart` | random `ssh-keygen` key art (needs 20 x 12) |
 | `stat` | file details for random paths under `/sys` and `/dev` |
@@ -276,21 +274,19 @@ Hollywood has no widgets for `pipes` (package `pipes-sh`), `cbonsai` or `nyancat
 Debian installs `pipes` and `cbonsai` in `/usr/games`, which is not in `PATH`, so the widgets use the full path.
 Each widget puts your terminal back the way it was when the guard stops it.
 
-### The lolcat, sl and tty-clock widgets
+### The lolcat and tty-clock widgets
 
-Hollywood has no widgets for `lolcat`, `sl` or `tty-clock`, so the image adds them (`lolcat-widget.sh`, `sl-widget.sh`
-and `tty-clock-widget.sh`).
+Hollywood has no widgets for `lolcat` or `tty-clock`, so the image adds them (`lolcat-widget.sh` and
+`tty-clock-widget.sh`).
 
 - `lolcat` colors the first lines of a random text file from `/etc`, `/usr/share/doc` or `/var/log` in animated
   rainbow colors, waits 3 seconds and repeats. It runs in any pane size. `lolcat` is written in Ruby, so it adds the
   Ruby interpreter to the image, about 44 MB.
-- `sl` drives a steam locomotive across the screen. One trip is short, so the widget starts it again after 2 seconds
-  with a random style: normal, little, an accident or a flying train.
 - `tty-clock` shows a large digital clock with seconds, in the middle of the pane, with a blinking colon. It needs a pane of
   at least 54 columns by 7 lines, because the clock with seconds is 51 columns wide. Set `HOLLYWOOD_CLOCK_COLOR` to a
   number from 0 to 7 to fix the color.
 
-Debian installs `lolcat` and `sl` in `/usr/games`, which is not in `PATH`, so those two widgets use the full path. Each
+Debian installs `lolcat` in `/usr/games`, which is not in `PATH`, so that widget uses the full path. Each
 widget puts your terminal back the way it was when the guard stops it.
 
 ### The mplayer widget
@@ -380,7 +376,7 @@ Why I cut each scene the way I did.
 - **Debian stable base.** `debian:trixie-slim` is a named release, so the base does not change between builds except
   for security fixes. It has every tool the widgets need, including `mplayer`.
 - **Hollywood from the upstream source.** The Dockerfile fetches the commit tagged `1.25` (`4bfa297`), so the
-  Hollywood scripts do not change between builds. This version has all 30 widgets. Its launcher passes the values of
+  Hollywood scripts do not change between builds. This version has all 29 widgets. Its launcher passes the values of
   `-s` and `-d` to its own tmux session, which the entrypoint needs. Its `sshart` widget works with current OpenSSH.
 - **Pane count from terminal size.** Hollywood defaults to two panes per CPU. On an 8-CPU machine that is 16 panes,
   which are too small to read on a 1920x1080 screen. The entrypoint sizes the count to the terminal. Then it picks a
@@ -427,9 +423,8 @@ Why I cut each scene the way I did.
 - **`pipes`, `cbonsai` and `nyancat` widgets.** They add motion without text. `pipes` and `nyancat` are easy to
   recognize, and `cbonsai` is slow and calm, which gives the busy panes some contrast. They need no network, no
   privileges and no pane size, so the guard never skips them.
-- **`lolcat`, `sl` and `tty-clock` widgets.** A hacking movie needs color, a joke and a clock. `lolcat` makes the
-  same plain text from the other widgets look different. `sl` is a familiar joke that moves across the whole pane.
-  `tty-clock` gives the display a shape that stays still while everything around it changes. `lolcat` is the costly
+- **`lolcat` and `tty-clock` widgets.** A hacking movie needs color and a clock. `lolcat` makes the
+  same plain text from the other widgets look different. `tty-clock` gives the display a shape that stays still while everything around it changes. `lolcat` is the costly
   one, because it needs Ruby and adds about 44 MB to the image.
 - **A new `mplayer` widget.** Hollywood plays the sound-wave video at 100 times normal speed. In a 100 x 18 pane
   that redraws the terminal about 950 times a second, which flickers. It also draws the video with libcaca, which
