@@ -62,18 +62,21 @@ these:
 - The sound wave, the wallpapers and the world map use half blocks in color. Every cell shows two pixels. There are no
   random letters, and nothing scrolls. The image brings 171 wallpapers from the KDE Plasma set.
 - A widget that needs more room than its pane has gets swapped for one that fits.
-- The base is Debian 13 (stable), and Hollywood 1.25 comes from a pinned upstream commit. All 27 widgets work.
+- The base is Debian 13 (stable), and Hollywood 1.25 comes from a pinned upstream commit. All 30 widgets work.
 - Your terminal is reset when the show ends, and Byobu never asks about ctrl-a.
 - There is a new `btop` widget. It shows the CPU, memory, network and processes. In a small pane, it shrinks to just
   the CPU box.
 - There is a new `gping` widget. It graphs the ping time to several well-known sites.
-- There are six more new widgets:
+- There are nine more new widgets:
   - `mtr` shows a live route trace.
   - `cacafire` shows animated fire.
   - `nms` decrypts text on the screen, as in *Sneakers*.
   - `pipes` draws animated pipes.
   - `cbonsai` grows a bonsai tree.
   - `nyancat` shows the rainbow cat.
+  - `lolcat` colors text in animated rainbow colors.
+  - `sl` drives a steam locomotive across the screen.
+  - `tty-clock` shows a large digital clock.
 - The `figlet` widget is gone. It only printed one word at a time, and the new widgets show more.
 
 The details are under "Behind the scenes", and my reasons are under "Director's commentary".
@@ -81,7 +84,7 @@ The details are under "Behind the scenes", and my reasons are under "Director's 
 ## 🎭 The cast
 
 Hollywood opens a tmux session and fills it with panes. Each pane runs one widget, and each widget wraps an ordinary
-tool. There are 27 widgets. All of them play themselves.
+tool. There are 30 widgets. All of them play themselves.
 
 | Widget | Shows |
 |---|---|
@@ -100,6 +103,7 @@ tool. There are 27 widgets. All of them play themselves.
 | `htop` | interactive process viewer |
 | `jp2a` | wallpaper photos in 256 colors, drawn with half blocks (see "Wallpapers") |
 | `logs` | log files under `/var/log` |
+| `lolcat` | text from a random file in animated rainbow colors |
 | `man` | random man pages |
 | `map` | a map of the world in 256 colors, drawn once with half blocks (see "Wallpapers") |
 | `mplayer` | a sound-wave video in true color, drawn with half-block characters (see "The mplayer widget") |
@@ -108,10 +112,12 @@ tool. There are 27 widgets. All of them play themselves.
 | `nms` | text from a random file that decrypts on the screen, as in *Sneakers* (see "The nms widget") |
 | `pipes` | animated pipes that grow across the screen |
 | `pv` | a fake file-transfer progress bar |
+| `sl` | a steam locomotive that drives across the screen, sometimes small, in an accident or flying |
 | `speedometer` | network throughput graph |
 | `sshart` | random `ssh-keygen` key art (needs 20 x 12) |
 | `stat` | file details for random paths under `/sys` and `/dev` |
 | `tree` | directory trees under `/sys` and `/dev` |
+| `tty-clock` | a large digital clock with seconds (needs 54 x 7) |
 
 The Debian slim image removes man pages and documentation. The Dockerfile puts them back so the `man` and `code`
 widgets have something to show.
@@ -133,6 +139,7 @@ Every setting is an environment variable, because even directors take notes.
 | Hosts the `gping` widget pings, separated by spaces | `HOLLYWOOD_GPING_HOSTS` | `google.com cloudflare.com github.com wikipedia.org amazon.com 1.1.1.1 8.8.8.8` |
 | Hosts the `mtr` widget traces (it picks one at random), separated by spaces | `HOLLYWOOD_MTR_HOSTS` | the same list as `gping` |
 | Color of the text that the `nms` widget decrypts (`white`, `yellow`, `black`, `magenta`, `blue`, `green` or `red`) | `HOLLYWOOD_NMS_COLOR` | `green` |
+| Color of the `tty-clock` widget, from `0` to `7` (the default is a random color at each start) | `HOLLYWOOD_CLOCK_COLOR` | random |
 
 ```sh
 docker run -it --rm -e HOLLYWOOD_CELLS_PER_PANE=1000 -e HOLLYWOOD_DELAY=60 mapitman/hollywood-directors-cut
@@ -190,6 +197,7 @@ guard stops the widget and starts a different one that fits.
 | `gping` | 40 x 8 |
 | `mtr` | 50 x 8 |
 | `sshart` | 20 x 12 |
+| `tty-clock` | 54 x 7 |
 
 All other widgets run in any pane size. To change a minimum or add a widget, edit the `MIN_` tables and the
 `min_rows` function at the top of `widget-guard.sh`.
@@ -267,6 +275,23 @@ Hollywood has no widgets for `pipes` (package `pipes-sh`), `cbonsai` or `nyancat
 
 Debian installs `pipes` and `cbonsai` in `/usr/games`, which is not in `PATH`, so the widgets use the full path.
 Each widget puts your terminal back the way it was when the guard stops it.
+
+### The lolcat, sl and tty-clock widgets
+
+Hollywood has no widgets for `lolcat`, `sl` or `tty-clock`, so the image adds them (`lolcat-widget.sh`, `sl-widget.sh`
+and `tty-clock-widget.sh`).
+
+- `lolcat` colors the first lines of a random text file from `/etc`, `/usr/share/doc` or `/var/log` in animated
+  rainbow colors, waits 3 seconds and repeats. It runs in any pane size. `lolcat` is written in Ruby, so it adds the
+  Ruby interpreter to the image, about 44 MB.
+- `sl` drives a steam locomotive across the screen. One trip is short, so the widget starts it again after 2 seconds
+  with a random style: normal, little, an accident or a flying train.
+- `tty-clock` shows a large digital clock with seconds, in the middle of the pane, with a blinking colon. It needs a pane of
+  at least 54 columns by 7 lines, because the clock with seconds is 51 columns wide. Set `HOLLYWOOD_CLOCK_COLOR` to a
+  number from 0 to 7 to fix the color.
+
+Debian installs `lolcat` and `sl` in `/usr/games`, which is not in `PATH`, so those two widgets use the full path. Each
+widget puts your terminal back the way it was when the guard stops it.
 
 ### The mplayer widget
 
@@ -355,7 +380,7 @@ Why I cut each scene the way I did.
 - **Debian stable base.** `debian:trixie-slim` is a named release, so the base does not change between builds except
   for security fixes. It has every tool the widgets need, including `mplayer`.
 - **Hollywood from the upstream source.** The Dockerfile fetches the commit tagged `1.25` (`4bfa297`), so the
-  Hollywood scripts do not change between builds. This version has all 27 widgets. Its launcher passes the values of
+  Hollywood scripts do not change between builds. This version has all 30 widgets. Its launcher passes the values of
   `-s` and `-d` to its own tmux session, which the entrypoint needs. Its `sshart` widget works with current OpenSSH.
 - **Pane count from terminal size.** Hollywood defaults to two panes per CPU. On an 8-CPU machine that is 16 panes,
   which are too small to read on a 1920x1080 screen. The entrypoint sizes the count to the terminal. Then it picks a
@@ -402,6 +427,10 @@ Why I cut each scene the way I did.
 - **`pipes`, `cbonsai` and `nyancat` widgets.** They add motion without text. `pipes` and `nyancat` are easy to
   recognize, and `cbonsai` is slow and calm, which gives the busy panes some contrast. They need no network, no
   privileges and no pane size, so the guard never skips them.
+- **`lolcat`, `sl` and `tty-clock` widgets.** A hacking movie needs color, a joke and a clock. `lolcat` makes the
+  same plain text from the other widgets look different. `sl` is a familiar joke that moves across the whole pane.
+  `tty-clock` gives the display a shape that stays still while everything around it changes. `lolcat` is the costly
+  one, because it needs Ruby and adds about 44 MB to the image.
 - **A new `mplayer` widget.** Hollywood plays the sound-wave video at 100 times normal speed. In a 100 x 18 pane
   that redraws the terminal about 950 times a second, which flickers. It also draws the video with libcaca, which
   puts a random-looking letter on every cell. The letters change on every frame. libcaca has no setting for

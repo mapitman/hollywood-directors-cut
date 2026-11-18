@@ -14,9 +14,9 @@ RUN rm -f /etc/dpkg/dpkg.cfg.d/docker* \
 RUN apt-get update \
     && apt-get -y install --no-install-recommends \
         byobu tmux procps ncurses-term \
-        apg atop bat bmon bsdextrautils btop cbonsai ccze cmatrix gping htop \
+        apg atop bat bmon bsdextrautils btop cbonsai ccze cmatrix gping htop lolcat \
         caca-utils iputils-ping man-db manpages moreutils mplayer mtr-tiny nyancat openssh-client pipes-sh pv python3 python3-pil python3-pygments \
-        speedometer tree \
+        sl speedometer tree tty-clock \
     && apt-get -y --reinstall install coreutils findutils \
     && rm -rf /var/lib/apt/lists/*
 
@@ -97,6 +97,13 @@ COPY --chmod=755 mtr-widget.sh /usr/lib/hollywood/mtr
 COPY --chmod=755 pipes-widget.sh /usr/lib/hollywood/pipes
 COPY --chmod=755 cbonsai-widget.sh /usr/lib/hollywood/cbonsai
 COPY --chmod=755 nyancat-widget.sh /usr/lib/hollywood/nyancat
+
+# Add lolcat, sl and tty-clock widgets. Hollywood has none. They need the packages lolcat,
+# sl and tty-clock from the package list above. Debian installs lolcat and sl in
+# /usr/games, which is not in PATH, so those two widgets use the full path.
+COPY --chmod=755 lolcat-widget.sh /usr/lib/hollywood/lolcat
+COPY --chmod=755 sl-widget.sh /usr/lib/hollywood/sl
+COPY --chmod=755 tty-clock-widget.sh /usr/lib/hollywood/tty-clock
 
 # Add an nms widget. Hollywood has none. Debian has no package for nms (no-more-secrets),
 # so build it from the upstream source at the commit tagged v1.0.1. The build tools are
