@@ -24,20 +24,21 @@ The image carries a copy of this file at `/usr/share/doc/hollywood/THIRD-PARTY.m
 - **Three widgets are replaced:** `mplayer`, `jp2a` and `map`. They are `mplayer-widget.sh`, `image-widget.sh` and
   `map-widget.sh`, with the renderers `soundwave-render.py` and `image-render.py`. Each script says it is based on
   the Hollywood widget it replaces.
-- **Ten widgets are added:** `btop`, in `btop-widget.sh`, `gping`, in `gping-widget.sh`, `mtr`, in `mtr-widget.sh`,
-  `cacafire`, in `cacafire-widget.sh`, `nms`, in `nms-widget.sh`, `pipes`, in `pipes-widget.sh`, `cbonsai`, in
-  `cbonsai-widget.sh`, `nyancat`, in `nyancat-widget.sh`, `lolcat`, in `lolcat-widget.sh`, and
-  `tty-clock`, in `tty-clock-widget.sh`. Hollywood has none of them,
+- **Eight widgets are added:** `btop`, in `btop-widget.sh`, `gping`, in `gping-widget.sh`, `mtr`, in `mtr-widget.sh`,
+  `nms`, in `nms-widget.sh`, `lolcat`, in `lolcat-widget.sh`, `hexyl`, in `hexyl-widget.sh`, `connections`, in
+  `connections-widget.sh`, and `portscan`, in `portscan-widget.sh`. Hollywood has none of them,
   so they are new and replace nothing. `btop` is a Debian package that is licensed under the Apache License 2.0.
   `gping` is a Debian package that is licensed under the MIT license. It runs the `ping` command from `iputils-ping`.
-  `mtr` (package `mtr-tiny`) is licensed under the GPL-2 or later. `cacafire` comes from the `caca-utils` package, which is licensed under
-  the WTFPL. `nms` is `no-more-secrets` by Brian Barto, which Debian does not package. The build compiles it from the upstream
+  `mtr` (package `mtr-tiny`) is licensed under the GPL-2 or later. `nms` is `no-more-secrets` by Brian Barto, which
+  Debian does not package. The build compiles it from the upstream
   source (<https://github.com/bartobri/no-more-secrets>, tag `v1.0.1`) under the GPL-3 license and keeps its license file at
   `/usr/share/doc/no-more-secrets/copyright`.
-  `pipes` (package `pipes-sh`) is licensed under the MIT license, `cbonsai` under the GPL-3 and `nyancat` under the NCSA
-  license. `lolcat` and `tty-clock` are licensed under the BSD 3-clause license. `lolcat` also installs the Ruby
-  interpreter and two Ruby libraries. Each package's copyright file is in `/usr/share/doc/<package>/copyright`.
-- **One widget is removed:** `figlet`. The `figlet` package is not installed.
+  `lolcat` is licensed under the BSD 3-clause license. It also installs the Ruby interpreter and two Ruby libraries.
+  `hexyl` is licensed under the MIT license or the Apache License 2.0. `connections` uses `ss` and `watch`, which the
+  base image has, and `portscan` uses `nmap`, which Debian licenses under the GPL-2 with the Nmap additions. Each
+  package's copyright file is in `/usr/share/doc/<package>/copyright`.
+- **Five widgets are removed:** `figlet`, which comes from Hollywood, and `cacafire`, `pipes`, `cbonsai` and `nyancat`,
+  which version 2.4.0 added. Their packages are not installed.
 - **Everything else is unchanged:** the other widgets and the bundled `map.jpg` and `soundwave.mp4` are used as they are.
 
 ### Files in this repository that come from Hollywood
