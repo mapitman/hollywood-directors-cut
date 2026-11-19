@@ -14,8 +14,8 @@ RUN rm -f /etc/dpkg/dpkg.cfg.d/docker* \
 RUN apt-get update \
     && apt-get -y install --no-install-recommends \
         byobu tmux procps ncurses-term \
-        apg atop bat bmon bsdextrautils btop cbonsai ccze cmatrix gping htop \
-        caca-utils iputils-ping man-db manpages moreutils mplayer mtr-tiny nyancat openssh-client pipes-sh pv python3 python3-pil python3-pygments \
+        apg atop bat bmon bsdextrautils btop ccze cmatrix gping hexyl htop lolcat \
+        iputils-ping man-db manpages moreutils mplayer mtr-tiny nmap openssh-client pv python3 python3-pil python3-pygments \
         speedometer tree \
     && apt-get -y --reinstall install coreutils findutils \
     && rm -rf /var/lib/apt/lists/*
@@ -85,18 +85,17 @@ COPY --chmod=755 btop-widget.sh /usr/lib/hollywood/btop
 # Add a gping widget. Hollywood has none. It needs gping, which is in the package list above.
 COPY --chmod=755 gping-widget.sh /usr/lib/hollywood/gping
 
-# Add a cacafire widget. Hollywood has none. It needs cacafire, which is in caca-utils in the package list above.
-COPY --chmod=755 cacafire-widget.sh /usr/lib/hollywood/cacafire
-
 # Add an mtr widget. Hollywood has none. It needs mtr, which is in the package list above.
 COPY --chmod=755 mtr-widget.sh /usr/lib/hollywood/mtr
 
-# Add pipes, cbonsai and nyancat widgets. Hollywood has none. They need the packages pipes-sh,
-# cbonsai and nyancat from the package list above. Debian installs pipes and cbonsai in
-# /usr/games, which is not in PATH, so the widgets use the full path.
-COPY --chmod=755 pipes-widget.sh /usr/lib/hollywood/pipes
-COPY --chmod=755 cbonsai-widget.sh /usr/lib/hollywood/cbonsai
-COPY --chmod=755 nyancat-widget.sh /usr/lib/hollywood/nyancat
+# Add lolcat, hexyl, connections and portscan widgets. Hollywood has none. They need the
+# packages lolcat, hexyl and nmap from the package list above. The connections widget uses
+# ss and watch, which the base image has. Debian installs lolcat in /usr/games, which is
+# not in PATH, so that widget uses the full path.
+COPY --chmod=755 lolcat-widget.sh /usr/lib/hollywood/lolcat
+COPY --chmod=755 hexyl-widget.sh /usr/lib/hollywood/hexyl
+COPY --chmod=755 connections-widget.sh /usr/lib/hollywood/connections
+COPY --chmod=755 portscan-widget.sh /usr/lib/hollywood/portscan
 
 # Add an nms widget. Hollywood has none. Debian has no package for nms (no-more-secrets),
 # so build it from the upstream source at the commit tagged v1.0.1. The build tools are
