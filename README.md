@@ -109,7 +109,7 @@ tool. There are 26 widgets. All of them play themselves.
 | `portscan` | the probes of an `nmap` port scan of the local host only (see "The portscan widget") |
 | `pv` | a fake file-transfer progress bar |
 | `speedometer` | network throughput graph |
-| `sshart` | random `ssh-keygen` key art (needs 20 x 12) |
+| `sshart` | the "drunken bishop" walk of random SSH keys, drawn step by step in color (see "The sshart widget", needs 20 x 12) |
 | `stat` | file details for random paths under `/sys` and `/dev` |
 | `tree` | directory trees under `/sys` and `/dev` |
 
@@ -307,6 +307,20 @@ Hollywood's `man` widget prints a whole manual page at once, so the pane scrolls
 it with `man-widget.sh`, which prints each page one line at a time with a pause of 0.04 seconds after every line, which
 is about 15 lines per second in practice. It waits one second between pages. Set `HOLLYWOOD_MAN_DELAY` to change the pause, and use `0`
 for Hollywood's speed.
+
+### The sshart widget
+
+OpenSSH draws the random art of a key with the "drunken bishop" algorithm. A bishop starts in the middle of a board of
+17 x 9 cells. It takes one diagonal step for every 2 bits of the key's hash, and each cell counts its visits. The
+count picks the character from ` .o+=*BOX@%&#/^`, and the start and end cells show `S` and `E`.
+
+Hollywood's `sshart` widget runs `ssh-keygen` and prints its text and its small picture in the corner of the pane.
+The image replaces it. `sshart-widget.sh` starts `sshart-render.py`, which runs the same walk with random hashes and
+draws it step by step. Each board types a fake `ssh-keygen -lv` command and a fingerprint, then the bishop walks at
+30 steps per second while the cells fill in. The color of a cell goes from green through yellow to red as its count
+grows. After the walk the board stays for 2 seconds, and then a new key starts. The pane holds as many boards as fit,
+each on its own schedule. A pane with fewer than 15 rows shows the boards without the typed lines. The finished boards
+are the same as the ones OpenSSH draws for the same hash.
 
 ### Wallpapers
 

@@ -84,6 +84,12 @@ COPY --chmod=755 image-render.py /usr/local/bin/hollywood-image-render
 # scrolls too fast to read. The replacement prints one line at a time.
 COPY --chmod=755 man-widget.sh /usr/lib/hollywood/man
 
+# Replace the sshart widget. The one in Hollywood prints the text and the small picture of a
+# new SSH key in the top corner every few seconds. The replacement draws as many boards as fit
+# in the pane and animates the "drunken bishop" walk on each. It needs the renderer script.
+COPY --chmod=755 sshart-widget.sh /usr/lib/hollywood/sshart
+COPY --chmod=755 sshart-render.py /usr/local/bin/hollywood-sshart-render
+
 # Add a btop widget. Hollywood has none. It needs btop, which is in the package list above.
 COPY --chmod=755 btop-widget.sh /usr/lib/hollywood/btop
 

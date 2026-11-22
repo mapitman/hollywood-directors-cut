@@ -40,6 +40,9 @@ upstream commit and is not stored here.
   The widgets call `image-render.py --clear` in their TERM trap to delete the picture. The `mplayer` widget does the
   same in `soundwave-render.py`. Both import the shared helpers in `hollywood_kitty.py`. To test the Kitty output
   without a Kitty terminal, run the renderer under `script` and search the log for `\x1b_Ga=T`.
+- The `sshart` widget replaces Hollywood's. `sshart-render.py` runs the OpenSSH "drunken bishop" walk with random
+  hashes and animates it. Its board matches `ssh-keygen -lv` for the same hash. To check, compare the board it builds
+  for the hash of a real key with the `ssh-keygen -lvf key.pub` output.
 - Each widget script follows the same pattern:
   - Exit with status 1 if its tool is missing (`command -v ... || exit 1`).
   - Trap TERM and HUP, stop the child, and restore the terminal (alternate screen, cursor, colors). The guard stops
