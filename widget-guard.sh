@@ -20,8 +20,8 @@ CLAIM_DIR=/tmp/hollywood-claims
 DELAY=${HOLLYWOOD_DELAY:-30}
 
 # Minimum pane size per widget. Widgets that are not listed have no minimum.
-declare -A MIN_COLS=([atop]=60 [bmon]=48 [btop]=60 [gping]=40 [mtr]=50 [sshart]=20)
-declare -A MIN_ROWS=([atop]=24 [btop]=8 [gping]=8 [mtr]=8 [sshart]=12)
+declare -A MIN_COLS=([atop]=60 [bmon]=48 [btop]=60 [connections]=60 [gping]=40 [hexyl]=78 [mtr]=50 [sshart]=20)
+declare -A MIN_ROWS=([atop]=24 [btop]=8 [connections]=8 [gping]=8 [hexyl]=5 [mtr]=8 [sshart]=12)
 
 # Minimum rows for widget $1 in a pane $2 columns wide.
 min_rows() {

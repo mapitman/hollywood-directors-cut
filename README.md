@@ -69,11 +69,11 @@ these:
 - There is a new `gping` widget. It graphs the ping time to several well-known sites.
 - There are six more new widgets:
   - `mtr` shows a live route trace.
-  - `cacafire` shows animated fire.
   - `nms` decrypts text on the screen, as in *Sneakers*.
-  - `pipes` draws animated pipes.
-  - `cbonsai` grows a bonsai tree.
-  - `nyancat` shows the rainbow cat.
+  - `lolcat` colors text in animated rainbow colors.
+  - `hexyl` shows a colored hex dump of a program.
+  - `connections` shows a live table of network connections.
+  - `portscan` shows the probes of a port scan of the local host.
 - The `figlet` widget is gone. It only printed one word at a time, and the new widgets show more.
 
 The details are under "Behind the scenes", and my reasons are under "Director's commentary".
@@ -90,23 +90,23 @@ tool. There are 27 widgets. All of them play themselves.
 | `bat` | random source files from `/usr`, syntax highlighted with `batcat` |
 | `bmon` | network bandwidth monitor (needs 48 x 26, or 141 x 18) |
 | `btop` | resource monitor with CPU, memory, network and process boxes (needs 60 x 8, see "The btop widget") |
-| `cacafire` | animated fire, drawn with libcaca |
-| `cbonsai` | a bonsai tree that grows one branch at a time, then a new tree |
 | `cmatrix` | falling green characters, as in The Matrix |
 | `code` | random C, C++, Java and Python files, highlighted with `pygmentize` |
+| `connections` | a live table of the network connections of the container (needs 60 x 8, see "The connections widget") |
 | `errno` | the list of error codes, in random order |
 | `gping` | live graph of the ping time to well-known sites (needs 40 x 8, see "The gping widget") |
 | `hexdump` | hex dumps of programs in `/usr/bin` |
+| `hexyl` | colored hex dumps of programs in `/usr/bin` (needs 78 x 5, see "The hexyl widget") |
 | `htop` | interactive process viewer |
 | `jp2a` | wallpaper photos in 256 colors, drawn with half blocks (see "Wallpapers") |
 | `logs` | log files under `/var/log` |
+| `lolcat` | text from a random file in animated rainbow colors |
 | `man` | random man pages |
 | `map` | a map of the world in 256 colors, drawn once with half blocks (see "Wallpapers") |
 | `mplayer` | a sound-wave video in true color, drawn with half-block characters (see "The mplayer widget") |
 | `mtr` | live trace of the route to a well-known site, with the delay at each hop (needs 50 x 8) |
-| `nyancat` | the rainbow cat that flies across the screen |
 | `nms` | text from a random file that decrypts on the screen, as in *Sneakers* (see "The nms widget") |
-| `pipes` | animated pipes that grow across the screen |
+| `portscan` | the probes of an `nmap` port scan of the local host only (see "The portscan widget") |
 | `pv` | a fake file-transfer progress bar |
 | `speedometer` | network throughput graph |
 | `sshart` | random `ssh-keygen` key art (needs 20 x 12) |
@@ -133,6 +133,7 @@ Every setting is an environment variable, because even directors take notes.
 | Hosts the `gping` widget pings, separated by spaces | `HOLLYWOOD_GPING_HOSTS` | `google.com cloudflare.com github.com wikipedia.org amazon.com 1.1.1.1 8.8.8.8` |
 | Hosts the `mtr` widget traces (it picks one at random), separated by spaces | `HOLLYWOOD_MTR_HOSTS` | the same list as `gping` |
 | Color of the text that the `nms` widget decrypts (`white`, `yellow`, `black`, `magenta`, `blue`, `green` or `red`) | `HOLLYWOOD_NMS_COLOR` | `green` |
+| Hosts the `connections` widget connects to, separated by spaces | `HOLLYWOOD_CONNECTIONS_HOSTS` | the same list as `gping` |
 
 ```sh
 docker run -it --rm -e HOLLYWOOD_CELLS_PER_PANE=1000 -e HOLLYWOOD_DELAY=60 mapitman/hollywood-directors-cut
@@ -187,7 +188,9 @@ guard stops the widget and starts a different one that fits.
 | `atop` | 60 x 24 |
 | `bmon` | 48 x 26, or 141 x 18 (it asks you to enlarge the window below this) |
 | `btop` | 60 x 8 (all four boxes need 80 x 24) |
+| `connections` | 60 x 8 |
 | `gping` | 40 x 8 |
+| `hexyl` | 78 x 5 |
 | `mtr` | 50 x 8 |
 | `sshart` | 20 x 12 |
 
@@ -242,31 +245,35 @@ host, with the delay at each hop, and updates it live. The widget picks one host
 time it starts. Set `HOLLYWOOD_MTR_HOSTS` to a list of hosts, separated by spaces, to trace other sites. It needs a pane of
 at least 50 columns by 8 lines. Like `gping`, it needs network access, and a setup that blocks ICMP shows empty hops.
 
-### The cacafire widget
+### The lolcat widget
 
-`cacafire` comes with `caca-utils` and draws an animated fire with libcaca. It runs in any pane size. The widget
-(`cacafire-widget.sh`) puts your terminal back the way it was when the guard stops it, because `cacafire` does not do that
-itself.
+Hollywood has no `lolcat` widget, so the image adds one (`lolcat-widget.sh`). It colors the first lines of a random
+text file from `/etc`, `/usr/share/doc` or `/var/log` in animated rainbow colors, waits 3 seconds and repeats. It
+runs in any pane size. `lolcat` is written in Ruby, so it adds the Ruby interpreter to the image. Debian installs
+`lolcat` in `/usr/games`, which is not in `PATH`, so the widget uses the full path.
 
-### The nms widget
+### The hexyl widget
 
-`nms` is the `no-more-secrets` program. It copies the decrypting text effect from the film *Sneakers*: the text starts
-as random symbols and turns into the real text one character at a time. Debian has no package for it, so the Docker build
-compiles it from the upstream source (tag `v1.0.1`) and removes the compiler again. The widget (`nms-widget.sh`) picks a
-random text file from `/etc`, `/usr/share/doc` or `/var/log`, decrypts its first lines, waits 3 seconds and repeats.
-Set `HOLLYWOOD_NMS_COLOR` to change the color of the decrypted text.
+`hexyl` prints a hex dump in colors: null bytes in gray, text in cyan, and other bytes in other colors. The widget
+(`hexyl-widget.sh`) dumps one screen of a random program from `/usr/bin`, starting between 10% and 60% of the file,
+where most programs keep their code. It waits 2 seconds and does it again. `hexyl` always prints 16 bytes in a row,
+which is 78 columns wide, so the widget needs a pane of at least 78 columns by 5 lines.
 
-### The pipes, cbonsai and nyancat widgets
+### The connections widget
 
-Hollywood has no widgets for `pipes` (package `pipes-sh`), `cbonsai` or `nyancat`, so the image adds them
-(`pipes-widget.sh`, `cbonsai-widget.sh` and `nyancat-widget.sh`). All three run in any pane size.
+The widget (`connections-widget.sh`) shows the output of `ss -tn`, which lists the TCP connections, and `watch`
+highlights what changes. A container with nothing running has no connections, so the widget opens its own. Every
+1.5 seconds it opens a TCP connection to port 443 of a random host, and it keeps at most 8 connections open. The oldest
+closes first. The hosts are the same as the `gping` list. Set `HOLLYWOOD_CONNECTIONS_HOSTS` to a list of hosts, separated by
+spaces, to use other hosts. The widget needs a pane of at least 60 columns by 8 lines and network access.
 
-- `pipes` draws three pipes that grow across the screen, with random starting positions.
-- `cbonsai` grows a bonsai tree one branch at a time, waits, and grows another.
-- `nyancat` shows the rainbow cat, without the timer.
+### The portscan widget
 
-Debian installs `pipes` and `cbonsai` in `/usr/games`, which is not in `PATH`, so the widgets use the full path.
-Each widget puts your terminal back the way it was when the guard stops it.
+The widget (`portscan-widget.sh`) runs `nmap` with `--packet-trace`, which prints one line for each probe and for its
+answer. It scans 200 ports at a random place in the range, 20 ports a second, then waits 2 seconds and scans another
+range. It scans only the local host (`127.0.0.1`), and nothing in the container listens on those ports, so every probe
+ends with "Connection refused". It uses the `nmap` connect scan (`-sT`), which needs no special privileges. It runs
+in any pane size.
 
 ### The mplayer widget
 
@@ -395,13 +402,17 @@ Why I cut each scene the way I did.
   moves. `gping` draws the ping time to several hosts as live lines. The widget pings seven well-known hosts by
   default, so the graph has several lines to watch. `HOLLYWOOD_GPING_HOSTS` changes the list. `gping` runs the `ping`
   command, so the image also installs `iputils-ping`. The widget needs only 40 x 8, so it fits in most panes.
-- **`mtr`, `cacafire` and `nms` widgets, and no `figlet` widget.** The `figlet` widget printed one word such as HACKED
+- **`mtr` and `nms` widgets, and no `figlet` widget.** The `figlet` widget printed one word such as HACKED
   or ENABLED in large letters every 2 seconds. It showed nothing that moves, and the other widgets look more like a
-  hacking movie. The three new widgets replace it. `mtr` shows a live route trace, `cacafire` shows animated fire, and
-  `nms` decrypts real text on the screen, as in *Sneakers*. The `figlet` package is no longer installed.
-- **`pipes`, `cbonsai` and `nyancat` widgets.** They add motion without text. `pipes` and `nyancat` are easy to
-  recognize, and `cbonsai` is slow and calm, which gives the busy panes some contrast. They need no network, no
-  privileges and no pane size, so the guard never skips them.
+  hacking movie. `mtr` shows a live route trace, and `nms` decrypts real text on the screen, as in *Sneakers*.
+  The `figlet` package is no longer installed.
+- **`lolcat`, `hexyl`, `connections` and `portscan` widgets.** The image shows things that look like a hacker at work.
+  `lolcat` colors plain text, `hexyl` dumps programs as colored hex, `connections` lists live network connections,
+  and `portscan` prints the probes of a port scan. The scan targets the local host only, so it sends nothing to other
+  systems. `connections` opens its own connections to the `gping` hosts, because an idle container has none.
+  `lolcat` needs Ruby and `portscan` needs `nmap`, so they make the image larger.
+- **Widgets that did not fit.** Version 2.4.0 had `cacafire`, `pipes`, `cbonsai` and `nyancat`. They are fun, but they
+  look like screensavers and memes, not like a hacking movie, so they are gone.
 - **A new `mplayer` widget.** Hollywood plays the sound-wave video at 100 times normal speed. In a 100 x 18 pane
   that redraws the terminal about 950 times a second, which flickers. It also draws the video with libcaca, which
   puts a random-looking letter on every cell. The letters change on every frame. libcaca has no setting for
