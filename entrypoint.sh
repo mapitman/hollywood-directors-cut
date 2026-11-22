@@ -12,6 +12,7 @@
 #
 #   HOLLYWOOD_CELLS_PER_PANE  cells per pane (default 1400)
 #   HOLLYWOOD_RANDOM_PANES    0 always uses the maximum (default 1)
+#   HOLLYWOOD_MIN_PANES       fewest panes, even in a small terminal (default 3)
 #   HOLLYWOOD_DELAY           minimum seconds a pane keeps a widget (default 30)
 #   HOLLYWOOD_REBUILD         seconds between layout rebuilds (default 300, 0 = never)
 #
