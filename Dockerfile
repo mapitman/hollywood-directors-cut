@@ -14,7 +14,7 @@ RUN rm -f /etc/dpkg/dpkg.cfg.d/docker* \
 RUN apt-get update \
     && apt-get -y install --no-install-recommends \
         byobu tmux procps ncurses-term \
-        apg atop bat bmon bsdextrautils btop ccze cmatrix gping hexyl htop lolcat \
+        apg atop bat bsdextrautils btop ccze cmatrix gping hexyl htop lolcat \
         iputils-ping man-db manpages moreutils mplayer mtr-tiny nmap openssh-client pv python3 python3-pil python3-pygments \
         speedometer tree \
     && apt-get -y --reinstall install coreutils findutils \
@@ -114,7 +114,9 @@ COPY --chmod=755 nms-widget.sh /usr/lib/hollywood/nms
 
 # Remove the figlet widget. It only prints a random word such as HACKED in large letters,
 # which the other widgets show better. Its package is not installed.
-RUN rm /usr/lib/hollywood/figlet
+# Remove the bmon widget too. It watches the container's network interface, which is nearly
+# idle, so its graphs stay empty. Its package is not installed.
+RUN rm /usr/lib/hollywood/figlet /usr/lib/hollywood/bmon
 
 # Byobu asks which mode ctrl-a should use the first time you press it. Choose
 # GNU Screen mode (option 1) now so the question never appears.

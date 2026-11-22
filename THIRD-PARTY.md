@@ -37,8 +37,8 @@ The image carries a copy of this file at `/usr/share/doc/hollywood/THIRD-PARTY.m
   `hexyl` is licensed under the MIT license or the Apache License 2.0. `connections` uses `ss` and `watch`, which the
   base image has, and `portscan` uses `nmap`, which Debian licenses under the GPL-2 with the Nmap additions. Each
   package's copyright file is in `/usr/share/doc/<package>/copyright`.
-- **Five widgets are removed:** `figlet`, which comes from Hollywood, and `cacafire`, `pipes`, `cbonsai` and `nyancat`,
-  which version 2.4.0 added. Their packages are not installed.
+- **Six widgets are removed:** `figlet` and `bmon`, which come from Hollywood, and `cacafire`, `pipes`, `cbonsai` and
+  `nyancat`, which version 2.4.0 added. Their packages are not installed.
 - **Everything else is unchanged:** the other widgets and the bundled `map.jpg` and `soundwave.mp4` are used as they are.
 
 ### Files in this repository that come from Hollywood
@@ -60,5 +60,5 @@ MIT license. The other files here, such as `entrypoint.sh`, `widget-guard.sh`, `
 ## Debian base image and packages
 
 The image starts from `debian:trixie-slim` and installs packages with `apt` (tmux, byobu, mplayer, atop, htop, btop,
-bmon, cmatrix and others). Each package's license is in `/usr/share/doc/<package>/copyright` in the
+cmatrix and others). Each package's license is in `/usr/share/doc/<package>/copyright` in the
 image, and its source is available with `apt-get source <package>`.

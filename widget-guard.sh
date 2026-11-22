@@ -20,17 +20,12 @@ CLAIM_DIR=/tmp/hollywood-claims
 DELAY=${HOLLYWOOD_DELAY:-30}
 
 # Minimum pane size per widget. Widgets that are not listed have no minimum.
-declare -A MIN_COLS=([atop]=60 [bmon]=48 [btop]=60 [connections]=60 [gping]=40 [hexyl]=78 [mtr]=50 [sshart]=20)
+declare -A MIN_COLS=([atop]=60 [btop]=60 [connections]=60 [gping]=40 [hexyl]=78 [mtr]=50 [sshart]=20)
 declare -A MIN_ROWS=([atop]=24 [btop]=8 [connections]=8 [gping]=8 [hexyl]=5 [mtr]=8 [sshart]=12)
 
 # Minimum rows for widget $1 in a pane $2 columns wide.
 min_rows() {
-	case "$1" in
-		# bmon shows its graphs in 18 rows when it is 141 or more columns wide,
-		# and in 26 rows otherwise. Below that it asks you to enlarge the window.
-		bmon) [ "$2" -ge 141 ] && echo 18 || echo 26 ;;
-		*) echo "${MIN_ROWS[$1]:-1}" ;;
-	esac
+	echo "${MIN_ROWS[$1]:-1}"
 }
 
 fits() {
