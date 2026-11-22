@@ -62,7 +62,7 @@ these:
 - The sound wave, the wallpapers and the world map use half blocks in color. Every cell shows two pixels. There are no
   random letters, and nothing scrolls. The image brings 171 wallpapers from the KDE Plasma set.
 - A widget that needs more room than its pane has gets swapped for one that fits.
-- The base is Debian 13 (stable), and Hollywood 1.25 comes from a pinned upstream commit. All 27 widgets work.
+- The base is Debian 13 (stable), and Hollywood 1.25 comes from a pinned upstream commit. All 26 widgets work.
 - Your terminal is reset when the show ends, and Byobu never asks about ctrl-a.
 - There is a new `btop` widget. It shows the CPU, memory, network and processes. In a small pane, it shrinks to just
   the CPU box.
@@ -75,20 +75,20 @@ these:
   - `connections` shows a live table of network connections.
   - `portscan` shows the probes of a port scan of the local host.
 - The `figlet` widget is gone. It only printed one word at a time, and the new widgets show more.
+- The `bmon` widget is gone. It watches the container's network interface, which is nearly idle, so its graphs stayed empty.
 
 The details are under "Behind the scenes", and my reasons are under "Director's commentary".
 
 ## 🎭 The cast
 
 Hollywood opens a tmux session and fills it with panes. Each pane runs one widget, and each widget wraps an ordinary
-tool. There are 27 widgets. All of them play themselves.
+tool. There are 26 widgets. All of them play themselves.
 
 | Widget | Shows |
 |---|---|
 | `apg` | random passwords from `/dev/urandom`, colored with `ccze` |
 | `atop` | system and process monitor (needs 60 x 24) |
 | `bat` | random source files from `/usr`, syntax highlighted with `batcat` |
-| `bmon` | network bandwidth monitor (needs 48 x 26, or 141 x 18) |
 | `btop` | resource monitor with CPU, memory, network and process boxes (needs 60 x 8, see "The btop widget") |
 | `cmatrix` | falling green characters, as in The Matrix |
 | `code` | random C, C++, Java and Python files, highlighted with `pygmentize` |
@@ -190,7 +190,6 @@ guard stops the widget and starts a different one that fits.
 | Widget | Minimum columns x rows |
 |---|---|
 | `atop` | 60 x 24 |
-| `bmon` | 48 x 26, or 141 x 18 (it asks you to enlarge the window below this) |
 | `btop` | 60 x 8 (all four boxes need 80 x 24) |
 | `connections` | 60 x 8 |
 | `gping` | 40 x 8 |
@@ -382,15 +381,14 @@ Why I cut each scene the way I did.
 - **Debian stable base.** `debian:trixie-slim` is a named release, so the base does not change between builds except
   for security fixes. It has every tool the widgets need, including `mplayer`.
 - **Hollywood from the upstream source.** The Dockerfile fetches the commit tagged `1.25` (`4bfa297`), so the
-  Hollywood scripts do not change between builds. This version has all 27 widgets. Its launcher passes the values of
+  Hollywood scripts do not change between builds. This version has all 26 widgets. Its launcher passes the values of
   `-s` and `-d` to its own tmux session, which the entrypoint needs. Its `sshart` widget works with current OpenSSH.
 - **Pane count from terminal size.** Hollywood defaults to two panes per CPU. On an 8-CPU machine that is 16 panes,
   which are too small to read on a 1920x1080 screen. The entrypoint sizes the count to the terminal. Then it picks a
   random number up to that. Therefore the widgets that need a big pane get a turn.
 - **30 to 45 seconds per widget.** Hollywood replaces every pane every 10 seconds by default. That is not long
-  enough to see what is happening in each widget. For example, the `bmon` graph covers 60 seconds of history. A
-  pane that lasts 10 seconds shows only the first sixth of it. A pane that lasts 30 to 45 seconds shows at least
-  half. The `code` widget shows each file for 2 seconds. The `bat` widget shows each file for 3 seconds. Therefore
+  enough to see what is happening in each widget. For example, the `btop` graphs cover many seconds of history. A
+  pane that lasts 10 seconds shows only the start of them. A pane that lasts 30 to 45 seconds shows much more. The `code` widget shows each file for 2 seconds. The `bat` widget shows each file for 3 seconds. Therefore
   10 seconds shows only a few files.
 - **Panes change one at a time.** Hollywood replaces all panes at the same moment, so you cannot finish reading one
   before it disappears. The widget guard gives each pane its own random time between the delay and 1.5 times the
@@ -400,7 +398,7 @@ Why I cut each scene the way I did.
   tmux refused the split and the window ended up with fewer panes than requested. At 161x37, 2 of 8 launches gave
   3 panes instead of 4.
 - **Widget size guard.** Some widgets keep running in a pane that is too small. They show a message instead of
-  content. For example, `atop` asks for 60 x 24, and `bmon` asks you to enlarge the window. With 4 panes at 161x37 each pane is
+  content. For example, `atop` asks for 60 x 24, and `btop` asks you to enlarge the window. With 4 panes at 161x37 each pane is
   at most 18 rows tall. A pane also shrinks while the launcher splits later panes, so the guard checks again on every
   resize.
 - **No repeated widgets.** The launcher picks the first widget separately from the rest, so two panes can start
@@ -431,6 +429,9 @@ Why I cut each scene the way I did.
   and `portscan` prints the probes of a port scan. The scan targets the local host only, so it sends nothing to other
   systems. `connections` opens its own connections to the `gping` hosts, because an idle container has none.
   `lolcat` needs Ruby and `portscan` needs `nmap`, so they make the image larger.
+- **No `bmon` widget.** The `bmon` widget draws the traffic of the container's network interface. An idle container
+  has almost none, so its graphs stayed empty and the pane looked broken. The `gping`, `mtr` and `connections`
+  widgets show live network activity instead. The `bmon` package is no longer installed.
 - **Widgets that did not fit.** Version 2.4.0 had `cacafire`, `pipes`, `cbonsai` and `nyancat`. They are fun, but they
   look like screensavers and memes, not like a hacking movie, so they are gone.
 - **A new `mplayer` widget.** Hollywood plays the sound-wave video at 100 times normal speed. In a 100 x 18 pane
