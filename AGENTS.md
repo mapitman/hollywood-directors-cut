@@ -37,7 +37,8 @@ upstream commit and is not stored here.
 - The `jp2a` and `map` widgets draw with `image-render.py`. It draws half blocks, or Kitty graphics with Unicode
   placeholders if `HOLLYWOOD_IMAGES=kitty`. `entrypoint.sh` sets that variable from `image-render.py --detect`
   before Hollywood starts, because only the entrypoint can ask the terminal without a conflict over the keyboard.
-  The widgets call `image-render.py --clear` in their TERM trap to delete the picture. To test the Kitty output
+  The widgets call `image-render.py --clear` in their TERM trap to delete the picture. The `mplayer` widget does the
+  same in `soundwave-render.py`. Both import the shared helpers in `hollywood_kitty.py`. To test the Kitty output
   without a Kitty terminal, run the renderer under `script` and search the log for `\x1b_Ga=T`.
 - Each widget script follows the same pattern:
   - Exit with status 1 if its tool is missing (`command -v ... || exit 1`).

@@ -8,16 +8,32 @@ rounded down to an even number (the chroma planes need an even width). The last
 column of a pane with an odd width stays empty. The script exits with status 3
 when the terminal size changes, so the caller can start the video again at the
 new size.
+
+When HOLLYWOOD_IMAGES is "kitty", each frame is sent to the terminal as a picture with
+the Kitty graphics protocol instead (see hollywood_kitty.py). The video can have any
+size, and the terminal stretches each frame over the whole pane.
 """
+import io
 import os
 import signal
 import sys
+
+from PIL import Image
+
+sys.path.insert(0, "/usr/local/lib/hollywood")
+import hollywood_kitty as kitty
 
 OUT = sys.stdout.fileno()
 IN = sys.stdin.buffer
 BLACK = 16  # xterm-256 color 16 is black
 DARK = 28   # luma below this counts as black
 SHOW_CURSOR = b"\x1b[0m\x1b[?25h"
+KITTY = os.environ.get("HOLLYWOOD_IMAGES") == "kitty"
+
+# The video levels run from 16 to 235 for luma and 16 to 240 for chroma. Stretch them
+# to the full range that PIL expects.
+LUMA_LEVELS = bytes(min(255, max(0, round((v - 16) * 255 / 219))) for v in range(256))
+CHROMA_LEVELS = bytes(min(255, max(0, round((v - 128) * 255 / 224 + 128))) for v in range(256))
 
 # Map a channel value 0..255 to a level 0..5 of the xterm 6x6x6 color cube.
 LEVEL = bytes(0 if v < 48 else 1 if v < 115 else 2 if v < 155 else 3 if v < 195 else 4 if v < 235 else 5
@@ -46,8 +62,42 @@ def color(y, u, v):
 
 
 def stop(signum, frame):
-    os.write(OUT, SHOW_CURSOR)
+    os.write(OUT, (kitty.delete(kitty.image_id()) if KITTY else b"") + SHOW_CURSOR)
     sys.exit(0)
+
+
+def play_kitty(width, height):
+    """Send every frame as a Kitty picture that the placeholder cells show."""
+    cols, rows = terminal_size()
+    number = kitty.image_id()
+    luma_size = width * height
+    chroma_size = (width // 2) * (height // 2)
+    shown = (min(cols, len(kitty.DIACRITICS)), min(rows, len(kitty.DIACRITICS)))
+    os.write(OUT, b"\x1b[?25l\x1b[0m\x1b[2J" + kitty.placeholders(number, shown[0], shown[1], 0, 0, rows))
+    frames = 0
+    while True:
+        if not IN.readline().startswith(b"FRAME"):
+            break
+        data = IN.read(luma_size + 2 * chroma_size)
+        if len(data) < luma_size + 2 * chroma_size:
+            break
+        frames += 1
+        if frames % 8 == 0 and terminal_size() != (cols, rows):
+            os.write(OUT, kitty.delete(number) + SHOW_CURSOR)
+            return 3
+        luma = Image.frombytes("L", (width, height), data[:luma_size]).point(LUMA_LEVELS)
+        planes = [
+            Image.frombytes("L", (width // 2, height // 2), data[start : start + chroma_size])
+            .point(CHROMA_LEVELS)
+            .resize((width, height), Image.BILINEAR)
+            for start in (luma_size, luma_size + chroma_size)
+        ]
+        picture = Image.merge("YCbCr", (luma, *planes)).convert("RGB")
+        png = io.BytesIO()
+        picture.save(png, "PNG", compress_level=1)
+        os.write(OUT, kitty.transmit(png.getvalue(), number, *shown))
+    os.write(OUT, kitty.delete(number) + SHOW_CURSOR)
+    return 0
 
 
 def main():
@@ -62,6 +112,8 @@ def main():
             width = int(token[1:])
         elif token[:1] == b"H":
             height = int(token[1:])
+    if KITTY:
+        return play_kitty(width, height)
     cols, rows = terminal_size()
     if width != cols - cols % 2 or height != 2 * rows:
         return 3

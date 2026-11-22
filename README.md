@@ -295,6 +295,10 @@ docker run -it --rm --entrypoint /opt/hollywood/lib/hollywood/mplayer mapitman/h
 
 Press ctrl-c to stop it. Run `reset` afterward if your cursor stays hidden.
 
+The `mplayer` widget uses the same Kitty mode. Instead of half blocks, `soundwave-render.py` sends every frame of the
+video as a PNG picture, and the terminal stretches it over the pane. The placeholder cells are drawn once. Inside
+tmux, tmux redraws the pane after each frame, so the widget sends about 0.5 MB per second.
+
 ### Wallpapers
 
 The `jp2a` widget shows every JPEG it finds under `/usr`, one after another, except the map picture, which the `map`
