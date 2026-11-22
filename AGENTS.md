@@ -34,6 +34,11 @@ upstream commit and is not stored here.
   ctrl-c.
 - The guard starts a widget only if the pane fits it. The minimum sizes are in the `MIN_COLS` and `MIN_ROWS` tables and
   the `min_rows` function in `widget-guard.sh`. A widget with no entry runs in any pane.
+- The `jp2a` and `map` widgets draw with `image-render.py`. It draws half blocks, or Kitty graphics with Unicode
+  placeholders if `HOLLYWOOD_IMAGES=kitty`. `entrypoint.sh` sets that variable from `image-render.py --detect`
+  before Hollywood starts, because only the entrypoint can ask the terminal without a conflict over the keyboard.
+  The widgets call `image-render.py --clear` in their TERM trap to delete the picture. To test the Kitty output
+  without a Kitty terminal, run the renderer under `script` and search the log for `\x1b_Ga=T`.
 - Each widget script follows the same pattern:
   - Exit with status 1 if its tool is missing (`command -v ... || exit 1`).
   - Trap TERM and HUP, stop the child, and restore the terminal (alternate screen, cursor, colors). The guard stops
