@@ -101,7 +101,7 @@ tool. There are 26 widgets. All of them play themselves.
 | `jp2a` | wallpaper photos in 256 colors, drawn with half blocks (see "Wallpapers") |
 | `logs` | log files under `/var/log` |
 | `lolcat` | text from a random file in animated rainbow colors |
-| `man` | random man pages |
+| `man` | random man pages, printed one line at a time (see "Slower man pages") |
 | `map` | a map of the world in 256 colors, drawn once with half blocks (see "Wallpapers") |
 | `mplayer` | a sound-wave video in true color, drawn with half-block characters (see "The mplayer widget") |
 | `mtr` | live trace of the route to a well-known site, with the delay at each hop (needs 50 x 8) |
@@ -130,6 +130,7 @@ Every setting is an environment variable, because even directors take notes.
 | Playback speed of the `mplayer` widget (`0.5` is calmer, `1` is normal speed) | `HOLLYWOOD_MPLAYER_SPEED` | `0.75` |
 | Crop filter for the `mplayer` widget (`scale` shows the whole video) | `HOLLYWOOD_MPLAYER_FILTERS` | `crop=128:64:0:16` |
 | Seconds the `jp2a` widget shows each picture | `HOLLYWOOD_IMAGE_SECONDS` | `3` |
+| Seconds the `man` widget waits after each line (`0` prints a page at once) | `HOLLYWOOD_MAN_DELAY` | `0.04` |
 | How the `jp2a` and `map` widgets draw pictures: `auto` asks the terminal, `kitty` forces Kitty graphics, `off` uses half blocks | `HOLLYWOOD_IMAGES` | `auto` |
 | Size of one terminal cell in pixels, such as `9x18`, if the terminal does not report it | `HOLLYWOOD_CELL_PX` | `10x20` |
 | Milliseconds between updates of the `btop` widget (`btop` accepts 100 or more) | `HOLLYWOOD_BTOP_UPDATE_MS` | `100` |
@@ -299,6 +300,13 @@ Press ctrl-c to stop it. Run `reset` afterward if your cursor stays hidden.
 The `mplayer` widget uses the same Kitty mode. Instead of half blocks, `soundwave-render.py` sends every frame of the
 video as a PNG picture, and the terminal stretches it over the pane. The placeholder cells are drawn once. Inside
 tmux, tmux redraws the pane after each frame, so the widget sends about 0.5 MB per second.
+
+### Slower man pages
+
+Hollywood's `man` widget prints a whole manual page at once, so the pane scrolls too fast to read. The image replaces
+it with `man-widget.sh`, which prints each page one line at a time with a pause of 0.04 seconds after every line, which
+is about 15 lines per second in practice. It waits one second between pages. Set `HOLLYWOOD_MAN_DELAY` to change the pause, and use `0`
+for Hollywood's speed.
 
 ### Wallpapers
 
