@@ -1,0 +1,671 @@
+[22m[36mEL3RST[0m[22m[36m [0m[22m[37m47[0m[22m[36m [0m[22m[36mLevel[0m[22m[36m [0m[22m[37m3[0m[22m[36m [0m[22m[36mreset[0m[22m[36m [0m
+[22m[36mENONET[0m[22m[36m [0m[22m[37m64[0m[22m[36m [0m[22m[36mMachine[0m[22m[36m [0m[22m[36mis[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36mon[0m[22m[36m [0m[22m[36mthe[0m[22m[36m [0m[22m[36mnetwork[0m[22m[36m [0m
+[22m[36mEOWNERDEAD[0m[22m[36m [0m[22m[37m130[0m[22m[36m [0m[22m[36mOwner[0m[22m[36m [0m[22m[36mdied[0m[22m[36m [0m
+[22m[36mEISNAM[0m[22m[36m [0m[22m[37m120[0m[22m[36m [0m[22m[36mIs[0m[22m[36m [0m[22m[36ma[0m[22m[36m [0m[22m[36mnamed[0m[22m[36m [0m[22m[36mtype[0m[22m[36m [0m[22m[36mfile[0m[22m[36m [0m
+[22m[36mEBFONT[0m[22m[36m [0m[22m[37m59[0m[22m[36m [0m[22m[36mBad[0m[22m[36m [0m[22m[36mfont[0m[22m[36m [0m[22m[36mfile[0m[22m[36m [0m[22m[36mformat[0m[22m[36m [0m
+[22m[36mENETUNREACH[0m[22m[36m [0m[22m[37m101[0m[22m[36m [0m[22m[36mNetwork[0m[22m[36m [0m[22m[36mis[0m[22m[36m [0m[22m[1m[33munreachable[0m[22m[36m [0m
+[22m[36mEUSERS[0m[22m[36m [0m[22m[37m87[0m[22m[36m [0m[22m[36mToo[0m[22m[36m [0m[22m[36mmany[0m[22m[36m [0m[22m[1m[35musers[0m[22m[36m [0m
+[22m[36mETOOMANYREFS[0m[22m[36m [0m[22m[37m109[0m[22m[36m [0m[22m[36mToo[0m[22m[36m [0m[22m[36mmany[0m[22m[36m [0m[22m[36mreferences[0m[22m[36m:[0m[22m[36m [0m[22m[1m[33mcannot[0m[22m[36m [0m[22m[36msplice[0m[22m[36m [0m
+[22m[36mETXTBSY[0m[22m[36m [0m[22m[37m26[0m[22m[36m [0m[22m[36mText[0m[22m[36m [0m[22m[36mfile[0m[22m[36m [0m[22m[36mbusy[0m[22m[36m [0m
+[22m[36mEPROTO[0m[22m[36m [0m[22m[37m71[0m[22m[36m [0m[22m[36mProtocol[0m[22m[36m [0m[22m[1m[31merror[0m[22m[36m [0m
+[22m[36mENOSR[0m[22m[36m [0m[22m[37m63[0m[22m[36m [0m[22m[36mOut[0m[22m[36m [0m[22m[36mof[0m[22m[36m [0m[22m[36mstreams[0m[22m[36m [0m[22m[36mresources[0m[22m[36m [0m
+[22m[36mENAMETOOLONG[0m[22m[36m [0m[22m[37m36[0m[22m[36m [0m[22m[36mFile[0m[22m[36m [0m[22m[36mname[0m[22m[36m [0m[22m[36mtoo[0m[22m[36m [0m[22m[36mlong[0m[22m[36m [0m
+[22m[36mEHOSTDOWN[0m[22m[36m [0m[22m[37m112[0m[22m[36m [0m[22m[36mHost[0m[22m[36m [0m[22m[36mis[0m[22m[36m [0m[22m[1m[33mdown[0m[22m[36m [0m
+[22m[36mENOSPC[0m[22m[36m [0m[22m[37m28[0m[22m[36m [0m[22m[36mNo[0m[22m[36m [0m[22m[36mspace[0m[22m[36m [0m[22m[36mleft[0m[22m[36m [0m[22m[36mon[0m[22m[36m [0m[22m[36mdevice[0m[22m[36m [0m
+[22m[36mENETDOWN[0m[22m[36m [0m[22m[37m100[0m[22m[36m [0m[22m[36mNetwork[0m[22m[36m [0m[22m[36mis[0m[22m[36m [0m[22m[1m[33mdown[0m[22m[36m [0m
+[22m[36mEAFNOSUPPORT[0m[22m[36m [0m[22m[37m97[0m[22m[36m [0m[22m[36mAddress[0m[22m[36m [0m[22m[36mfamily[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36msupported[0m[22m[36m [0m[22m[36mby[0m[22m[36m [0m[22m[36mprotocol[0m[22m[36m [0m
+[22m[36mEACCES[0m[22m[36m [0m[22m[37m13[0m[22m[36m [0m[22m[36mPermission[0m[22m[36m [0m[22m[36mdenied[0m[22m[36m [0m
+[22m[36mEPIPE[0m[22m[36m [0m[22m[37m32[0m[22m[36m [0m[22m[36mBroken[0m[22m[36m [0m[22m[36mpipe[0m[22m[36m [0m
+[22m[36mECONNREFUSED[0m[22m[36m [0m[22m[37m111[0m[22m[36m [0m[22m[1m[32mConnection[0m[22m[36m [0m[22m[36mrefused[0m[22m[36m [0m
+[22m[36mETIMEDOUT[0m[22m[36m [0m[22m[37m110[0m[22m[36m [0m[22m[1m[32mConnection[0m[22m[36m [0m[22m[36mtimed[0m[22m[36m [0m[22m[36mout[0m[22m[36m [0m
+[22m[36mETIME[0m[22m[36m [0m[22m[37m62[0m[22m[36m [0m[22m[36mTimer[0m[22m[36m [0m[22m[36mexpired[0m[22m[36m [0m
+[22m[36mELOOP[0m[22m[36m [0m[22m[37m40[0m[22m[36m [0m[22m[36mToo[0m[22m[36m [0m[22m[36mmany[0m[22m[36m [0m[22m[36mlevels[0m[22m[36m [0m[22m[36mof[0m[22m[36m [0m[22m[36msymbolic[0m[22m[36m [0m[22m[36mlinks[0m[22m[36m [0m
+[22m[36mESPIPE[0m[22m[36m [0m[22m[37m29[0m[22m[36m [0m[22m[36mIllegal[0m[22m[36m [0m[22m[36mseek[0m[22m[36m [0m
+[22m[36mEMEDIUMTYPE[0m[22m[36m [0m[22m[37m124[0m[22m[36m [0m[22m[36mWrong[0m[22m[36m [0m[22m[36mmedium[0m[22m[36m [0m[22m[36mtype[0m[22m[36m [0m
+[22m[36mEIO[0m[22m[36m [0m[22m[37m5[0m[22m[36m [0m[22m[36mInput/output[0m[22m[36m [0m[22m[1m[31merror[0m[22m[36m [0m
+[22m[36mENETRESET[0m[22m[36m [0m[22m[37m102[0m[22m[36m [0m[22m[36mNetwork[0m[22m[36m [0m[22m[36mdropped[0m[22m[36m [0m[22m[1m[32mconnection[0m[22m[36m [0m[22m[36mon[0m[22m[36m [0m[22m[36mreset[0m[22m[36m [0m
+[22m[36mEL2NSYNC[0m[22m[36m [0m[22m[37m45[0m[22m[36m [0m[22m[36mLevel[0m[22m[36m [0m[22m[37m2[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36msynchronized[0m[22m[36m [0m
+[22m[36mEBADR[0m[22m[36m [0m[22m[37m53[0m[22m[36m [0m[22m[1m[31mInvalid[0m[22m[36m [0m[22m[36mrequest[0m[22m[36m [0m[22m[36mdescriptor[0m[22m[36m [0m
+[22m[36mELIBEXEC[0m[22m[36m [0m[22m[37m83[0m[22m[36m [0m[22m[1m[33mCannot[0m[22m[36m [0m[22m[1m[35mexec[0m[22m[36m [0m[22m[36ma[0m[22m[36m [0m[22m[36mshared[0m[22m[36m [0m[22m[36mlibrary[0m[22m[36m [0m[22m[36mdirectly[0m[22m[36m [0m
+[22m[36mENOLCK[0m[22m[36m [0m[22m[37m37[0m[22m[36m [0m[22m[36mNo[0m[22m[36m [0m[22m[36mlocks[0m[22m[36m [0m[22m[36mavailable[0m[22m[36m [0m
+[22m[36mEHOSTUNREACH[0m[22m[36m [0m[22m[37m113[0m[22m[36m [0m[22m[36mNo[0m[22m[36m [0m[22m[1m[35mroute[0m[22m[36m [0m[22m[36mto[0m[22m[36m [0m[22m[36mhost[0m[22m[36m [0m
+[22m[36mESHUTDOWN[0m[22m[36m [0m[22m[37m108[0m[22m[36m [0m[22m[1m[33mCannot[0m[22m[36m [0m[22m[36msend[0m[22m[36m [0m[22m[36mafter[0m[22m[36m [0m[22m[36mtransport[0m[22m[36m [0m[22m[1m[33mendpoint[0m[22m[36m [0m[22m[36mshutdown[0m[22m[36m [0m
+[22m[36mEHWPOISON[0m[22m[36m [0m[22m[37m133[0m[22m[36m [0m[22m[36mMemory[0m[22m[36m [0m[22m[36mpage[0m[22m[36m [0m[22m[36mhas[0m[22m[36m [0m[22m[36mhardware[0m[22m[36m [0m[22m[1m[31merror[0m[22m[36m [0m
+[22m[36mEWOULDBLOCK[0m[22m[36m [0m[22m[37m11[0m[22m[36m [0m[22m[36mResource[0m[22m[36m [0m[22m[36mtemporarily[0m[22m[36m [0m[22m[36munavailable[0m[22m[36m [0m
+[22m[36mEUCLEAN[0m[22m[36m [0m[22m[37m117[0m[22m[36m [0m[22m[36mStructure[0m[22m[36m [0m[22m[36mneeds[0m[22m[36m [0m[22m[1m[32mcleaning[0m[22m[36m [0m
+[22m[36mENOCSI[0m[22m[36m [0m[22m[37m50[0m[22m[36m [0m[22m[36mNo[0m[22m[36m [0m[22m[36mCSI[0m[22m[36m [0m[22m[36mstructure[0m[22m[36m [0m[22m[36mavailable[0m[22m[36m [0m
+[22m[36mEAGAIN[0m[22m[36m [0m[22m[37m11[0m[22m[36m [0m[22m[36mResource[0m[22m[36m [0m[22m[36mtemporarily[0m[22m[36m [0m[22m[36munavailable[0m[22m[36m [0m
+[22m[36mEL3HLT[0m[22m[36m [0m[22m[37m46[0m[22m[36m [0m[22m[36mLevel[0m[22m[36m [0m[22m[37m3[0m[22m[36m [0m[22m[36mhalted[0m[22m[36m [0m
+[22m[36mEILSEQ[0m[22m[36m [0m[22m[37m84[0m[22m[36m [0m[22m[1m[31mInvalid[0m[22m[36m [0m[22m[36mor[0m[22m[36m [0m[22m[36mincomplete[0m[22m[36m [0m[22m[36mmultibyte[0m[22m[36m [0m[22m[36mor[0m[22m[36m [0m[22m[36mwide[0m[22m[36m [0m[22m[36mcharacter[0m[22m[36m [0m
+[22m[36mEBADRQC[0m[22m[36m [0m[22m[37m56[0m[22m[36m [0m[22m[1m[31mInvalid[0m[22m[36m [0m[22m[36mrequest[0m[22m[36m [0m[22m[36mcode[0m[22m[36m [0m
+[22m[36mEBADE[0m[22m[36m [0m[22m[37m52[0m[22m[36m [0m[22m[1m[31mInvalid[0m[22m[36m [0m[22m[36mexchange[0m[22m[36m [0m
+[22m[36mEREMOTEIO[0m[22m[36m [0m[22m[37m121[0m[22m[36m [0m[22m[36mRemote[0m[22m[36m [0m[22m[36mI/O[0m[22m[36m [0m[22m[1m[31merror[0m[22m[36m [0m
+[22m[36mENOTRECOVERABLE[0m[22m[36m [0m[22m[37m131[0m[22m[36m [0m[22m[36mState[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36mrecoverable[0m[22m[36m [0m
+[22m[36mENOSTR[0m[22m[36m [0m[22m[37m60[0m[22m[36m [0m[22m[36mDevice[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36ma[0m[22m[36m [0m[22m[36mstream[0m[22m[36m [0m
+[22m[36mEKEYREJECTED[0m[22m[36m [0m[22m[37m129[0m[22m[36m [0m[22m[36mKey[0m[22m[36m [0m[22m[36mwas[0m[22m[36m [0m[22m[36mrejected[0m[22m[36m [0m[22m[36mby[0m[22m[36m [0m[22m[36mservice[0m[22m[36m [0m
+[22m[36mEPFNOSUPPORT[0m[22m[36m [0m[22m[37m96[0m[22m[36m [0m[22m[36mProtocol[0m[22m[36m [0m[22m[36mfamily[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36msupported[0m[22m[36m [0m
+[22m[36mERANGE[0m[22m[36m [0m[22m[37m34[0m[22m[36m [0m[22m[36mNumerical[0m[22m[36m [0m[22m[36mresult[0m[22m[36m [0m[22m[36mout[0m[22m[36m [0m[22m[36mof[0m[22m[36m [0m[22m[36mrange[0m[22m[36m [0m
+[22m[36mERFKILL[0m[22m[36m [0m[22m[37m132[0m[22m[36m [0m[22m[36mOperation[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36mpossible[0m[22m[36m [0m[22m[36mdue[0m[22m[36m [0m[22m[36mto[0m[22m[36m [0m[22m[36mRF-kill[0m[22m[36m [0m
+[22m[36mECOMM[0m[22m[36m [0m[22m[37m70[0m[22m[36m [0m[22m[36mCommunication[0m[22m[36m [0m[22m[1m[31merror[0m[22m[36m [0m[22m[36mon[0m[22m[36m [0m[22m[36msend[0m[22m[36m [0m
+[22m[36mEPROTONOSUPPORT[0m[22m[36m [0m[22m[37m93[0m[22m[36m [0m[22m[36mProtocol[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36msupported[0m[22m[36m [0m
+[22m[36mESOCKTNOSUPPORT[0m[22m[36m [0m[22m[37m94[0m[22m[36m [0m[22m[36mSocket[0m[22m[36m [0m[22m[36mtype[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36msupported[0m[22m[36m [0m
+[22m[36mENOEXEC[0m[22m[36m [0m[22m[37m8[0m[22m[36m [0m[22m[1m[35mExec[0m[22m[36m [0m[22m[36mformat[0m[22m[36m [0m[22m[1m[31merror[0m[22m[36m [0m
+[22m[36mEBADF[0m[22m[36m [0m[22m[37m9[0m[22m[36m [0m[22m[36mBad[0m[22m[36m [0m[22m[36mfile[0m[22m[36m [0m[22m[36mdescriptor[0m[22m[36m [0m
+[22m[36mEINPROGRESS[0m[22m[36m [0m[22m[37m115[0m[22m[36m [0m[22m[36mOperation[0m[22m[36m [0m[22m[36mnow[0m[22m[36m [0m[22m[36min[0m[22m[36m [0m[22m[36mprogress[0m[22m[36m [0m
+[22m[36mEPERM[0m[22m[36m [0m[22m[37m1[0m[22m[36m [0m[22m[36mOperation[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36mpermitted[0m[22m[36m [0m
+[22m[36mEDESTADDRREQ[0m[22m[36m [0m[22m[37m89[0m[22m[36m [0m[22m[36mDestination[0m[22m[36m [0m[22m[36maddress[0m[22m[36m [0m[22m[36mrequired[0m[22m[36m [0m
+[22m[36mENOLINK[0m[22m[36m [0m[22m[37m67[0m[22m[36m [0m[22m[36mLink[0m[22m[36m [0m[22m[36mhas[0m[22m[36m [0m[22m[36mbeen[0m[22m[36m [0m[22m[36msevered[0m[22m[36m [0m
+[22m[36mENXIO[0m[22m[36m [0m[22m[37m6[0m[22m[36m [0m[22m[36mNo[0m[22m[36m [0m[22m[36msuch[0m[22m[36m [0m[22m[36mdevice[0m[22m[36m [0m[22m[36mor[0m[22m[36m [0m[22m[36maddress[0m[22m[36m [0m
+[22m[36mEKEYREVOKED[0m[22m[36m [0m[22m[37m128[0m[22m[36m [0m[22m[36mKey[0m[22m[36m [0m[22m[36mhas[0m[22m[36m [0m[22m[36mbeen[0m[22m[36m [0m[22m[36mrevoked[0m[22m[36m [0m
+[22m[36mEMSGSIZE[0m[22m[36m [0m[22m[37m90[0m[22m[36m [0m[22m[36mMessage[0m[22m[36m [0m[22m[36mtoo[0m[22m[36m [0m[22m[36mlong[0m[22m[36m [0m
+[22m[36mENOTBLK[0m[22m[36m [0m[22m[37m15[0m[22m[36m [0m[22m[36mBlock[0m[22m[36m [0m[22m[36mdevice[0m[22m[36m [0m[22m[36mrequired[0m[22m[36m [0m
+[22m[36mENOTTY[0m[22m[36m [0m[22m[37m25[0m[22m[36m [0m[22m[36mInappropriate[0m[22m[36m [0m[22m[36mioctl[0m[22m[36m [0m[22m[36mfor[0m[22m[36m [0m[22m[36mdevice[0m[22m[36m [0m
+[22m[36mENOPKG[0m[22m[36m [0m[22m[37m65[0m[22m[36m [0m[22m[36mPackage[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36minstalled[0m[22m[36m [0m
+[22m[36mENOANO[0m[22m[36m [0m[22m[37m55[0m[22m[36m [0m[22m[36mNo[0m[22m[36m [0m[22m[36manode[0m[22m[36m [0m
+[22m[36mE2BIG[0m[22m[36m [0m[22m[37m7[0m[22m[36m [0m[22m[36mArgument[0m[22m[36m [0m[22m[1m[33mlist[0m[22m[36m [0m[22m[36mtoo[0m[22m[36m [0m[22m[36mlong[0m[22m[36m [0m
+[22m[36mEPROTOTYPE[0m[22m[36m [0m[22m[37m91[0m[22m[36m [0m[22m[36mProtocol[0m[22m[36m [0m[22m[36mwrong[0m[22m[36m [0m[22m[36mtype[0m[22m[36m [0m[22m[36mfor[0m[22m[36m [0m[22m[36msocket[0m[22m[36m [0m
+[22m[36mENOENT[0m[22m[36m [0m[22m[37m2[0m[22m[36m [0m[22m[36mNo[0m[22m[36m [0m[22m[36msuch[0m[22m[36m [0m[22m[36mfile[0m[22m[36m [0m[22m[36mor[0m[22m[36m [0m[22m[36mdirectory[0m[22m[36m [0m
+[22m[36mENOSYS[0m[22m[36m [0m[22m[37m38[0m[22m[36m [0m[22m[36mFunction[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36mimplemented[0m[22m[36m [0m
+[22m[36mENOMEDIUM[0m[22m[36m [0m[22m[37m123[0m[22m[36m [0m[22m[36mNo[0m[22m[36m [0m[22m[36mmedium[0m[22m[36m [0m[22m[36mfound[0m[22m[36m [0m
+[22m[36mEFBIG[0m[22m[36m [0m[22m[37m27[0m[22m[36m [0m[22m[36mFile[0m[22m[36m [0m[22m[36mtoo[0m[22m[36m [0m[22m[36mlarge[0m[22m[36m [0m
+[22m[36mENODEV[0m[22m[36m [0m[22m[37m19[0m[22m[36m [0m[22m[36mNo[0m[22m[36m [0m[22m[36msuch[0m[22m[36m [0m[22m[36mdevice[0m[22m[36m [0m
+[22m[36mEISDIR[0m[22m[36m [0m[22m[37m21[0m[22m[36m [0m[22m[36mIs[0m[22m[36m [0m[22m[36ma[0m[22m[36m [0m[22m[36mdirectory[0m[22m[36m [0m
+[22m[36mELNRNG[0m[22m[36m [0m[22m[37m48[0m[22m[36m [0m[22m[36mLink[0m[22m[36m [0m[22m[36mnumber[0m[22m[36m [0m[22m[36mout[0m[22m[36m [0m[22m[36mof[0m[22m[36m [0m[22m[36mrange[0m[22m[36m [0m
+[22m[36mESTRPIPE[0m[22m[36m [0m[22m[37m86[0m[22m[36m [0m[22m[36mStreams[0m[22m[36m [0m[22m[36mpipe[0m[22m[36m [0m[22m[1m[31merror[0m[22m[36m [0m
+[22m[36mENOMEM[0m[22m[36m [0m[22m[37m12[0m[22m[36m [0m[22m[1m[33mCannot[0m[22m[36m [0m[22m[36mallocate[0m[22m[36m [0m[22m[36mmemory[0m[22m[36m [0m
+[22m[36mEADDRINUSE[0m[22m[36m [0m[22m[37m98[0m[22m[36m [0m[22m[36mAddress[0m[22m[36m [0m[22m[36malready[0m[22m[36m [0m[22m[36min[0m[22m[36m [0m[22m[36muse[0m[22m[36m [0m
+[22m[36mEMLINK[0m[22m[36m [0m[22m[37m31[0m[22m[36m [0m[22m[36mToo[0m[22m[36m [0m[22m[36mmany[0m[22m[36m [0m[22m[36mlinks[0m[22m[36m [0m
+[22m[36mEIDRM[0m[22m[36m [0m[22m[37m43[0m[22m[36m [0m[22m[1m[36mIdentifier[0m[22m[36m [0m[22m[36mremoved[0m[22m[36m [0m
+[22m[36mENOKEY[0m[22m[36m [0m[22m[37m126[0m[22m[36m [0m[22m[36mRequired[0m[22m[36m [0m[22m[36mkey[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36mavailable[0m[22m[36m [0m
+[22m[36mESRMNT[0m[22m[36m [0m[22m[37m69[0m[22m[36m [0m[22m[36mSrmount[0m[22m[36m [0m[22m[1m[31merror[0m[22m[36m [0m
+[22m[36mELIBMAX[0m[22m[36m [0m[22m[37m82[0m[22m[36m [0m[22m[1m[32mAttempting[0m[22m[36m [0m[22m[36mto[0m[22m[36m [0m[22m[36mlink[0m[22m[36m [0m[22m[36min[0m[22m[36m [0m[22m[36mtoo[0m[22m[36m [0m[22m[36mmany[0m[22m[36m [0m[22m[36mshared[0m[22m[36m [0m[22m[36mlibraries[0m[22m[36m [0m
+[22m[36mEXDEV[0m[22m[36m [0m[22m[37m18[0m[22m[36m [0m[22m[1m[31mInvalid[0m[22m[36m [0m[22m[36mcross-device[0m[22m[36m [0m[22m[36mlink[0m[22m[36m [0m
+[22m[36mELIBBAD[0m[22m[36m [0m[22m[37m80[0m[22m[36m [0m[22m[36mAccessing[0m[22m[36m [0m[22m[36ma[0m[22m[36m [0m[22m[36mcorrupted[0m[22m[36m [0m[22m[36mshared[0m[22m[36m [0m[22m[36mlibrary[0m[22m[36m [0m
+[22m[36mEBADMSG[0m[22m[36m [0m[22m[37m74[0m[22m[36m [0m[22m[36mBad[0m[22m[36m [0m[22m[36mmessage[0m[22m[36m [0m
+[22m[36mEFAULT[0m[22m[36m [0m[22m[37m14[0m[22m[36m [0m[22m[36mBad[0m[22m[36m [0m[22m[36maddress[0m[22m[36m [0m
+[22m[36mENOTDIR[0m[22m[36m [0m[22m[37m20[0m[22m[36m [0m[22m[1m[33mNot[0m[22m[36m [0m[22m[36ma[0m[22m[36m [0m[22m[36mdirectory[0m[22m[36m [0m
+[22m[36mEKEYEXPIRED[0m[22m[36m [0m[22m[37m127[0m[22m[36m [0m[22m[36mKey[0m[22m[36m [0m[22m[36mhas[0m[22m[36m [0m[22m[36mexpired[0m[22m[36m [0m
+[22m[36mEADV[0m[22m[36m [0m[22m[37m68[0m[22m[36m [0m[22m[36mAdvertise[0m[22m[36m [0m[22m[1m[31merror[0m[22m[36m [0m
+[22m[36mEINVAL[0m[22m[36m [0m[22m[37m22[0m[22m[36m [0m[22m[1m[31mInvalid[0m[22m[36m [0m[22m[36margument[0m[22m[36m [0m
+[22m[36mENOTEMPTY[0m[22m[36m [0m[22m[37m39[0m[22m[36m [0m[22m[36mDirectory[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[1m[33mempty[0m[22m[36m [0m
+[22m[36mEBADSLT[0m[22m[36m [0m[22m[37m57[0m[22m[36m [0m[22m[1m[31mInvalid[0m[22m[36m [0m[22m[36mslot[0m[22m[36m [0m
+[22m[36mENOMSG[0m[22m[36m [0m[22m[37m42[0m[22m[36m [0m[22m[36mNo[0m[22m[36m [0m[22m[36mmessage[0m[22m[36m [0m[22m[36mof[0m[22m[36m [0m[22m[36mdesired[0m[22m[36m [0m[22m[36mtype[0m[22m[36m [0m
+[22m[36mEUNATCH[0m[22m[36m [0m[22m[37m49[0m[22m[36m [0m[22m[36mProtocol[0m[22m[36m [0m[22m[36mdriver[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36mattached[0m[22m[36m [0m
+[22m[36mEDOM[0m[22m[36m [0m[22m[37m33[0m[22m[36m [0m[22m[36mNumerical[0m[22m[36m [0m[22m[36margument[0m[22m[36m [0m[22m[36mout[0m[22m[36m [0m[22m[36mof[0m[22m[36m [0m[22m[1m[35mdomain[0m[22m[36m [0m
+[22m[36mEDOTDOT[0m[22m[36m [0m[22m[37m73[0m[22m[36m [0m[22m[36mRFS[0m[22m[36m [0m[22m[36mspecific[0m[22m[36m [0m[22m[1m[31merror[0m[22m[36m [0m
+[22m[36mEBUSY[0m[22m[36m [0m[22m[37m16[0m[22m[36m [0m[22m[36mDevice[0m[22m[36m [0m[22m[36mor[0m[22m[36m [0m[22m[36mresource[0m[22m[36m [0m[22m[36mbusy[0m[22m[36m [0m
+[22m[36mEREMOTE[0m[22m[36m [0m[22m[37m66[0m[22m[36m [0m[22m[36mObject[0m[22m[36m [0m[22m[36mis[0m[22m[36m [0m[22m[36mremote[0m[22m[36m [0m
+[22m[36mEDQUOT[0m[22m[36m [0m[22m[37m122[0m[22m[36m [0m[22m[36mDisk[0m[22m[36m [0m[22m[36mquota[0m[22m[36m [0m[22m[36mexceeded[0m[22m[36m [0m
+[22m[36mEL2HLT[0m[22m[36m [0m[22m[37m51[0m[22m[36m [0m[22m[36mLevel[0m[22m[36m [0m[22m[37m2[0m[22m[36m [0m[22m[36mhalted[0m[22m[36m [0m
+[22m[36mENOTSOCK[0m[22m[36m [0m[22m[37m88[0m[22m[36m [0m[22m[36mSocket[0m[22m[36m [0m[22m[36moperation[0m[22m[36m [0m[22m[36mon[0m[22m[36m [0m[22m[36mnon-socket[0m[22m[36m [0m
+[22m[36mEALREADY[0m[22m[36m [0m[22m[37m114[0m[22m[36m [0m[22m[36mOperation[0m[22m[36m [0m[22m[36malready[0m[22m[36m [0m[22m[36min[0m[22m[36m [0m[22m[36mprogress[0m[22m[36m [0m
+[22m[36mENOTCONN[0m[22m[36m [0m[22m[37m107[0m[22m[36m [0m[22m[36mTransport[0m[22m[36m [0m[22m[1m[33mendpoint[0m[22m[36m [0m[22m[36mis[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[1m[32mconnected[0m[22m[36m [0m
+[22m[36mECANCELED[0m[22m[36m [0m[22m[37m125[0m[22m[36m [0m[22m[36mOperation[0m[22m[36m [0m[22m[36mcanceled[0m[22m[36m [0m
+[22m[36mENOTSUP[0m[22m[36m [0m[22m[37m95[0m[22m[36m [0m[22m[36mOperation[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36msupported[0m[22m[36m [0m
+[22m[36mECHRNG[0m[22m[36m [0m[22m[37m44[0m[22m[36m [0m[22m[36mChannel[0m[22m[36m [0m[22m[36mnumber[0m[22m[36m [0m[22m[36mout[0m[22m[36m [0m[22m[36mof[0m[22m[36m [0m[22m[36mrange[0m[22m[36m [0m
+[22m[36mEADDRNOTAVAIL[0m[22m[36m [0m[22m[37m99[0m[22m[36m [0m[22m[1m[33mCannot[0m[22m[36m [0m[22m[36massign[0m[22m[36m [0m[22m[36mrequested[0m[22m[36m [0m[22m[36maddress[0m[22m[36m [0m
+[22m[36mENOTUNIQ[0m[22m[36m [0m[22m[37m76[0m[22m[36m [0m[22m[36mName[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36munique[0m[22m[36m [0m[22m[36mon[0m[22m[36m [0m[22m[36mnetwork[0m[22m[36m [0m
+[22m[36mESTALE[0m[22m[36m [0m[22m[37m116[0m[22m[36m [0m[22m[36mStale[0m[22m[36m [0m[22m[36mfile[0m[22m[36m [0m[22m[36mhandle[0m[22m[36m [0m
+[22m[36mEOPNOTSUPP[0m[22m[36m [0m[22m[37m95[0m[22m[36m [0m[22m[36mOperation[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36msupported[0m[22m[36m [0m
+[22m[36mEMULTIHOP[0m[22m[36m [0m[22m[37m72[0m[22m[36m [0m[22m[36mMultihop[0m[22m[36m [0m[22m[1m[32mattempted[0m[22m[36m [0m
+[22m[36mENOBUFS[0m[22m[36m [0m[22m[37m105[0m[22m[36m [0m[22m[36mNo[0m[22m[36m [0m[22m[36mbuffer[0m[22m[36m [0m[22m[36mspace[0m[22m[36m [0m[22m[36mavailable[0m[22m[36m [0m
+[22m[36mEMFILE[0m[22m[36m [0m[22m[37m24[0m[22m[36m [0m[22m[36mToo[0m[22m[36m [0m[22m[36mmany[0m[22m[36m [0m[22m[1m[32mopen[0m[22m[36m [0m[22m[36mfiles[0m[22m[36m [0m
+[22m[36mEDEADLOCK[0m[22m[36m [0m[22m[37m35[0m[22m[36m [0m[22m[36mResource[0m[22m[36m [0m[22m[36mdeadlock[0m[22m[36m [0m[22m[36mavoided[0m[22m[36m [0m
+[22m[36mEEXIST[0m[22m[36m [0m[22m[37m17[0m[22m[36m [0m[22m[36mFile[0m[22m[36m [0m[22m[36mexists[0m[22m[36m [0m
+[22m[36mELIBACC[0m[22m[36m [0m[22m[37m79[0m[22m[36m [0m[22m[36mCan[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36maccess[0m[22m[36m [0m[22m[36ma[0m[22m[36m [0m[22m[36mneeded[0m[22m[36m [0m[22m[36mshared[0m[22m[36m [0m[22m[36mlibrary[0m[22m[36m [0m
+[22m[36mECONNRESET[0m[22m[36m [0m[22m[37m104[0m[22m[36m [0m[22m[1m[32mConnection[0m[22m[36m [0m[22m[36mreset[0m[22m[36m [0m[22m[36mby[0m[22m[36m [0m[22m[36mpeer[0m[22m[36m [0m
+[22m[36mEDEADLK[0m[22m[36m [0m[22m[37m35[0m[22m[36m [0m[22m[36mResource[0m[22m[36m [0m[22m[36mdeadlock[0m[22m[36m [0m[22m[36mavoided[0m[22m[36m [0m
+[22m[36mENOPROTOOPT[0m[22m[36m [0m[22m[37m92[0m[22m[36m [0m[22m[36mProtocol[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36mavailable[0m[22m[36m [0m
+[22m[36mECONNABORTED[0m[22m[36m [0m[22m[37m103[0m[22m[36m [0m[22m[36mSoftware[0m[22m[36m [0m[22m[36mcaused[0m[22m[36m [0m[22m[1m[32mconnection[0m[22m[36m [0m[22m[36mabort[0m[22m[36m [0m
+[22m[36mERESTART[0m[22m[36m [0m[22m[37m85[0m[22m[36m [0m[22m[36mInterrupted[0m[22m[36m [0m[22m[36msystem[0m[22m[36m [0m[22m[36mcall[0m[22m[36m [0m[22m[36mshould[0m[22m[36m [0m[22m[36mbe[0m[22m[36m [0m[22m[1m[33mrestarted[0m[22m[36m [0m
+[22m[36mECHILD[0m[22m[36m [0m[22m[37m10[0m[22m[36m [0m[22m[36mNo[0m[22m[36m [0m[22m[36mchild[0m[22m[36m [0m[22m[36mprocesses[0m[22m[36m [0m
+[22m[36mEXFULL[0m[22m[36m [0m[22m[37m54[0m[22m[36m [0m[22m[36mExchange[0m[22m[36m [0m[22m[36mfull[0m[22m[36m [0m
+[22m[36mESRCH[0m[22m[36m [0m[22m[37m3[0m[22m[36m [0m[22m[36mNo[0m[22m[36m [0m[22m[36msuch[0m[22m[36m [0m[22m[36mprocess[0m[22m[36m [0m
+[22m[36mEROFS[0m[22m[36m [0m[22m[37m30[0m[22m[36m [0m[22m[36mRead-only[0m[22m[36m [0m[22m[36mfile[0m[22m[36m [0m[22m[36msystem[0m[22m[36m [0m
+[22m[36mEINTR[0m[22m[36m [0m[22m[37m4[0m[22m[36m [0m[22m[36mInterrupted[0m[22m[36m [0m[22m[36msystem[0m[22m[36m [0m[22m[36mcall[0m[22m[36m [0m
+[22m[36mEBADFD[0m[22m[36m [0m[22m[37m77[0m[22m[36m [0m[22m[36mFile[0m[22m[36m [0m[22m[36mdescriptor[0m[22m[36m [0m[22m[36min[0m[22m[36m [0m[22m[36mbad[0m[22m[36m [0m[22m[36mstate[0m[22m[36m [0m
+[22m[36mEISCONN[0m[22m[36m [0m[22m[37m106[0m[22m[36m [0m[22m[36mTransport[0m[22m[36m [0m[22m[1m[33mendpoint[0m[22m[36m [0m[22m[36mis[0m[22m[36m [0m[22m[36malready[0m[22m[36m [0m[22m[1m[32mconnected[0m[22m[36m [0m
+[22m[36mENOTNAM[0m[22m[36m [0m[22m[37m118[0m[22m[36m [0m[22m[1m[33mNot[0m[22m[36m [0m[22m[36ma[0m[22m[36m [0m[22m[36mXENIX[0m[22m[36m [0m[22m[36mnamed[0m[22m[36m [0m[22m[36mtype[0m[22m[36m [0m[22m[36mfile[0m[22m[36m [0m
+[22m[36mEOVERFLOW[0m[22m[36m [0m[22m[37m75[0m[22m[36m [0m[22m[36mValue[0m[22m[36m [0m[22m[36mtoo[0m[22m[36m [0m[22m[36mlarge[0m[22m[36m [0m[22m[36mfor[0m[22m[36m [0m[22m[36mdefined[0m[22m[36m [0m[22m[36mdata[0m[22m[36m [0m[22m[36mtype[0m[22m[36m [0m
+[22m[36mENODATA[0m[22m[36m [0m[22m[37m61[0m[22m[36m [0m[22m[36mNo[0m[22m[36m [0m[22m[36mdata[0m[22m[36m [0m[22m[36mavailable[0m[22m[36m [0m
+[22m[36mENFILE[0m[22m[36m [0m[22m[37m23[0m[22m[36m [0m[22m[36mToo[0m[22m[36m [0m[22m[36mmany[0m[22m[36m [0m[22m[1m[32mopen[0m[22m[36m [0m[22m[36mfiles[0m[22m[36m [0m[22m[36min[0m[22m[36m [0m[22m[36msystem[0m[22m[36m [0m
+[22m[36mELIBSCN[0m[22m[36m [0m[22m[37m81[0m[22m[36m [0m[22m[36m.[0m[22m[36mlib[0m[22m[36m [0m[22m[36msection[0m[22m[36m [0m[22m[36min[0m[22m[36m [0m[22m[1m[34ma.out[0m[22m[36m [0m[22m[36mcorrupted[0m[22m[36m [0m
+[22m[36mEREMCHG[0m[22m[36m [0m[22m[37m78[0m[22m[36m [0m[22m[36mRemote[0m[22m[36m [0m[22m[36maddress[0m[22m[36m [0m[22m[36mchanged[0m[22m[36m [0m
+[22m[36mENAVAIL[0m[22m[36m [0m[22m[37m119[0m[22m[36m [0m[22m[36mNo[0m[22m[36m [0m[22m[36mXENIX[0m[22m[36m [0m[22m[36msemaphores[0m[22m[36m [0m[22m[36mavailable[0m[22m[36m [0m
+[0m[22m[36mENXIO[0m[22m[36m [0m[22m[37m6[0m[22m[36m [0m[22m[36mNo[0m[22m[36m [0m[22m[36msuch[0m[22m[36m [0m[22m[36mdevice[0m[22m[36m [0m[22m[36mor[0m[22m[36m [0m[22m[36maddress[0m[22m[36m [0m
+[22m[36mERESTART[0m[22m[36m [0m[22m[37m85[0m[22m[36m [0m[22m[36mInterrupted[0m[22m[36m [0m[22m[36msystem[0m[22m[36m [0m[22m[36mcall[0m[22m[36m [0m[22m[36mshould[0m[22m[36m [0m[22m[36mbe[0m[22m[36m [0m[22m[1m[33mrestarted[0m[22m[36m [0m
+[22m[36mEINTR[0m[22m[36m [0m[22m[37m4[0m[22m[36m [0m[22m[36mInterrupted[0m[22m[36m [0m[22m[36msystem[0m[22m[36m [0m[22m[36mcall[0m[22m[36m [0m
+[22m[36mEREMCHG[0m[22m[36m [0m[22m[37m78[0m[22m[36m [0m[22m[36mRemote[0m[22m[36m [0m[22m[36maddress[0m[22m[36m [0m[22m[36mchanged[0m[22m[36m [0m
+[22m[36mEEXIST[0m[22m[36m [0m[22m[37m17[0m[22m[36m [0m[22m[36mFile[0m[22m[36m [0m[22m[36mexists[0m[22m[36m [0m
+[22m[36mEMFILE[0m[22m[36m [0m[22m[37m24[0m[22m[36m [0m[22m[36mToo[0m[22m[36m [0m[22m[36mmany[0m[22m[36m [0m[22m[1m[32mopen[0m[22m[36m [0m[22m[36mfiles[0m[22m[36m [0m
+[22m[36mECONNABORTED[0m[22m[36m [0m[22m[37m103[0m[22m[36m [0m[22m[36mSoftware[0m[22m[36m [0m[22m[36mcaused[0m[22m[36m [0m[22m[1m[32mconnection[0m[22m[36m [0m[22m[36mabort[0m[22m[36m [0m
+[22m[36mENOTDIR[0m[22m[36m [0m[22m[37m20[0m[22m[36m [0m[22m[1m[33mNot[0m[22m[36m [0m[22m[36ma[0m[22m[36m [0m[22m[36mdirectory[0m[22m[36m [0m
+[22m[36mEHWPOISON[0m[22m[36m [0m[22m[37m133[0m[22m[36m [0m[22m[36mMemory[0m[22m[36m [0m[22m[36mpage[0m[22m[36m [0m[22m[36mhas[0m[22m[36m [0m[22m[36mhardware[0m[22m[36m [0m[22m[1m[31merror[0m[22m[36m [0m
+[22m[36mEMULTIHOP[0m[22m[36m [0m[22m[37m72[0m[22m[36m [0m[22m[36mMultihop[0m[22m[36m [0m[22m[1m[32mattempted[0m[22m[36m [0m
+[22m[36mECONNREFUSED[0m[22m[36m [0m[22m[37m111[0m[22m[36m [0m[22m[1m[32mConnection[0m[22m[36m [0m[22m[36mrefused[0m[22m[36m [0m
+[22m[36mESTRPIPE[0m[22m[36m [0m[22m[37m86[0m[22m[36m [0m[22m[36mStreams[0m[22m[36m [0m[22m[36mpipe[0m[22m[36m [0m[22m[1m[31merror[0m[22m[36m [0m
+[22m[36mENETDOWN[0m[22m[36m [0m[22m[37m100[0m[22m[36m [0m[22m[36mNetwork[0m[22m[36m [0m[22m[36mis[0m[22m[36m [0m[22m[1m[33mdown[0m[22m[36m [0m
+[22m[36mEMEDIUMTYPE[0m[22m[36m [0m[22m[37m124[0m[22m[36m [0m[22m[36mWrong[0m[22m[36m [0m[22m[36mmedium[0m[22m[36m [0m[22m[36mtype[0m[22m[36m [0m
+[22m[36mENAVAIL[0m[22m[36m [0m[22m[37m119[0m[22m[36m [0m[22m[36mNo[0m[22m[36m [0m[22m[36mXENIX[0m[22m[36m [0m[22m[36msemaphores[0m[22m[36m [0m[22m[36mavailable[0m[22m[36m [0m
+[22m[36mE2BIG[0m[22m[36m [0m[22m[37m7[0m[22m[36m [0m[22m[36mArgument[0m[22m[36m [0m[22m[1m[33mlist[0m[22m[36m [0m[22m[36mtoo[0m[22m[36m [0m[22m[36mlong[0m[22m[36m [0m
+[22m[36mEALREADY[0m[22m[36m [0m[22m[37m114[0m[22m[36m [0m[22m[36mOperation[0m[22m[36m [0m[22m[36malready[0m[22m[36m [0m[22m[36min[0m[22m[36m [0m[22m[36mprogress[0m[22m[36m [0m
+[22m[36mEBFONT[0m[22m[36m [0m[22m[37m59[0m[22m[36m [0m[22m[36mBad[0m[22m[36m [0m[22m[36mfont[0m[22m[36m [0m[22m[36mfile[0m[22m[36m [0m[22m[36mformat[0m[22m[36m [0m
+[22m[36mEPROTONOSUPPORT[0m[22m[36m [0m[22m[37m93[0m[22m[36m [0m[22m[36mProtocol[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36msupported[0m[22m[36m [0m
+[22m[36mELIBBAD[0m[22m[36m [0m[22m[37m80[0m[22m[36m [0m[22m[36mAccessing[0m[22m[36m [0m[22m[36ma[0m[22m[36m [0m[22m[36mcorrupted[0m[22m[36m [0m[22m[36mshared[0m[22m[36m [0m[22m[36mlibrary[0m[22m[36m [0m
+[22m[36mESHUTDOWN[0m[22m[36m [0m[22m[37m108[0m[22m[36m [0m[22m[1m[33mCannot[0m[22m[36m [0m[22m[36msend[0m[22m[36m [0m[22m[36mafter[0m[22m[36m [0m[22m[36mtransport[0m[22m[36m [0m[22m[1m[33mendpoint[0m[22m[36m [0m[22m[36mshutdown[0m[22m[36m [0m
+[22m[36mEKEYEXPIRED[0m[22m[36m [0m[22m[37m127[0m[22m[36m [0m[22m[36mKey[0m[22m[36m [0m[22m[36mhas[0m[22m[36m [0m[22m[36mexpired[0m[22m[36m [0m
+[22m[36mEXDEV[0m[22m[36m [0m[22m[37m18[0m[22m[36m [0m[22m[1m[31mInvalid[0m[22m[36m [0m[22m[36mcross-device[0m[22m[36m [0m[22m[36mlink[0m[22m[36m [0m
+[22m[36mEOVERFLOW[0m[22m[36m [0m[22m[37m75[0m[22m[36m [0m[22m[36mValue[0m[22m[36m [0m[22m[36mtoo[0m[22m[36m [0m[22m[36mlarge[0m[22m[36m [0m[22m[36mfor[0m[22m[36m [0m[22m[36mdefined[0m[22m[36m [0m[22m[36mdata[0m[22m[36m [0m[22m[36mtype[0m[22m[36m [0m
+[22m[36mELIBSCN[0m[22m[36m [0m[22m[37m81[0m[22m[36m [0m[22m[36m.[0m[22m[36mlib[0m[22m[36m [0m[22m[36msection[0m[22m[36m [0m[22m[36min[0m[22m[36m [0m[22m[1m[34ma.out[0m[22m[36m [0m[22m[36mcorrupted[0m[22m[36m [0m
+[22m[36mENOKEY[0m[22m[36m [0m[22m[37m126[0m[22m[36m [0m[22m[36mRequired[0m[22m[36m [0m[22m[36mkey[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36mavailable[0m[22m[36m [0m
+[22m[36mEL2HLT[0m[22m[36m [0m[22m[37m51[0m[22m[36m [0m[22m[36mLevel[0m[22m[36m [0m[22m[37m2[0m[22m[36m [0m[22m[36mhalted[0m[22m[36m [0m
+[22m[36mENOLCK[0m[22m[36m [0m[22m[37m37[0m[22m[36m [0m[22m[36mNo[0m[22m[36m [0m[22m[36mlocks[0m[22m[36m [0m[22m[36mavailable[0m[22m[36m [0m
+[22m[36mEBADF[0m[22m[36m [0m[22m[37m9[0m[22m[36m [0m[22m[36mBad[0m[22m[36m [0m[22m[36mfile[0m[22m[36m [0m[22m[36mdescriptor[0m[22m[36m [0m
+[22m[36mEMSGSIZE[0m[22m[36m [0m[22m[37m90[0m[22m[36m [0m[22m[36mMessage[0m[22m[36m [0m[22m[36mtoo[0m[22m[36m [0m[22m[36mlong[0m[22m[36m [0m
+[22m[36mELOOP[0m[22m[36m [0m[22m[37m40[0m[22m[36m [0m[22m[36mToo[0m[22m[36m [0m[22m[36mmany[0m[22m[36m [0m[22m[36mlevels[0m[22m[36m [0m[22m[36mof[0m[22m[36m [0m[22m[36msymbolic[0m[22m[36m [0m[22m[36mlinks[0m[22m[36m [0m
+[22m[36mENOTBLK[0m[22m[36m [0m[22m[37m15[0m[22m[36m [0m[22m[36mBlock[0m[22m[36m [0m[22m[36mdevice[0m[22m[36m [0m[22m[36mrequired[0m[22m[36m [0m
+[22m[36mENOSR[0m[22m[36m [0m[22m[37m63[0m[22m[36m [0m[22m[36mOut[0m[22m[36m [0m[22m[36mof[0m[22m[36m [0m[22m[36mstreams[0m[22m[36m [0m[22m[36mresources[0m[22m[36m [0m
+[22m[36mEKEYREVOKED[0m[22m[36m [0m[22m[37m128[0m[22m[36m [0m[22m[36mKey[0m[22m[36m [0m[22m[36mhas[0m[22m[36m [0m[22m[36mbeen[0m[22m[36m [0m[22m[36mrevoked[0m[22m[36m [0m
+[22m[36mECONNRESET[0m[22m[36m [0m[22m[37m104[0m[22m[36m [0m[22m[1m[32mConnection[0m[22m[36m [0m[22m[36mreset[0m[22m[36m [0m[22m[36mby[0m[22m[36m [0m[22m[36mpeer[0m[22m[36m [0m
+[22m[36mENOCSI[0m[22m[36m [0m[22m[37m50[0m[22m[36m [0m[22m[36mNo[0m[22m[36m [0m[22m[36mCSI[0m[22m[36m [0m[22m[36mstructure[0m[22m[36m [0m[22m[36mavailable[0m[22m[36m [0m
+[22m[36mENETUNREACH[0m[22m[36m [0m[22m[37m101[0m[22m[36m [0m[22m[36mNetwork[0m[22m[36m [0m[22m[36mis[0m[22m[36m [0m[22m[1m[33munreachable[0m[22m[36m [0m
+[22m[36mEBADMSG[0m[22m[36m [0m[22m[37m74[0m[22m[36m [0m[22m[36mBad[0m[22m[36m [0m[22m[36mmessage[0m[22m[36m [0m
+[22m[36mENOTSUP[0m[22m[36m [0m[22m[37m95[0m[22m[36m [0m[22m[36mOperation[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36msupported[0m[22m[36m [0m
+[22m[36mEMLINK[0m[22m[36m [0m[22m[37m31[0m[22m[36m [0m[22m[36mToo[0m[22m[36m [0m[22m[36mmany[0m[22m[36m [0m[22m[36mlinks[0m[22m[36m [0m
+[22m[36mECHILD[0m[22m[36m [0m[22m[37m10[0m[22m[36m [0m[22m[36mNo[0m[22m[36m [0m[22m[36mchild[0m[22m[36m [0m[22m[36mprocesses[0m[22m[36m [0m
+[22m[36mEISNAM[0m[22m[36m [0m[22m[37m120[0m[22m[36m [0m[22m[36mIs[0m[22m[36m [0m[22m[36ma[0m[22m[36m [0m[22m[36mnamed[0m[22m[36m [0m[22m[36mtype[0m[22m[36m [0m[22m[36mfile[0m[22m[36m [0m
+[22m[36mEWOULDBLOCK[0m[22m[36m [0m[22m[37m11[0m[22m[36m [0m[22m[36mResource[0m[22m[36m [0m[22m[36mtemporarily[0m[22m[36m [0m[22m[36munavailable[0m[22m[36m [0m
+[22m[36mEAFNOSUPPORT[0m[22m[36m [0m[22m[37m97[0m[22m[36m [0m[22m[36mAddress[0m[22m[36m [0m[22m[36mfamily[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36msupported[0m[22m[36m [0m[22m[36mby[0m[22m[36m [0m[22m[36mprotocol[0m[22m[36m [0m
+[22m[36mENOTNAM[0m[22m[36m [0m[22m[37m118[0m[22m[36m [0m[22m[1m[33mNot[0m[22m[36m [0m[22m[36ma[0m[22m[36m [0m[22m[36mXENIX[0m[22m[36m [0m[22m[36mnamed[0m[22m[36m [0m[22m[36mtype[0m[22m[36m [0m[22m[36mfile[0m[22m[36m [0m
+[22m[36mEREMOTE[0m[22m[36m [0m[22m[37m66[0m[22m[36m [0m[22m[36mObject[0m[22m[36m [0m[22m[36mis[0m[22m[36m [0m[22m[36mremote[0m[22m[36m [0m
+[22m[36mETIME[0m[22m[36m [0m[22m[37m62[0m[22m[36m [0m[22m[36mTimer[0m[22m[36m [0m[22m[36mexpired[0m[22m[36m [0m
+[22m[36mEHOSTDOWN[0m[22m[36m [0m[22m[37m112[0m[22m[36m [0m[22m[36mHost[0m[22m[36m [0m[22m[36mis[0m[22m[36m [0m[22m[1m[33mdown[0m[22m[36m [0m
+[22m[36mESRMNT[0m[22m[36m [0m[22m[37m69[0m[22m[36m [0m[22m[36mSrmount[0m[22m[36m [0m[22m[1m[31merror[0m[22m[36m [0m
+[22m[36mESOCKTNOSUPPORT[0m[22m[36m [0m[22m[37m94[0m[22m[36m [0m[22m[36mSocket[0m[22m[36m [0m[22m[36mtype[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36msupported[0m[22m[36m [0m
+[22m[36mEXFULL[0m[22m[36m [0m[22m[37m54[0m[22m[36m [0m[22m[36mExchange[0m[22m[36m [0m[22m[36mfull[0m[22m[36m [0m
+[22m[36mELIBMAX[0m[22m[36m [0m[22m[37m82[0m[22m[36m [0m[22m[1m[32mAttempting[0m[22m[36m [0m[22m[36mto[0m[22m[36m [0m[22m[36mlink[0m[22m[36m [0m[22m[36min[0m[22m[36m [0m[22m[36mtoo[0m[22m[36m [0m[22m[36mmany[0m[22m[36m [0m[22m[36mshared[0m[22m[36m [0m[22m[36mlibraries[0m[22m[36m [0m
+[22m[36mEBADSLT[0m[22m[36m [0m[22m[37m57[0m[22m[36m [0m[22m[1m[31mInvalid[0m[22m[36m [0m[22m[36mslot[0m[22m[36m [0m
+[22m[36mECHRNG[0m[22m[36m [0m[22m[37m44[0m[22m[36m [0m[22m[36mChannel[0m[22m[36m [0m[22m[36mnumber[0m[22m[36m [0m[22m[36mout[0m[22m[36m [0m[22m[36mof[0m[22m[36m [0m[22m[36mrange[0m[22m[36m [0m
+[22m[36mESTALE[0m[22m[36m [0m[22m[37m116[0m[22m[36m [0m[22m[36mStale[0m[22m[36m [0m[22m[36mfile[0m[22m[36m [0m[22m[36mhandle[0m[22m[36m [0m
+[22m[36mEPROTO[0m[22m[36m [0m[22m[37m71[0m[22m[36m [0m[22m[36mProtocol[0m[22m[36m [0m[22m[1m[31merror[0m[22m[36m [0m
+[22m[36mEFAULT[0m[22m[36m [0m[22m[37m14[0m[22m[36m [0m[22m[36mBad[0m[22m[36m [0m[22m[36maddress[0m[22m[36m [0m
+[22m[36mEIDRM[0m[22m[36m [0m[22m[37m43[0m[22m[36m [0m[22m[1m[36mIdentifier[0m[22m[36m [0m[22m[36mremoved[0m[22m[36m [0m
+[22m[36mENOBUFS[0m[22m[36m [0m[22m[37m105[0m[22m[36m [0m[22m[36mNo[0m[22m[36m [0m[22m[36mbuffer[0m[22m[36m [0m[22m[36mspace[0m[22m[36m [0m[22m[36mavailable[0m[22m[36m [0m
+[22m[36mENOSYS[0m[22m[36m [0m[22m[37m38[0m[22m[36m [0m[22m[36mFunction[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36mimplemented[0m[22m[36m [0m
+[22m[36mENOLINK[0m[22m[36m [0m[22m[37m67[0m[22m[36m [0m[22m[36mLink[0m[22m[36m [0m[22m[36mhas[0m[22m[36m [0m[22m[36mbeen[0m[22m[36m [0m[22m[36msevered[0m[22m[36m [0m
+[22m[36mENOMEDIUM[0m[22m[36m [0m[22m[37m123[0m[22m[36m [0m[22m[36mNo[0m[22m[36m [0m[22m[36mmedium[0m[22m[36m [0m[22m[36mfound[0m[22m[36m [0m
+[22m[36mEINPROGRESS[0m[22m[36m [0m[22m[37m115[0m[22m[36m [0m[22m[36mOperation[0m[22m[36m [0m[22m[36mnow[0m[22m[36m [0m[22m[36min[0m[22m[36m [0m[22m[36mprogress[0m[22m[36m [0m
+[22m[36mEBUSY[0m[22m[36m [0m[22m[37m16[0m[22m[36m [0m[22m[36mDevice[0m[22m[36m [0m[22m[36mor[0m[22m[36m [0m[22m[36mresource[0m[22m[36m [0m[22m[36mbusy[0m[22m[36m [0m
+[22m[36mERFKILL[0m[22m[36m [0m[22m[37m132[0m[22m[36m [0m[22m[36mOperation[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36mpossible[0m[22m[36m [0m[22m[36mdue[0m[22m[36m [0m[22m[36mto[0m[22m[36m [0m[22m[36mRF-kill[0m[22m[36m [0m
+[22m[36mEADDRINUSE[0m[22m[36m [0m[22m[37m98[0m[22m[36m [0m[22m[36mAddress[0m[22m[36m [0m[22m[36malready[0m[22m[36m [0m[22m[36min[0m[22m[36m [0m[22m[36muse[0m[22m[36m [0m
+[22m[36mEPFNOSUPPORT[0m[22m[36m [0m[22m[37m96[0m[22m[36m [0m[22m[36mProtocol[0m[22m[36m [0m[22m[36mfamily[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36msupported[0m[22m[36m [0m
+[22m[36mELNRNG[0m[22m[36m [0m[22m[37m48[0m[22m[36m [0m[22m[36mLink[0m[22m[36m [0m[22m[36mnumber[0m[22m[36m [0m[22m[36mout[0m[22m[36m [0m[22m[36mof[0m[22m[36m [0m[22m[36mrange[0m[22m[36m [0m
+[22m[36mEDEADLOCK[0m[22m[36m [0m[22m[37m35[0m[22m[36m [0m[22m[36mResource[0m[22m[36m [0m[22m[36mdeadlock[0m[22m[36m [0m[22m[36mavoided[0m[22m[36m [0m
+[22m[36mEUSERS[0m[22m[36m [0m[22m[37m87[0m[22m[36m [0m[22m[36mToo[0m[22m[36m [0m[22m[36mmany[0m[22m[36m [0m[22m[1m[35musers[0m[22m[36m [0m
+[22m[36mESRCH[0m[22m[36m [0m[22m[37m3[0m[22m[36m [0m[22m[36mNo[0m[22m[36m [0m[22m[36msuch[0m[22m[36m [0m[22m[36mprocess[0m[22m[36m [0m
+[22m[36mEOPNOTSUPP[0m[22m[36m [0m[22m[37m95[0m[22m[36m [0m[22m[36mOperation[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36msupported[0m[22m[36m [0m
+[22m[36mEUCLEAN[0m[22m[36m [0m[22m[37m117[0m[22m[36m [0m[22m[36mStructure[0m[22m[36m [0m[22m[36mneeds[0m[22m[36m [0m[22m[1m[32mcleaning[0m[22m[36m [0m
+[22m[36mEREMOTEIO[0m[22m[36m [0m[22m[37m121[0m[22m[36m [0m[22m[36mRemote[0m[22m[36m [0m[22m[36mI/O[0m[22m[36m [0m[22m[1m[31merror[0m[22m[36m [0m
+[22m[36mELIBEXEC[0m[22m[36m [0m[22m[37m83[0m[22m[36m [0m[22m[1m[33mCannot[0m[22m[36m [0m[22m[1m[35mexec[0m[22m[36m [0m[22m[36ma[0m[22m[36m [0m[22m[36mshared[0m[22m[36m [0m[22m[36mlibrary[0m[22m[36m [0m[22m[36mdirectly[0m[22m[36m [0m
+[22m[36mEBADE[0m[22m[36m [0m[22m[37m52[0m[22m[36m [0m[22m[1m[31mInvalid[0m[22m[36m [0m[22m[36mexchange[0m[22m[36m [0m
+[22m[36mEPROTOTYPE[0m[22m[36m [0m[22m[37m91[0m[22m[36m [0m[22m[36mProtocol[0m[22m[36m [0m[22m[36mwrong[0m[22m[36m [0m[22m[36mtype[0m[22m[36m [0m[22m[36mfor[0m[22m[36m [0m[22m[36msocket[0m[22m[36m [0m
+[22m[36mENOMEM[0m[22m[36m [0m[22m[37m12[0m[22m[36m [0m[22m[1m[33mCannot[0m[22m[36m [0m[22m[36mallocate[0m[22m[36m [0m[22m[36mmemory[0m[22m[36m [0m
+[22m[36mEDOTDOT[0m[22m[36m [0m[22m[37m73[0m[22m[36m [0m[22m[36mRFS[0m[22m[36m [0m[22m[36mspecific[0m[22m[36m [0m[22m[1m[31merror[0m[22m[36m [0m
+[22m[36mENOTSOCK[0m[22m[36m [0m[22m[37m88[0m[22m[36m [0m[22m[36mSocket[0m[22m[36m [0m[22m[36moperation[0m[22m[36m [0m[22m[36mon[0m[22m[36m [0m[22m[36mnon-socket[0m[22m[36m [0m
+[22m[36mENOTTY[0m[22m[36m [0m[22m[37m25[0m[22m[36m [0m[22m[36mInappropriate[0m[22m[36m [0m[22m[36mioctl[0m[22m[36m [0m[22m[36mfor[0m[22m[36m [0m[22m[36mdevice[0m[22m[36m [0m
+[22m[36mERANGE[0m[22m[36m [0m[22m[37m34[0m[22m[36m [0m[22m[36mNumerical[0m[22m[36m [0m[22m[36mresult[0m[22m[36m [0m[22m[36mout[0m[22m[36m [0m[22m[36mof[0m[22m[36m [0m[22m[36mrange[0m[22m[36m [0m
+[22m[36mENOANO[0m[22m[36m [0m[22m[37m55[0m[22m[36m [0m[22m[36mNo[0m[22m[36m [0m[22m[36manode[0m[22m[36m [0m
+[22m[36mEADDRNOTAVAIL[0m[22m[36m [0m[22m[37m99[0m[22m[36m [0m[22m[1m[33mCannot[0m[22m[36m [0m[22m[36massign[0m[22m[36m [0m[22m[36mrequested[0m[22m[36m [0m[22m[36maddress[0m[22m[36m [0m
+[22m[36mEBADRQC[0m[22m[36m [0m[22m[37m56[0m[22m[36m [0m[22m[1m[31mInvalid[0m[22m[36m [0m[22m[36mrequest[0m[22m[36m [0m[22m[36mcode[0m[22m[36m [0m
+[22m[36mEDESTADDRREQ[0m[22m[36m [0m[22m[37m89[0m[22m[36m [0m[22m[36mDestination[0m[22m[36m [0m[22m[36maddress[0m[22m[36m [0m[22m[36mrequired[0m[22m[36m [0m
+[22m[36mENOSPC[0m[22m[36m [0m[22m[37m28[0m[22m[36m [0m[22m[36mNo[0m[22m[36m [0m[22m[36mspace[0m[22m[36m [0m[22m[36mleft[0m[22m[36m [0m[22m[36mon[0m[22m[36m [0m[22m[36mdevice[0m[22m[36m [0m
+[22m[36mENOENT[0m[22m[36m [0m[22m[37m2[0m[22m[36m [0m[22m[36mNo[0m[22m[36m [0m[22m[36msuch[0m[22m[36m [0m[22m[36mfile[0m[22m[36m [0m[22m[36mor[0m[22m[36m [0m[22m[36mdirectory[0m[22m[36m [0m
+[22m[36mEISCONN[0m[22m[36m [0m[22m[37m106[0m[22m[36m [0m[22m[36mTransport[0m[22m[36m [0m[22m[1m[33mendpoint[0m[22m[36m [0m[22m[36mis[0m[22m[36m [0m[22m[36malready[0m[22m[36m [0m[22m[1m[32mconnected[0m[22m[36m [0m
+[22m[36mENOTEMPTY[0m[22m[36m [0m[22m[37m39[0m[22m[36m [0m[22m[36mDirectory[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[1m[33mempty[0m[22m[36m [0m
+[22m[36mENOTUNIQ[0m[22m[36m [0m[22m[37m76[0m[22m[36m [0m[22m[36mName[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36munique[0m[22m[36m [0m[22m[36mon[0m[22m[36m [0m[22m[36mnetwork[0m[22m[36m [0m
+[22m[36mEACCES[0m[22m[36m [0m[22m[37m13[0m[22m[36m [0m[22m[36mPermission[0m[22m[36m [0m[22m[36mdenied[0m[22m[36m [0m
+[22m[36mEDOM[0m[22m[36m [0m[22m[37m33[0m[22m[36m [0m[22m[36mNumerical[0m[22m[36m [0m[22m[36margument[0m[22m[36m [0m[22m[36mout[0m[22m[36m [0m[22m[36mof[0m[22m[36m [0m[22m[1m[35mdomain[0m[22m[36m [0m
+[22m[36mEISDIR[0m[22m[36m [0m[22m[37m21[0m[22m[36m [0m[22m[36mIs[0m[22m[36m [0m[22m[36ma[0m[22m[36m [0m[22m[36mdirectory[0m[22m[36m [0m
+[22m[36mEHOSTUNREACH[0m[22m[36m [0m[22m[37m113[0m[22m[36m [0m[22m[36mNo[0m[22m[36m [0m[22m[1m[35mroute[0m[22m[36m [0m[22m[36mto[0m[22m[36m [0m[22m[36mhost[0m[22m[36m [0m
+[22m[36mENOSTR[0m[22m[36m [0m[22m[37m60[0m[22m[36m [0m[22m[36mDevice[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36ma[0m[22m[36m [0m[22m[36mstream[0m[22m[36m [0m
+[22m[36mEAGAIN[0m[22m[36m [0m[22m[37m11[0m[22m[36m [0m[22m[36mResource[0m[22m[36m [0m[22m[36mtemporarily[0m[22m[36m [0m[22m[36munavailable[0m[22m[36m [0m
+[22m[36mELIBACC[0m[22m[36m [0m[22m[37m79[0m[22m[36m [0m[22m[36mCan[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36maccess[0m[22m[36m [0m[22m[36ma[0m[22m[36m [0m[22m[36mneeded[0m[22m[36m [0m[22m[36mshared[0m[22m[36m [0m[22m[36mlibrary[0m[22m[36m [0m
+[22m[36mEIO[0m[22m[36m [0m[22m[37m5[0m[22m[36m [0m[22m[36mInput/output[0m[22m[36m [0m[22m[1m[31merror[0m[22m[36m [0m
+[22m[36mENOMSG[0m[22m[36m [0m[22m[37m42[0m[22m[36m [0m[22m[36mNo[0m[22m[36m [0m[22m[36mmessage[0m[22m[36m [0m[22m[36mof[0m[22m[36m [0m[22m[36mdesired[0m[22m[36m [0m[22m[36mtype[0m[22m[36m [0m
+[22m[36mEL3RST[0m[22m[36m [0m[22m[37m47[0m[22m[36m [0m[22m[36mLevel[0m[22m[36m [0m[22m[37m3[0m[22m[36m [0m[22m[36mreset[0m[22m[36m [0m
+[22m[36mEL3HLT[0m[22m[36m [0m[22m[37m46[0m[22m[36m [0m[22m[36mLevel[0m[22m[36m [0m[22m[37m3[0m[22m[36m [0m[22m[36mhalted[0m[22m[36m [0m
+[22m[36mEINVAL[0m[22m[36m [0m[22m[37m22[0m[22m[36m [0m[22m[1m[31mInvalid[0m[22m[36m [0m[22m[36margument[0m[22m[36m [0m
+[22m[36mEPIPE[0m[22m[36m [0m[22m[37m32[0m[22m[36m [0m[22m[36mBroken[0m[22m[36m [0m[22m[36mpipe[0m[22m[36m [0m
+[22m[36mENOPROTOOPT[0m[22m[36m [0m[22m[37m92[0m[22m[36m [0m[22m[36mProtocol[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36mavailable[0m[22m[36m [0m
+[22m[36mESPIPE[0m[22m[36m [0m[22m[37m29[0m[22m[36m [0m[22m[36mIllegal[0m[22m[36m [0m[22m[36mseek[0m[22m[36m [0m
+[22m[36mEUNATCH[0m[22m[36m [0m[22m[37m49[0m[22m[36m [0m[22m[36mProtocol[0m[22m[36m [0m[22m[36mdriver[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36mattached[0m[22m[36m [0m
+[22m[36mENOTCONN[0m[22m[36m [0m[22m[37m107[0m[22m[36m [0m[22m[36mTransport[0m[22m[36m [0m[22m[1m[33mendpoint[0m[22m[36m [0m[22m[36mis[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[1m[32mconnected[0m[22m[36m [0m
+[22m[36mEADV[0m[22m[36m [0m[22m[37m68[0m[22m[36m [0m[22m[36mAdvertise[0m[22m[36m [0m[22m[1m[31merror[0m[22m[36m [0m
+[22m[36mEFBIG[0m[22m[36m [0m[22m[37m27[0m[22m[36m [0m[22m[36mFile[0m[22m[36m [0m[22m[36mtoo[0m[22m[36m [0m[22m[36mlarge[0m[22m[36m [0m
+[22m[36mECOMM[0m[22m[36m [0m[22m[37m70[0m[22m[36m [0m[22m[36mCommunication[0m[22m[36m [0m[22m[1m[31merror[0m[22m[36m [0m[22m[36mon[0m[22m[36m [0m[22m[36msend[0m[22m[36m [0m
+[22m[36mEBADFD[0m[22m[36m [0m[22m[37m77[0m[22m[36m [0m[22m[36mFile[0m[22m[36m [0m[22m[36mdescriptor[0m[22m[36m [0m[22m[36min[0m[22m[36m [0m[22m[36mbad[0m[22m[36m [0m[22m[36mstate[0m[22m[36m [0m
+[22m[36mEBADR[0m[22m[36m [0m[22m[37m53[0m[22m[36m [0m[22m[1m[31mInvalid[0m[22m[36m [0m[22m[36mrequest[0m[22m[36m [0m[22m[36mdescriptor[0m[22m[36m [0m
+[22m[36mEDQUOT[0m[22m[36m [0m[22m[37m122[0m[22m[36m [0m[22m[36mDisk[0m[22m[36m [0m[22m[36mquota[0m[22m[36m [0m[22m[36mexceeded[0m[22m[36m [0m
+[22m[36mEL2NSYNC[0m[22m[36m [0m[22m[37m45[0m[22m[36m [0m[22m[36mLevel[0m[22m[36m [0m[22m[37m2[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36msynchronized[0m[22m[36m [0m
+[22m[36mEROFS[0m[22m[36m [0m[22m[37m30[0m[22m[36m [0m[22m[36mRead-only[0m[22m[36m [0m[22m[36mfile[0m[22m[36m [0m[22m[36msystem[0m[22m[36m [0m
+[22m[36mENONET[0m[22m[36m [0m[22m[37m64[0m[22m[36m [0m[22m[36mMachine[0m[22m[36m [0m[22m[36mis[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36mon[0m[22m[36m [0m[22m[36mthe[0m[22m[36m [0m[22m[36mnetwork[0m[22m[36m [0m
+[22m[36mETXTBSY[0m[22m[36m [0m[22m[37m26[0m[22m[36m [0m[22m[36mText[0m[22m[36m [0m[22m[36mfile[0m[22m[36m [0m[22m[36mbusy[0m[22m[36m [0m
+[22m[36mECANCELED[0m[22m[36m [0m[22m[37m125[0m[22m[36m [0m[22m[36mOperation[0m[22m[36m [0m[22m[36mcanceled[0m[22m[36m [0m
+[22m[36mEKEYREJECTED[0m[22m[36m [0m[22m[37m129[0m[22m[36m [0m[22m[36mKey[0m[22m[36m [0m[22m[36mwas[0m[22m[36m [0m[22m[36mrejected[0m[22m[36m [0m[22m[36mby[0m[22m[36m [0m[22m[36mservice[0m[22m[36m [0m
+[22m[36mEDEADLK[0m[22m[36m [0m[22m[37m35[0m[22m[36m [0m[22m[36mResource[0m[22m[36m [0m[22m[36mdeadlock[0m[22m[36m [0m[22m[36mavoided[0m[22m[36m [0m
+[22m[36mEPERM[0m[22m[36m [0m[22m[37m1[0m[22m[36m [0m[22m[36mOperation[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36mpermitted[0m[22m[36m [0m
+[22m[36mENODATA[0m[22m[36m [0m[22m[37m61[0m[22m[36m [0m[22m[36mNo[0m[22m[36m [0m[22m[36mdata[0m[22m[36m [0m[22m[36mavailable[0m[22m[36m [0m
+[22m[36mETOOMANYREFS[0m[22m[36m [0m[22m[37m109[0m[22m[36m [0m[22m[36mToo[0m[22m[36m [0m[22m[36mmany[0m[22m[36m [0m[22m[36mreferences[0m[22m[36m:[0m[22m[36m [0m[22m[1m[33mcannot[0m[22m[36m [0m[22m[36msplice[0m[22m[36m [0m
+[22m[36mENOEXEC[0m[22m[36m [0m[22m[37m8[0m[22m[36m [0m[22m[1m[35mExec[0m[22m[36m [0m[22m[36mformat[0m[22m[36m [0m[22m[1m[31merror[0m[22m[36m [0m
+[22m[36mENOTRECOVERABLE[0m[22m[36m [0m[22m[37m131[0m[22m[36m [0m[22m[36mState[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36mrecoverable[0m[22m[36m [0m
+[22m[36mENETRESET[0m[22m[36m [0m[22m[37m102[0m[22m[36m [0m[22m[36mNetwork[0m[22m[36m [0m[22m[36mdropped[0m[22m[36m [0m[22m[1m[32mconnection[0m[22m[36m [0m[22m[36mon[0m[22m[36m [0m[22m[36mreset[0m[22m[36m [0m
+[22m[36mETIMEDOUT[0m[22m[36m [0m[22m[37m110[0m[22m[36m [0m[22m[1m[32mConnection[0m[22m[36m [0m[22m[36mtimed[0m[22m[36m [0m[22m[36mout[0m[22m[36m [0m
+[22m[36mENODEV[0m[22m[36m [0m[22m[37m19[0m[22m[36m [0m[22m[36mNo[0m[22m[36m [0m[22m[36msuch[0m[22m[36m [0m[22m[36mdevice[0m[22m[36m [0m
+[22m[36mENAMETOOLONG[0m[22m[36m [0m[22m[37m36[0m[22m[36m [0m[22m[36mFile[0m[22m[36m [0m[22m[36mname[0m[22m[36m [0m[22m[36mtoo[0m[22m[36m [0m[22m[36mlong[0m[22m[36m [0m
+[22m[36mENFILE[0m[22m[36m [0m[22m[37m23[0m[22m[36m [0m[22m[36mToo[0m[22m[36m [0m[22m[36mmany[0m[22m[36m [0m[22m[1m[32mopen[0m[22m[36m [0m[22m[36mfiles[0m[22m[36m [0m[22m[36min[0m[22m[36m [0m[22m[36msystem[0m[22m[36m [0m
+[22m[36mEILSEQ[0m[22m[36m [0m[22m[37m84[0m[22m[36m [0m[22m[1m[31mInvalid[0m[22m[36m [0m[22m[36mor[0m[22m[36m [0m[22m[36mincomplete[0m[22m[36m [0m[22m[36mmultibyte[0m[22m[36m [0m[22m[36mor[0m[22m[36m [0m[22m[36mwide[0m[22m[36m [0m[22m[36mcharacter[0m[22m[36m [0m
+[22m[36mEOWNERDEAD[0m[22m[36m [0m[22m[37m130[0m[22m[36m [0m[22m[36mOwner[0m[22m[36m [0m[22m[36mdied[0m[22m[36m [0m
+[22m[36mENOPKG[0m[22m[36m [0m[22m[37m65[0m[22m[36m [0m[22m[36mPackage[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36minstalled[0m[22m[36m [0m
+[0m[22m[36mENOPKG[0m[22m[36m [0m[22m[37m65[0m[22m[36m [0m[22m[36mPackage[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36minstalled[0m[22m[36m [0m
+[22m[36mEBADMSG[0m[22m[36m [0m[22m[37m74[0m[22m[36m [0m[22m[36mBad[0m[22m[36m [0m[22m[36mmessage[0m[22m[36m [0m
+[22m[36mEXFULL[0m[22m[36m [0m[22m[37m54[0m[22m[36m [0m[22m[36mExchange[0m[22m[36m [0m[22m[36mfull[0m[22m[36m [0m
+[22m[36mEEXIST[0m[22m[36m [0m[22m[37m17[0m[22m[36m [0m[22m[36mFile[0m[22m[36m [0m[22m[36mexists[0m[22m[36m [0m
+[22m[36mENOTNAM[0m[22m[36m [0m[22m[37m118[0m[22m[36m [0m[22m[1m[33mNot[0m[22m[36m [0m[22m[36ma[0m[22m[36m [0m[22m[36mXENIX[0m[22m[36m [0m[22m[36mnamed[0m[22m[36m [0m[22m[36mtype[0m[22m[36m [0m[22m[36mfile[0m[22m[36m [0m
+[22m[36mELNRNG[0m[22m[36m [0m[22m[37m48[0m[22m[36m [0m[22m[36mLink[0m[22m[36m [0m[22m[36mnumber[0m[22m[36m [0m[22m[36mout[0m[22m[36m [0m[22m[36mof[0m[22m[36m [0m[22m[36mrange[0m[22m[36m [0m
+[22m[36mENOMSG[0m[22m[36m [0m[22m[37m42[0m[22m[36m [0m[22m[36mNo[0m[22m[36m [0m[22m[36mmessage[0m[22m[36m [0m[22m[36mof[0m[22m[36m [0m[22m[36mdesired[0m[22m[36m [0m[22m[36mtype[0m[22m[36m [0m
+[22m[36mESRMNT[0m[22m[36m [0m[22m[37m69[0m[22m[36m [0m[22m[36mSrmount[0m[22m[36m [0m[22m[1m[31merror[0m[22m[36m [0m
+[22m[36mENOTSUP[0m[22m[36m [0m[22m[37m95[0m[22m[36m [0m[22m[36mOperation[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36msupported[0m[22m[36m [0m
+[22m[36mEISDIR[0m[22m[36m [0m[22m[37m21[0m[22m[36m [0m[22m[36mIs[0m[22m[36m [0m[22m[36ma[0m[22m[36m [0m[22m[36mdirectory[0m[22m[36m [0m
+[22m[36mEL3HLT[0m[22m[36m [0m[22m[37m46[0m[22m[36m [0m[22m[36mLevel[0m[22m[36m [0m[22m[37m3[0m[22m[36m [0m[22m[36mhalted[0m[22m[36m [0m
+[22m[36mECHILD[0m[22m[36m [0m[22m[37m10[0m[22m[36m [0m[22m[36mNo[0m[22m[36m [0m[22m[36mchild[0m[22m[36m [0m[22m[36mprocesses[0m[22m[36m [0m
+[22m[36mENODEV[0m[22m[36m [0m[22m[37m19[0m[22m[36m [0m[22m[36mNo[0m[22m[36m [0m[22m[36msuch[0m[22m[36m [0m[22m[36mdevice[0m[22m[36m [0m
+[22m[36mEWOULDBLOCK[0m[22m[36m [0m[22m[37m11[0m[22m[36m [0m[22m[36mResource[0m[22m[36m [0m[22m[36mtemporarily[0m[22m[36m [0m[22m[36munavailable[0m[22m[36m [0m
+[22m[36mEUCLEAN[0m[22m[36m [0m[22m[37m117[0m[22m[36m [0m[22m[36mStructure[0m[22m[36m [0m[22m[36mneeds[0m[22m[36m [0m[22m[1m[32mcleaning[0m[22m[36m [0m
+[22m[36mEPERM[0m[22m[36m [0m[22m[37m1[0m[22m[36m [0m[22m[36mOperation[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36mpermitted[0m[22m[36m [0m
+[22m[36mEIDRM[0m[22m[36m [0m[22m[37m43[0m[22m[36m [0m[22m[1m[36mIdentifier[0m[22m[36m [0m[22m[36mremoved[0m[22m[36m [0m
+[22m[36mEUSERS[0m[22m[36m [0m[22m[37m87[0m[22m[36m [0m[22m[36mToo[0m[22m[36m [0m[22m[36mmany[0m[22m[36m [0m[22m[1m[35musers[0m[22m[36m [0m
+[22m[36mEBADE[0m[22m[36m [0m[22m[37m52[0m[22m[36m [0m[22m[1m[31mInvalid[0m[22m[36m [0m[22m[36mexchange[0m[22m[36m [0m
+[22m[36mEOWNERDEAD[0m[22m[36m [0m[22m[37m130[0m[22m[36m [0m[22m[36mOwner[0m[22m[36m [0m[22m[36mdied[0m[22m[36m [0m
+[22m[36mENFILE[0m[22m[36m [0m[22m[37m23[0m[22m[36m [0m[22m[36mToo[0m[22m[36m [0m[22m[36mmany[0m[22m[36m [0m[22m[1m[32mopen[0m[22m[36m [0m[22m[36mfiles[0m[22m[36m [0m[22m[36min[0m[22m[36m [0m[22m[36msystem[0m[22m[36m [0m
+[22m[36mECONNREFUSED[0m[22m[36m [0m[22m[37m111[0m[22m[36m [0m[22m[1m[32mConnection[0m[22m[36m [0m[22m[36mrefused[0m[22m[36m [0m
+[22m[36mENETRESET[0m[22m[36m [0m[22m[37m102[0m[22m[36m [0m[22m[36mNetwork[0m[22m[36m [0m[22m[36mdropped[0m[22m[36m [0m[22m[1m[32mconnection[0m[22m[36m [0m[22m[36mon[0m[22m[36m [0m[22m[36mreset[0m[22m[36m [0m
+[22m[36mEAFNOSUPPORT[0m[22m[36m [0m[22m[37m97[0m[22m[36m [0m[22m[36mAddress[0m[22m[36m [0m[22m[36mfamily[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36msupported[0m[22m[36m [0m[22m[36mby[0m[22m[36m [0m[22m[36mprotocol[0m[22m[36m [0m
+[22m[36mEMFILE[0m[22m[36m [0m[22m[37m24[0m[22m[36m [0m[22m[36mToo[0m[22m[36m [0m[22m[36mmany[0m[22m[36m [0m[22m[1m[32mopen[0m[22m[36m [0m[22m[36mfiles[0m[22m[36m [0m
+[22m[36mENAMETOOLONG[0m[22m[36m [0m[22m[37m36[0m[22m[36m [0m[22m[36mFile[0m[22m[36m [0m[22m[36mname[0m[22m[36m [0m[22m[36mtoo[0m[22m[36m [0m[22m[36mlong[0m[22m[36m [0m
+[22m[36mEMSGSIZE[0m[22m[36m [0m[22m[37m90[0m[22m[36m [0m[22m[36mMessage[0m[22m[36m [0m[22m[36mtoo[0m[22m[36m [0m[22m[36mlong[0m[22m[36m [0m
+[22m[36mEBADSLT[0m[22m[36m [0m[22m[37m57[0m[22m[36m [0m[22m[1m[31mInvalid[0m[22m[36m [0m[22m[36mslot[0m[22m[36m [0m
+[22m[36mENOSR[0m[22m[36m [0m[22m[37m63[0m[22m[36m [0m[22m[36mOut[0m[22m[36m [0m[22m[36mof[0m[22m[36m [0m[22m[36mstreams[0m[22m[36m [0m[22m[36mresources[0m[22m[36m [0m
+[22m[36mENOTCONN[0m[22m[36m [0m[22m[37m107[0m[22m[36m [0m[22m[36mTransport[0m[22m[36m [0m[22m[1m[33mendpoint[0m[22m[36m [0m[22m[36mis[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[1m[32mconnected[0m[22m[36m [0m
+[22m[36mEISNAM[0m[22m[36m [0m[22m[37m120[0m[22m[36m [0m[22m[36mIs[0m[22m[36m [0m[22m[36ma[0m[22m[36m [0m[22m[36mnamed[0m[22m[36m [0m[22m[36mtype[0m[22m[36m [0m[22m[36mfile[0m[22m[36m [0m
+[22m[36mEMULTIHOP[0m[22m[36m [0m[22m[37m72[0m[22m[36m [0m[22m[36mMultihop[0m[22m[36m [0m[22m[1m[32mattempted[0m[22m[36m [0m
+[22m[36mEXDEV[0m[22m[36m [0m[22m[37m18[0m[22m[36m [0m[22m[1m[31mInvalid[0m[22m[36m [0m[22m[36mcross-device[0m[22m[36m [0m[22m[36mlink[0m[22m[36m [0m
+[22m[36mEILSEQ[0m[22m[36m [0m[22m[37m84[0m[22m[36m [0m[22m[1m[31mInvalid[0m[22m[36m [0m[22m[36mor[0m[22m[36m [0m[22m[36mincomplete[0m[22m[36m [0m[22m[36mmultibyte[0m[22m[36m [0m[22m[36mor[0m[22m[36m [0m[22m[36mwide[0m[22m[36m [0m[22m[36mcharacter[0m[22m[36m [0m
+[22m[36mEADDRINUSE[0m[22m[36m [0m[22m[37m98[0m[22m[36m [0m[22m[36mAddress[0m[22m[36m [0m[22m[36malready[0m[22m[36m [0m[22m[36min[0m[22m[36m [0m[22m[36muse[0m[22m[36m [0m
+[22m[36mEADDRNOTAVAIL[0m[22m[36m [0m[22m[37m99[0m[22m[36m [0m[22m[1m[33mCannot[0m[22m[36m [0m[22m[36massign[0m[22m[36m [0m[22m[36mrequested[0m[22m[36m [0m[22m[36maddress[0m[22m[36m [0m
+[22m[36mENOSPC[0m[22m[36m [0m[22m[37m28[0m[22m[36m [0m[22m[36mNo[0m[22m[36m [0m[22m[36mspace[0m[22m[36m [0m[22m[36mleft[0m[22m[36m [0m[22m[36mon[0m[22m[36m [0m[22m[36mdevice[0m[22m[36m [0m
+[22m[36mEALREADY[0m[22m[36m [0m[22m[37m114[0m[22m[36m [0m[22m[36mOperation[0m[22m[36m [0m[22m[36malready[0m[22m[36m [0m[22m[36min[0m[22m[36m [0m[22m[36mprogress[0m[22m[36m [0m
+[22m[36mENOLCK[0m[22m[36m [0m[22m[37m37[0m[22m[36m [0m[22m[36mNo[0m[22m[36m [0m[22m[36mlocks[0m[22m[36m [0m[22m[36mavailable[0m[22m[36m [0m
+[22m[36mECOMM[0m[22m[36m [0m[22m[37m70[0m[22m[36m [0m[22m[36mCommunication[0m[22m[36m [0m[22m[1m[31merror[0m[22m[36m [0m[22m[36mon[0m[22m[36m [0m[22m[36msend[0m[22m[36m [0m
+[22m[36mEINTR[0m[22m[36m [0m[22m[37m4[0m[22m[36m [0m[22m[36mInterrupted[0m[22m[36m [0m[22m[36msystem[0m[22m[36m [0m[22m[36mcall[0m[22m[36m [0m
+[22m[36mENOCSI[0m[22m[36m [0m[22m[37m50[0m[22m[36m [0m[22m[36mNo[0m[22m[36m [0m[22m[36mCSI[0m[22m[36m [0m[22m[36mstructure[0m[22m[36m [0m[22m[36mavailable[0m[22m[36m [0m
+[22m[36mENOTTY[0m[22m[36m [0m[22m[37m25[0m[22m[36m [0m[22m[36mInappropriate[0m[22m[36m [0m[22m[36mioctl[0m[22m[36m [0m[22m[36mfor[0m[22m[36m [0m[22m[36mdevice[0m[22m[36m [0m
+[22m[36mEMLINK[0m[22m[36m [0m[22m[37m31[0m[22m[36m [0m[22m[36mToo[0m[22m[36m [0m[22m[36mmany[0m[22m[36m [0m[22m[36mlinks[0m[22m[36m [0m
+[22m[36mEL3RST[0m[22m[36m [0m[22m[37m47[0m[22m[36m [0m[22m[36mLevel[0m[22m[36m [0m[22m[37m3[0m[22m[36m [0m[22m[36mreset[0m[22m[36m [0m
+[22m[36mEDOM[0m[22m[36m [0m[22m[37m33[0m[22m[36m [0m[22m[36mNumerical[0m[22m[36m [0m[22m[36margument[0m[22m[36m [0m[22m[36mout[0m[22m[36m [0m[22m[36mof[0m[22m[36m [0m[22m[1m[35mdomain[0m[22m[36m [0m
+[22m[36mESRCH[0m[22m[36m [0m[22m[37m3[0m[22m[36m [0m[22m[36mNo[0m[22m[36m [0m[22m[36msuch[0m[22m[36m [0m[22m[36mprocess[0m[22m[36m [0m
+[22m[36mENOTRECOVERABLE[0m[22m[36m [0m[22m[37m131[0m[22m[36m [0m[22m[36mState[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36mrecoverable[0m[22m[36m [0m
+[22m[36mEREMOTEIO[0m[22m[36m [0m[22m[37m121[0m[22m[36m [0m[22m[36mRemote[0m[22m[36m [0m[22m[36mI/O[0m[22m[36m [0m[22m[1m[31merror[0m[22m[36m [0m
+[22m[36mEREMOTE[0m[22m[36m [0m[22m[37m66[0m[22m[36m [0m[22m[36mObject[0m[22m[36m [0m[22m[36mis[0m[22m[36m [0m[22m[36mremote[0m[22m[36m [0m
+[22m[36mETIMEDOUT[0m[22m[36m [0m[22m[37m110[0m[22m[36m [0m[22m[1m[32mConnection[0m[22m[36m [0m[22m[36mtimed[0m[22m[36m [0m[22m[36mout[0m[22m[36m [0m
+[22m[36mESTALE[0m[22m[36m [0m[22m[37m116[0m[22m[36m [0m[22m[36mStale[0m[22m[36m [0m[22m[36mfile[0m[22m[36m [0m[22m[36mhandle[0m[22m[36m [0m
+[22m[36mENOTSOCK[0m[22m[36m [0m[22m[37m88[0m[22m[36m [0m[22m[36mSocket[0m[22m[36m [0m[22m[36moperation[0m[22m[36m [0m[22m[36mon[0m[22m[36m [0m[22m[36mnon-socket[0m[22m[36m [0m
+[22m[36mENOBUFS[0m[22m[36m [0m[22m[37m105[0m[22m[36m [0m[22m[36mNo[0m[22m[36m [0m[22m[36mbuffer[0m[22m[36m [0m[22m[36mspace[0m[22m[36m [0m[22m[36mavailable[0m[22m[36m [0m
+[22m[36mEIO[0m[22m[36m [0m[22m[37m5[0m[22m[36m [0m[22m[36mInput/output[0m[22m[36m [0m[22m[1m[31merror[0m[22m[36m [0m
+[22m[36mENOTEMPTY[0m[22m[36m [0m[22m[37m39[0m[22m[36m [0m[22m[36mDirectory[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[1m[33mempty[0m[22m[36m [0m
+[22m[36mENXIO[0m[22m[36m [0m[22m[37m6[0m[22m[36m [0m[22m[36mNo[0m[22m[36m [0m[22m[36msuch[0m[22m[36m [0m[22m[36mdevice[0m[22m[36m [0m[22m[36mor[0m[22m[36m [0m[22m[36maddress[0m[22m[36m [0m
+[22m[36mEPROTO[0m[22m[36m [0m[22m[37m71[0m[22m[36m [0m[22m[36mProtocol[0m[22m[36m [0m[22m[1m[31merror[0m[22m[36m [0m
+[22m[36mEHWPOISON[0m[22m[36m [0m[22m[37m133[0m[22m[36m [0m[22m[36mMemory[0m[22m[36m [0m[22m[36mpage[0m[22m[36m [0m[22m[36mhas[0m[22m[36m [0m[22m[36mhardware[0m[22m[36m [0m[22m[1m[31merror[0m[22m[36m [0m
+[22m[36mENOANO[0m[22m[36m [0m[22m[37m55[0m[22m[36m [0m[22m[36mNo[0m[22m[36m [0m[22m[36manode[0m[22m[36m [0m
+[22m[36mESPIPE[0m[22m[36m [0m[22m[37m29[0m[22m[36m [0m[22m[36mIllegal[0m[22m[36m [0m[22m[36mseek[0m[22m[36m [0m
+[22m[36mEUNATCH[0m[22m[36m [0m[22m[37m49[0m[22m[36m [0m[22m[36mProtocol[0m[22m[36m [0m[22m[36mdriver[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36mattached[0m[22m[36m [0m
+[22m[36mELIBACC[0m[22m[36m [0m[22m[37m79[0m[22m[36m [0m[22m[36mCan[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36maccess[0m[22m[36m [0m[22m[36ma[0m[22m[36m [0m[22m[36mneeded[0m[22m[36m [0m[22m[36mshared[0m[22m[36m [0m[22m[36mlibrary[0m[22m[36m [0m
+[22m[36mEDQUOT[0m[22m[36m [0m[22m[37m122[0m[22m[36m [0m[22m[36mDisk[0m[22m[36m [0m[22m[36mquota[0m[22m[36m [0m[22m[36mexceeded[0m[22m[36m [0m
+[22m[36mENOTBLK[0m[22m[36m [0m[22m[37m15[0m[22m[36m [0m[22m[36mBlock[0m[22m[36m [0m[22m[36mdevice[0m[22m[36m [0m[22m[36mrequired[0m[22m[36m [0m
+[22m[36mENOMEDIUM[0m[22m[36m [0m[22m[37m123[0m[22m[36m [0m[22m[36mNo[0m[22m[36m [0m[22m[36mmedium[0m[22m[36m [0m[22m[36mfound[0m[22m[36m [0m
+[22m[36mEDEADLK[0m[22m[36m [0m[22m[37m35[0m[22m[36m [0m[22m[36mResource[0m[22m[36m [0m[22m[36mdeadlock[0m[22m[36m [0m[22m[36mavoided[0m[22m[36m [0m
+[22m[36mELIBSCN[0m[22m[36m [0m[22m[37m81[0m[22m[36m [0m[22m[36m.[0m[22m[36mlib[0m[22m[36m [0m[22m[36msection[0m[22m[36m [0m[22m[36min[0m[22m[36m [0m[22m[1m[34ma.out[0m[22m[36m [0m[22m[36mcorrupted[0m[22m[36m [0m
+[22m[36mETOOMANYREFS[0m[22m[36m [0m[22m[37m109[0m[22m[36m [0m[22m[36mToo[0m[22m[36m [0m[22m[36mmany[0m[22m[36m [0m[22m[36mreferences[0m[22m[36m:[0m[22m[36m [0m[22m[1m[33mcannot[0m[22m[36m [0m[22m[36msplice[0m[22m[36m [0m
+[22m[36mESTRPIPE[0m[22m[36m [0m[22m[37m86[0m[22m[36m [0m[22m[36mStreams[0m[22m[36m [0m[22m[36mpipe[0m[22m[36m [0m[22m[1m[31merror[0m[22m[36m [0m
+[22m[36mEDESTADDRREQ[0m[22m[36m [0m[22m[37m89[0m[22m[36m [0m[22m[36mDestination[0m[22m[36m [0m[22m[36maddress[0m[22m[36m [0m[22m[36mrequired[0m[22m[36m [0m
+[22m[36mEL2HLT[0m[22m[36m [0m[22m[37m51[0m[22m[36m [0m[22m[36mLevel[0m[22m[36m [0m[22m[37m2[0m[22m[36m [0m[22m[36mhalted[0m[22m[36m [0m
+[22m[36mEPROTONOSUPPORT[0m[22m[36m [0m[22m[37m93[0m[22m[36m [0m[22m[36mProtocol[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36msupported[0m[22m[36m [0m
+[22m[36mEHOSTUNREACH[0m[22m[36m [0m[22m[37m113[0m[22m[36m [0m[22m[36mNo[0m[22m[36m [0m[22m[1m[35mroute[0m[22m[36m [0m[22m[36mto[0m[22m[36m [0m[22m[36mhost[0m[22m[36m [0m
+[22m[36mENOTDIR[0m[22m[36m [0m[22m[37m20[0m[22m[36m [0m[22m[1m[33mNot[0m[22m[36m [0m[22m[36ma[0m[22m[36m [0m[22m[36mdirectory[0m[22m[36m [0m
+[22m[36mEFAULT[0m[22m[36m [0m[22m[37m14[0m[22m[36m [0m[22m[36mBad[0m[22m[36m [0m[22m[36maddress[0m[22m[36m [0m
+[22m[36mENOTUNIQ[0m[22m[36m [0m[22m[37m76[0m[22m[36m [0m[22m[36mName[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36munique[0m[22m[36m [0m[22m[36mon[0m[22m[36m [0m[22m[36mnetwork[0m[22m[36m [0m
+[22m[36mEDOTDOT[0m[22m[36m [0m[22m[37m73[0m[22m[36m [0m[22m[36mRFS[0m[22m[36m [0m[22m[36mspecific[0m[22m[36m [0m[22m[1m[31merror[0m[22m[36m [0m
+[22m[36mENOSYS[0m[22m[36m [0m[22m[37m38[0m[22m[36m [0m[22m[36mFunction[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36mimplemented[0m[22m[36m [0m
+[22m[36mENOLINK[0m[22m[36m [0m[22m[37m67[0m[22m[36m [0m[22m[36mLink[0m[22m[36m [0m[22m[36mhas[0m[22m[36m [0m[22m[36mbeen[0m[22m[36m [0m[22m[36msevered[0m[22m[36m [0m
+[22m[36mENOSTR[0m[22m[36m [0m[22m[37m60[0m[22m[36m [0m[22m[36mDevice[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36ma[0m[22m[36m [0m[22m[36mstream[0m[22m[36m [0m
+[22m[36mECONNABORTED[0m[22m[36m [0m[22m[37m103[0m[22m[36m [0m[22m[36mSoftware[0m[22m[36m [0m[22m[36mcaused[0m[22m[36m [0m[22m[1m[32mconnection[0m[22m[36m [0m[22m[36mabort[0m[22m[36m [0m
+[22m[36mENONET[0m[22m[36m [0m[22m[37m64[0m[22m[36m [0m[22m[36mMachine[0m[22m[36m [0m[22m[36mis[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36mon[0m[22m[36m [0m[22m[36mthe[0m[22m[36m [0m[22m[36mnetwork[0m[22m[36m [0m
+[22m[36mEBUSY[0m[22m[36m [0m[22m[37m16[0m[22m[36m [0m[22m[36mDevice[0m[22m[36m [0m[22m[36mor[0m[22m[36m [0m[22m[36mresource[0m[22m[36m [0m[22m[36mbusy[0m[22m[36m [0m
+[22m[36mECONNRESET[0m[22m[36m [0m[22m[37m104[0m[22m[36m [0m[22m[1m[32mConnection[0m[22m[36m [0m[22m[36mreset[0m[22m[36m [0m[22m[36mby[0m[22m[36m [0m[22m[36mpeer[0m[22m[36m [0m
+[22m[36mEINPROGRESS[0m[22m[36m [0m[22m[37m115[0m[22m[36m [0m[22m[36mOperation[0m[22m[36m [0m[22m[36mnow[0m[22m[36m [0m[22m[36min[0m[22m[36m [0m[22m[36mprogress[0m[22m[36m [0m
+[22m[36mEOPNOTSUPP[0m[22m[36m [0m[22m[37m95[0m[22m[36m [0m[22m[36mOperation[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36msupported[0m[22m[36m [0m
+[22m[36mEFBIG[0m[22m[36m [0m[22m[37m27[0m[22m[36m [0m[22m[36mFile[0m[22m[36m [0m[22m[36mtoo[0m[22m[36m [0m[22m[36mlarge[0m[22m[36m [0m
+[22m[36mEMEDIUMTYPE[0m[22m[36m [0m[22m[37m124[0m[22m[36m [0m[22m[36mWrong[0m[22m[36m [0m[22m[36mmedium[0m[22m[36m [0m[22m[36mtype[0m[22m[36m [0m
+[22m[36mEOVERFLOW[0m[22m[36m [0m[22m[37m75[0m[22m[36m [0m[22m[36mValue[0m[22m[36m [0m[22m[36mtoo[0m[22m[36m [0m[22m[36mlarge[0m[22m[36m [0m[22m[36mfor[0m[22m[36m [0m[22m[36mdefined[0m[22m[36m [0m[22m[36mdata[0m[22m[36m [0m[22m[36mtype[0m[22m[36m [0m
+[22m[36mETIME[0m[22m[36m [0m[22m[37m62[0m[22m[36m [0m[22m[36mTimer[0m[22m[36m [0m[22m[36mexpired[0m[22m[36m [0m
+[22m[36mELIBEXEC[0m[22m[36m [0m[22m[37m83[0m[22m[36m [0m[22m[1m[33mCannot[0m[22m[36m [0m[22m[1m[35mexec[0m[22m[36m [0m[22m[36ma[0m[22m[36m [0m[22m[36mshared[0m[22m[36m [0m[22m[36mlibrary[0m[22m[36m [0m[22m[36mdirectly[0m[22m[36m [0m
+[22m[36mENETUNREACH[0m[22m[36m [0m[22m[37m101[0m[22m[36m [0m[22m[36mNetwork[0m[22m[36m [0m[22m[36mis[0m[22m[36m [0m[22m[1m[33munreachable[0m[22m[36m [0m
+[22m[36mEREMCHG[0m[22m[36m [0m[22m[37m78[0m[22m[36m [0m[22m[36mRemote[0m[22m[36m [0m[22m[36maddress[0m[22m[36m [0m[22m[36mchanged[0m[22m[36m [0m
+[22m[36mELIBBAD[0m[22m[36m [0m[22m[37m80[0m[22m[36m [0m[22m[36mAccessing[0m[22m[36m [0m[22m[36ma[0m[22m[36m [0m[22m[36mcorrupted[0m[22m[36m [0m[22m[36mshared[0m[22m[36m [0m[22m[36mlibrary[0m[22m[36m [0m
+[22m[36mECHRNG[0m[22m[36m [0m[22m[37m44[0m[22m[36m [0m[22m[36mChannel[0m[22m[36m [0m[22m[36mnumber[0m[22m[36m [0m[22m[36mout[0m[22m[36m [0m[22m[36mof[0m[22m[36m [0m[22m[36mrange[0m[22m[36m [0m
+[22m[36mEROFS[0m[22m[36m [0m[22m[37m30[0m[22m[36m [0m[22m[36mRead-only[0m[22m[36m [0m[22m[36mfile[0m[22m[36m [0m[22m[36msystem[0m[22m[36m [0m
+[22m[36mEL2NSYNC[0m[22m[36m [0m[22m[37m45[0m[22m[36m [0m[22m[36mLevel[0m[22m[36m [0m[22m[37m2[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36msynchronized[0m[22m[36m [0m
+[22m[36mEAGAIN[0m[22m[36m [0m[22m[37m11[0m[22m[36m [0m[22m[36mResource[0m[22m[36m [0m[22m[36mtemporarily[0m[22m[36m [0m[22m[36munavailable[0m[22m[36m [0m
+[22m[36mEBADRQC[0m[22m[36m [0m[22m[37m56[0m[22m[36m [0m[22m[1m[31mInvalid[0m[22m[36m [0m[22m[36mrequest[0m[22m[36m [0m[22m[36mcode[0m[22m[36m [0m
+[22m[36mETXTBSY[0m[22m[36m [0m[22m[37m26[0m[22m[36m [0m[22m[36mText[0m[22m[36m [0m[22m[36mfile[0m[22m[36m [0m[22m[36mbusy[0m[22m[36m [0m
+[22m[36mELIBMAX[0m[22m[36m [0m[22m[37m82[0m[22m[36m [0m[22m[1m[32mAttempting[0m[22m[36m [0m[22m[36mto[0m[22m[36m [0m[22m[36mlink[0m[22m[36m [0m[22m[36min[0m[22m[36m [0m[22m[36mtoo[0m[22m[36m [0m[22m[36mmany[0m[22m[36m [0m[22m[36mshared[0m[22m[36m [0m[22m[36mlibraries[0m[22m[36m [0m
+[22m[36mEBFONT[0m[22m[36m [0m[22m[37m59[0m[22m[36m [0m[22m[36mBad[0m[22m[36m [0m[22m[36mfont[0m[22m[36m [0m[22m[36mfile[0m[22m[36m [0m[22m[36mformat[0m[22m[36m [0m
+[22m[36mEHOSTDOWN[0m[22m[36m [0m[22m[37m112[0m[22m[36m [0m[22m[36mHost[0m[22m[36m [0m[22m[36mis[0m[22m[36m [0m[22m[1m[33mdown[0m[22m[36m [0m
+[22m[36mEDEADLOCK[0m[22m[36m [0m[22m[37m35[0m[22m[36m [0m[22m[36mResource[0m[22m[36m [0m[22m[36mdeadlock[0m[22m[36m [0m[22m[36mavoided[0m[22m[36m [0m
+[22m[36mEKEYREVOKED[0m[22m[36m [0m[22m[37m128[0m[22m[36m [0m[22m[36mKey[0m[22m[36m [0m[22m[36mhas[0m[22m[36m [0m[22m[36mbeen[0m[22m[36m [0m[22m[36mrevoked[0m[22m[36m [0m
+[22m[36mEKEYEXPIRED[0m[22m[36m [0m[22m[37m127[0m[22m[36m [0m[22m[36mKey[0m[22m[36m [0m[22m[36mhas[0m[22m[36m [0m[22m[36mexpired[0m[22m[36m [0m
+[22m[36mEISCONN[0m[22m[36m [0m[22m[37m106[0m[22m[36m [0m[22m[36mTransport[0m[22m[36m [0m[22m[1m[33mendpoint[0m[22m[36m [0m[22m[36mis[0m[22m[36m [0m[22m[36malready[0m[22m[36m [0m[22m[1m[32mconnected[0m[22m[36m [0m
+[22m[36mERANGE[0m[22m[36m [0m[22m[37m34[0m[22m[36m [0m[22m[36mNumerical[0m[22m[36m [0m[22m[36mresult[0m[22m[36m [0m[22m[36mout[0m[22m[36m [0m[22m[36mof[0m[22m[36m [0m[22m[36mrange[0m[22m[36m [0m
+[22m[36mEBADFD[0m[22m[36m [0m[22m[37m77[0m[22m[36m [0m[22m[36mFile[0m[22m[36m [0m[22m[36mdescriptor[0m[22m[36m [0m[22m[36min[0m[22m[36m [0m[22m[36mbad[0m[22m[36m [0m[22m[36mstate[0m[22m[36m [0m
+[22m[36mESHUTDOWN[0m[22m[36m [0m[22m[37m108[0m[22m[36m [0m[22m[1m[33mCannot[0m[22m[36m [0m[22m[36msend[0m[22m[36m [0m[22m[36mafter[0m[22m[36m [0m[22m[36mtransport[0m[22m[36m [0m[22m[1m[33mendpoint[0m[22m[36m [0m[22m[36mshutdown[0m[22m[36m [0m
+[22m[36mEADV[0m[22m[36m [0m[22m[37m68[0m[22m[36m [0m[22m[36mAdvertise[0m[22m[36m [0m[22m[1m[31merror[0m[22m[36m [0m
+[22m[36mEKEYREJECTED[0m[22m[36m [0m[22m[37m129[0m[22m[36m [0m[22m[36mKey[0m[22m[36m [0m[22m[36mwas[0m[22m[36m [0m[22m[36mrejected[0m[22m[36m [0m[22m[36mby[0m[22m[36m [0m[22m[36mservice[0m[22m[36m [0m
+[22m[36mEPIPE[0m[22m[36m [0m[22m[37m32[0m[22m[36m [0m[22m[36mBroken[0m[22m[36m [0m[22m[36mpipe[0m[22m[36m [0m
+[22m[36mEBADR[0m[22m[36m [0m[22m[37m53[0m[22m[36m [0m[22m[1m[31mInvalid[0m[22m[36m [0m[22m[36mrequest[0m[22m[36m [0m[22m[36mdescriptor[0m[22m[36m [0m
+[22m[36mENODATA[0m[22m[36m [0m[22m[37m61[0m[22m[36m [0m[22m[36mNo[0m[22m[36m [0m[22m[36mdata[0m[22m[36m [0m[22m[36mavailable[0m[22m[36m [0m
+[22m[36mE2BIG[0m[22m[36m [0m[22m[37m7[0m[22m[36m [0m[22m[36mArgument[0m[22m[36m [0m[22m[1m[33mlist[0m[22m[36m [0m[22m[36mtoo[0m[22m[36m [0m[22m[36mlong[0m[22m[36m [0m
+[22m[36mEBADF[0m[22m[36m [0m[22m[37m9[0m[22m[36m [0m[22m[36mBad[0m[22m[36m [0m[22m[36mfile[0m[22m[36m [0m[22m[36mdescriptor[0m[22m[36m [0m
+[22m[36mERESTART[0m[22m[36m [0m[22m[37m85[0m[22m[36m [0m[22m[36mInterrupted[0m[22m[36m [0m[22m[36msystem[0m[22m[36m [0m[22m[36mcall[0m[22m[36m [0m[22m[36mshould[0m[22m[36m [0m[22m[36mbe[0m[22m[36m [0m[22m[1m[33mrestarted[0m[22m[36m [0m
+[22m[36mESOCKTNOSUPPORT[0m[22m[36m [0m[22m[37m94[0m[22m[36m [0m[22m[36mSocket[0m[22m[36m [0m[22m[36mtype[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36msupported[0m[22m[36m [0m
+[22m[36mENOMEM[0m[22m[36m [0m[22m[37m12[0m[22m[36m [0m[22m[1m[33mCannot[0m[22m[36m [0m[22m[36mallocate[0m[22m[36m [0m[22m[36mmemory[0m[22m[36m [0m
+[22m[36mENOEXEC[0m[22m[36m [0m[22m[37m8[0m[22m[36m [0m[22m[1m[35mExec[0m[22m[36m [0m[22m[36mformat[0m[22m[36m [0m[22m[1m[31merror[0m[22m[36m [0m
+[22m[36mEPFNOSUPPORT[0m[22m[36m [0m[22m[37m96[0m[22m[36m [0m[22m[36mProtocol[0m[22m[36m [0m[22m[36mfamily[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36msupported[0m[22m[36m [0m
+[22m[36mENAVAIL[0m[22m[36m [0m[22m[37m119[0m[22m[36m [0m[22m[36mNo[0m[22m[36m [0m[22m[36mXENIX[0m[22m[36m [0m[22m[36msemaphores[0m[22m[36m [0m[22m[36mavailable[0m[22m[36m [0m
+[22m[36mENOENT[0m[22m[36m [0m[22m[37m2[0m[22m[36m [0m[22m[36mNo[0m[22m[36m [0m[22m[36msuch[0m[22m[36m [0m[22m[36mfile[0m[22m[36m [0m[22m[36mor[0m[22m[36m [0m[22m[36mdirectory[0m[22m[36m [0m
+[22m[36mERFKILL[0m[22m[36m [0m[22m[37m132[0m[22m[36m [0m[22m[36mOperation[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36mpossible[0m[22m[36m [0m[22m[36mdue[0m[22m[36m [0m[22m[36mto[0m[22m[36m [0m[22m[36mRF-kill[0m[22m[36m [0m
+[22m[36mEPROTOTYPE[0m[22m[36m [0m[22m[37m91[0m[22m[36m [0m[22m[36mProtocol[0m[22m[36m [0m[22m[36mwrong[0m[22m[36m [0m[22m[36mtype[0m[22m[36m [0m[22m[36mfor[0m[22m[36m [0m[22m[36msocket[0m[22m[36m [0m
+[22m[36mECANCELED[0m[22m[36m [0m[22m[37m125[0m[22m[36m [0m[22m[36mOperation[0m[22m[36m [0m[22m[36mcanceled[0m[22m[36m [0m
+[22m[36mEACCES[0m[22m[36m [0m[22m[37m13[0m[22m[36m [0m[22m[36mPermission[0m[22m[36m [0m[22m[36mdenied[0m[22m[36m [0m
+[22m[36mEINVAL[0m[22m[36m [0m[22m[37m22[0m[22m[36m [0m[22m[1m[31mInvalid[0m[22m[36m [0m[22m[36margument[0m[22m[36m [0m
+[22m[36mENOKEY[0m[22m[36m [0m[22m[37m126[0m[22m[36m [0m[22m[36mRequired[0m[22m[36m [0m[22m[36mkey[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36mavailable[0m[22m[36m [0m
+[22m[36mENETDOWN[0m[22m[36m [0m[22m[37m100[0m[22m[36m [0m[22m[36mNetwork[0m[22m[36m [0m[22m[36mis[0m[22m[36m [0m[22m[1m[33mdown[0m[22m[36m [0m
+[22m[36mELOOP[0m[22m[36m [0m[22m[37m40[0m[22m[36m [0m[22m[36mToo[0m[22m[36m [0m[22m[36mmany[0m[22m[36m [0m[22m[36mlevels[0m[22m[36m [0m[22m[36mof[0m[22m[36m [0m[22m[36msymbolic[0m[22m[36m [0m[22m[36mlinks[0m[22m[36m [0m
+[22m[36mENOPROTOOPT[0m[22m[36m [0m[22m[37m92[0m[22m[36m [0m[22m[36mProtocol[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36mavailable[0m[22m[36m [0m
+[0m[22m[36mENOTSUP[0m[22m[36m [0m[22m[37m95[0m[22m[36m [0m[22m[36mOperation[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36msupported[0m[22m[36m [0m
+[22m[36mENOTRECOVERABLE[0m[22m[36m [0m[22m[37m131[0m[22m[36m [0m[22m[36mState[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36mrecoverable[0m[22m[36m [0m
+[22m[36mEDOM[0m[22m[36m [0m[22m[37m33[0m[22m[36m [0m[22m[36mNumerical[0m[22m[36m [0m[22m[36margument[0m[22m[36m [0m[22m[36mout[0m[22m[36m [0m[22m[36mof[0m[22m[36m [0m[22m[1m[35mdomain[0m[22m[36m [0m
+[22m[36mELIBMAX[0m[22m[36m [0m[22m[37m82[0m[22m[36m [0m[22m[1m[32mAttempting[0m[22m[36m [0m[22m[36mto[0m[22m[36m [0m[22m[36mlink[0m[22m[36m [0m[22m[36min[0m[22m[36m [0m[22m[36mtoo[0m[22m[36m [0m[22m[36mmany[0m[22m[36m [0m[22m[36mshared[0m[22m[36m [0m[22m[36mlibraries[0m[22m[36m [0m
+[22m[36mESOCKTNOSUPPORT[0m[22m[36m [0m[22m[37m94[0m[22m[36m [0m[22m[36mSocket[0m[22m[36m [0m[22m[36mtype[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36msupported[0m[22m[36m [0m
+[22m[36mESPIPE[0m[22m[36m [0m[22m[37m29[0m[22m[36m [0m[22m[36mIllegal[0m[22m[36m [0m[22m[36mseek[0m[22m[36m [0m
+[22m[36mENAVAIL[0m[22m[36m [0m[22m[37m119[0m[22m[36m [0m[22m[36mNo[0m[22m[36m [0m[22m[36mXENIX[0m[22m[36m [0m[22m[36msemaphores[0m[22m[36m [0m[22m[36mavailable[0m[22m[36m [0m
+[22m[36mEMEDIUMTYPE[0m[22m[36m [0m[22m[37m124[0m[22m[36m [0m[22m[36mWrong[0m[22m[36m [0m[22m[36mmedium[0m[22m[36m [0m[22m[36mtype[0m[22m[36m [0m
+[22m[36mENOPKG[0m[22m[36m [0m[22m[37m65[0m[22m[36m [0m[22m[36mPackage[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36minstalled[0m[22m[36m [0m
+[22m[36mEPFNOSUPPORT[0m[22m[36m [0m[22m[37m96[0m[22m[36m [0m[22m[36mProtocol[0m[22m[36m [0m[22m[36mfamily[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36msupported[0m[22m[36m [0m
+[22m[36mEDOTDOT[0m[22m[36m [0m[22m[37m73[0m[22m[36m [0m[22m[36mRFS[0m[22m[36m [0m[22m[36mspecific[0m[22m[36m [0m[22m[1m[31merror[0m[22m[36m [0m
+[22m[36mENOSR[0m[22m[36m [0m[22m[37m63[0m[22m[36m [0m[22m[36mOut[0m[22m[36m [0m[22m[36mof[0m[22m[36m [0m[22m[36mstreams[0m[22m[36m [0m[22m[36mresources[0m[22m[36m [0m
+[22m[36mEKEYREVOKED[0m[22m[36m [0m[22m[37m128[0m[22m[36m [0m[22m[36mKey[0m[22m[36m [0m[22m[36mhas[0m[22m[36m [0m[22m[36mbeen[0m[22m[36m [0m[22m[36mrevoked[0m[22m[36m [0m
+[22m[36mEPIPE[0m[22m[36m [0m[22m[37m32[0m[22m[36m [0m[22m[36mBroken[0m[22m[36m [0m[22m[36mpipe[0m[22m[36m [0m
+[22m[36mEWOULDBLOCK[0m[22m[36m [0m[22m[37m11[0m[22m[36m [0m[22m[36mResource[0m[22m[36m [0m[22m[36mtemporarily[0m[22m[36m [0m[22m[36munavailable[0m[22m[36m [0m
+[22m[36mE2BIG[0m[22m[36m [0m[22m[37m7[0m[22m[36m [0m[22m[36mArgument[0m[22m[36m [0m[22m[1m[33mlist[0m[22m[36m [0m[22m[36mtoo[0m[22m[36m [0m[22m[36mlong[0m[22m[36m [0m
+[22m[36mENOEXEC[0m[22m[36m [0m[22m[37m8[0m[22m[36m [0m[22m[1m[35mExec[0m[22m[36m [0m[22m[36mformat[0m[22m[36m [0m[22m[1m[31merror[0m[22m[36m [0m
+[22m[36mELNRNG[0m[22m[36m [0m[22m[37m48[0m[22m[36m [0m[22m[36mLink[0m[22m[36m [0m[22m[36mnumber[0m[22m[36m [0m[22m[36mout[0m[22m[36m [0m[22m[36mof[0m[22m[36m [0m[22m[36mrange[0m[22m[36m [0m
+[22m[36mECHILD[0m[22m[36m [0m[22m[37m10[0m[22m[36m [0m[22m[36mNo[0m[22m[36m [0m[22m[36mchild[0m[22m[36m [0m[22m[36mprocesses[0m[22m[36m [0m
+[22m[36mENONET[0m[22m[36m [0m[22m[37m64[0m[22m[36m [0m[22m[36mMachine[0m[22m[36m [0m[22m[36mis[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36mon[0m[22m[36m [0m[22m[36mthe[0m[22m[36m [0m[22m[36mnetwork[0m[22m[36m [0m
+[22m[36mETIME[0m[22m[36m [0m[22m[37m62[0m[22m[36m [0m[22m[36mTimer[0m[22m[36m [0m[22m[36mexpired[0m[22m[36m [0m
+[22m[36mEPROTOTYPE[0m[22m[36m [0m[22m[37m91[0m[22m[36m [0m[22m[36mProtocol[0m[22m[36m [0m[22m[36mwrong[0m[22m[36m [0m[22m[36mtype[0m[22m[36m [0m[22m[36mfor[0m[22m[36m [0m[22m[36msocket[0m[22m[36m [0m
+[22m[36mEL2NSYNC[0m[22m[36m [0m[22m[37m45[0m[22m[36m [0m[22m[36mLevel[0m[22m[36m [0m[22m[37m2[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36msynchronized[0m[22m[36m [0m
+[22m[36mEINVAL[0m[22m[36m [0m[22m[37m22[0m[22m[36m [0m[22m[1m[31mInvalid[0m[22m[36m [0m[22m[36margument[0m[22m[36m [0m
+[22m[36mENETUNREACH[0m[22m[36m [0m[22m[37m101[0m[22m[36m [0m[22m[36mNetwork[0m[22m[36m [0m[22m[36mis[0m[22m[36m [0m[22m[1m[33munreachable[0m[22m[36m [0m
+[22m[36mEXDEV[0m[22m[36m [0m[22m[37m18[0m[22m[36m [0m[22m[1m[31mInvalid[0m[22m[36m [0m[22m[36mcross-device[0m[22m[36m [0m[22m[36mlink[0m[22m[36m [0m
+[22m[36mESTRPIPE[0m[22m[36m [0m[22m[37m86[0m[22m[36m [0m[22m[36mStreams[0m[22m[36m [0m[22m[36mpipe[0m[22m[36m [0m[22m[1m[31merror[0m[22m[36m [0m
+[22m[36mEROFS[0m[22m[36m [0m[22m[37m30[0m[22m[36m [0m[22m[36mRead-only[0m[22m[36m [0m[22m[36mfile[0m[22m[36m [0m[22m[36msystem[0m[22m[36m [0m
+[22m[36mEHWPOISON[0m[22m[36m [0m[22m[37m133[0m[22m[36m [0m[22m[36mMemory[0m[22m[36m [0m[22m[36mpage[0m[22m[36m [0m[22m[36mhas[0m[22m[36m [0m[22m[36mhardware[0m[22m[36m [0m[22m[1m[31merror[0m[22m[36m [0m
+[22m[36mEMSGSIZE[0m[22m[36m [0m[22m[37m90[0m[22m[36m [0m[22m[36mMessage[0m[22m[36m [0m[22m[36mtoo[0m[22m[36m [0m[22m[36mlong[0m[22m[36m [0m
+[22m[36mEAFNOSUPPORT[0m[22m[36m [0m[22m[37m97[0m[22m[36m [0m[22m[36mAddress[0m[22m[36m [0m[22m[36mfamily[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36msupported[0m[22m[36m [0m[22m[36mby[0m[22m[36m [0m[22m[36mprotocol[0m[22m[36m [0m
+[22m[36mERESTART[0m[22m[36m [0m[22m[37m85[0m[22m[36m [0m[22m[36mInterrupted[0m[22m[36m [0m[22m[36msystem[0m[22m[36m [0m[22m[36mcall[0m[22m[36m [0m[22m[36mshould[0m[22m[36m [0m[22m[36mbe[0m[22m[36m [0m[22m[1m[33mrestarted[0m[22m[36m [0m
+[22m[36mETOOMANYREFS[0m[22m[36m [0m[22m[37m109[0m[22m[36m [0m[22m[36mToo[0m[22m[36m [0m[22m[36mmany[0m[22m[36m [0m[22m[36mreferences[0m[22m[36m:[0m[22m[36m [0m[22m[1m[33mcannot[0m[22m[36m [0m[22m[36msplice[0m[22m[36m [0m
+[22m[36mEDESTADDRREQ[0m[22m[36m [0m[22m[37m89[0m[22m[36m [0m[22m[36mDestination[0m[22m[36m [0m[22m[36maddress[0m[22m[36m [0m[22m[36mrequired[0m[22m[36m [0m
+[22m[36mENOBUFS[0m[22m[36m [0m[22m[37m105[0m[22m[36m [0m[22m[36mNo[0m[22m[36m [0m[22m[36mbuffer[0m[22m[36m [0m[22m[36mspace[0m[22m[36m [0m[22m[36mavailable[0m[22m[36m [0m
+[22m[36mEUCLEAN[0m[22m[36m [0m[22m[37m117[0m[22m[36m [0m[22m[36mStructure[0m[22m[36m [0m[22m[36mneeds[0m[22m[36m [0m[22m[1m[32mcleaning[0m[22m[36m [0m
+[22m[36mEBADMSG[0m[22m[36m [0m[22m[37m74[0m[22m[36m [0m[22m[36mBad[0m[22m[36m [0m[22m[36mmessage[0m[22m[36m [0m
+[22m[36mEBFONT[0m[22m[36m [0m[22m[37m59[0m[22m[36m [0m[22m[36mBad[0m[22m[36m [0m[22m[36mfont[0m[22m[36m [0m[22m[36mfile[0m[22m[36m [0m[22m[36mformat[0m[22m[36m [0m
+[22m[36mENOANO[0m[22m[36m [0m[22m[37m55[0m[22m[36m [0m[22m[36mNo[0m[22m[36m [0m[22m[36manode[0m[22m[36m [0m
+[22m[36mENOTSOCK[0m[22m[36m [0m[22m[37m88[0m[22m[36m [0m[22m[36mSocket[0m[22m[36m [0m[22m[36moperation[0m[22m[36m [0m[22m[36mon[0m[22m[36m [0m[22m[36mnon-socket[0m[22m[36m [0m
+[22m[36mECHRNG[0m[22m[36m [0m[22m[37m44[0m[22m[36m [0m[22m[36mChannel[0m[22m[36m [0m[22m[36mnumber[0m[22m[36m [0m[22m[36mout[0m[22m[36m [0m[22m[36mof[0m[22m[36m [0m[22m[36mrange[0m[22m[36m [0m
+[22m[36mEMLINK[0m[22m[36m [0m[22m[37m31[0m[22m[36m [0m[22m[36mToo[0m[22m[36m [0m[22m[36mmany[0m[22m[36m [0m[22m[36mlinks[0m[22m[36m [0m
+[22m[36mEHOSTDOWN[0m[22m[36m [0m[22m[37m112[0m[22m[36m [0m[22m[36mHost[0m[22m[36m [0m[22m[36mis[0m[22m[36m [0m[22m[1m[33mdown[0m[22m[36m [0m
+[22m[36mEINTR[0m[22m[36m [0m[22m[37m4[0m[22m[36m [0m[22m[36mInterrupted[0m[22m[36m [0m[22m[36msystem[0m[22m[36m [0m[22m[36mcall[0m[22m[36m [0m
+[22m[36mENODATA[0m[22m[36m [0m[22m[37m61[0m[22m[36m [0m[22m[36mNo[0m[22m[36m [0m[22m[36mdata[0m[22m[36m [0m[22m[36mavailable[0m[22m[36m [0m
+[22m[36mENETRESET[0m[22m[36m [0m[22m[37m102[0m[22m[36m [0m[22m[36mNetwork[0m[22m[36m [0m[22m[36mdropped[0m[22m[36m [0m[22m[1m[32mconnection[0m[22m[36m [0m[22m[36mon[0m[22m[36m [0m[22m[36mreset[0m[22m[36m [0m
+[22m[36mEREMOTE[0m[22m[36m [0m[22m[37m66[0m[22m[36m [0m[22m[36mObject[0m[22m[36m [0m[22m[36mis[0m[22m[36m [0m[22m[36mremote[0m[22m[36m [0m
+[22m[36mEADV[0m[22m[36m [0m[22m[37m68[0m[22m[36m [0m[22m[36mAdvertise[0m[22m[36m [0m[22m[1m[31merror[0m[22m[36m [0m
+[22m[36mENOENT[0m[22m[36m [0m[22m[37m2[0m[22m[36m [0m[22m[36mNo[0m[22m[36m [0m[22m[36msuch[0m[22m[36m [0m[22m[36mfile[0m[22m[36m [0m[22m[36mor[0m[22m[36m [0m[22m[36mdirectory[0m[22m[36m [0m
+[22m[36mESRCH[0m[22m[36m [0m[22m[37m3[0m[22m[36m [0m[22m[36mNo[0m[22m[36m [0m[22m[36msuch[0m[22m[36m [0m[22m[36mprocess[0m[22m[36m [0m
+[22m[36mEILSEQ[0m[22m[36m [0m[22m[37m84[0m[22m[36m [0m[22m[1m[31mInvalid[0m[22m[36m [0m[22m[36mor[0m[22m[36m [0m[22m[36mincomplete[0m[22m[36m [0m[22m[36mmultibyte[0m[22m[36m [0m[22m[36mor[0m[22m[36m [0m[22m[36mwide[0m[22m[36m [0m[22m[36mcharacter[0m[22m[36m [0m
+[22m[36mECOMM[0m[22m[36m [0m[22m[37m70[0m[22m[36m [0m[22m[36mCommunication[0m[22m[36m [0m[22m[1m[31merror[0m[22m[36m [0m[22m[36mon[0m[22m[36m [0m[22m[36msend[0m[22m[36m [0m
+[22m[36mEBADRQC[0m[22m[36m [0m[22m[37m56[0m[22m[36m [0m[22m[1m[31mInvalid[0m[22m[36m [0m[22m[36mrequest[0m[22m[36m [0m[22m[36mcode[0m[22m[36m [0m
+[22m[36mERFKILL[0m[22m[36m [0m[22m[37m132[0m[22m[36m [0m[22m[36mOperation[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36mpossible[0m[22m[36m [0m[22m[36mdue[0m[22m[36m [0m[22m[36mto[0m[22m[36m [0m[22m[36mRF-kill[0m[22m[36m [0m
+[22m[36mENOLINK[0m[22m[36m [0m[22m[37m67[0m[22m[36m [0m[22m[36mLink[0m[22m[36m [0m[22m[36mhas[0m[22m[36m [0m[22m[36mbeen[0m[22m[36m [0m[22m[36msevered[0m[22m[36m [0m
+[22m[36mENOMSG[0m[22m[36m [0m[22m[37m42[0m[22m[36m [0m[22m[36mNo[0m[22m[36m [0m[22m[36mmessage[0m[22m[36m [0m[22m[36mof[0m[22m[36m [0m[22m[36mdesired[0m[22m[36m [0m[22m[36mtype[0m[22m[36m [0m
+[22m[36mENOMEDIUM[0m[22m[36m [0m[22m[37m123[0m[22m[36m [0m[22m[36mNo[0m[22m[36m [0m[22m[36mmedium[0m[22m[36m [0m[22m[36mfound[0m[22m[36m [0m
+[22m[36mENOTUNIQ[0m[22m[36m [0m[22m[37m76[0m[22m[36m [0m[22m[36mName[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36munique[0m[22m[36m [0m[22m[36mon[0m[22m[36m [0m[22m[36mnetwork[0m[22m[36m [0m
+[22m[36mENOTEMPTY[0m[22m[36m [0m[22m[37m39[0m[22m[36m [0m[22m[36mDirectory[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[1m[33mempty[0m[22m[36m [0m
+[22m[36mENOMEM[0m[22m[36m [0m[22m[37m12[0m[22m[36m [0m[22m[1m[33mCannot[0m[22m[36m [0m[22m[36mallocate[0m[22m[36m [0m[22m[36mmemory[0m[22m[36m [0m
+[22m[36mELIBSCN[0m[22m[36m [0m[22m[37m81[0m[22m[36m [0m[22m[36m.[0m[22m[36mlib[0m[22m[36m [0m[22m[36msection[0m[22m[36m [0m[22m[36min[0m[22m[36m [0m[22m[1m[34ma.out[0m[22m[36m [0m[22m[36mcorrupted[0m[22m[36m [0m
+[22m[36mEBADR[0m[22m[36m [0m[22m[37m53[0m[22m[36m [0m[22m[1m[31mInvalid[0m[22m[36m [0m[22m[36mrequest[0m[22m[36m [0m[22m[36mdescriptor[0m[22m[36m [0m
+[22m[36mEOPNOTSUPP[0m[22m[36m [0m[22m[37m95[0m[22m[36m [0m[22m[36mOperation[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36msupported[0m[22m[36m [0m
+[22m[36mEPROTO[0m[22m[36m [0m[22m[37m71[0m[22m[36m [0m[22m[36mProtocol[0m[22m[36m [0m[22m[1m[31merror[0m[22m[36m [0m
+[22m[36mEISDIR[0m[22m[36m [0m[22m[37m21[0m[22m[36m [0m[22m[36mIs[0m[22m[36m [0m[22m[36ma[0m[22m[36m [0m[22m[36mdirectory[0m[22m[36m [0m
+[22m[36mENOCSI[0m[22m[36m [0m[22m[37m50[0m[22m[36m [0m[22m[36mNo[0m[22m[36m [0m[22m[36mCSI[0m[22m[36m [0m[22m[36mstructure[0m[22m[36m [0m[22m[36mavailable[0m[22m[36m [0m
+[22m[36mEBADSLT[0m[22m[36m [0m[22m[37m57[0m[22m[36m [0m[22m[1m[31mInvalid[0m[22m[36m [0m[22m[36mslot[0m[22m[36m [0m
+[22m[36mEUNATCH[0m[22m[36m [0m[22m[37m49[0m[22m[36m [0m[22m[36mProtocol[0m[22m[36m [0m[22m[36mdriver[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36mattached[0m[22m[36m [0m
+[22m[36mENOSPC[0m[22m[36m [0m[22m[37m28[0m[22m[36m [0m[22m[36mNo[0m[22m[36m [0m[22m[36mspace[0m[22m[36m [0m[22m[36mleft[0m[22m[36m [0m[22m[36mon[0m[22m[36m [0m[22m[36mdevice[0m[22m[36m [0m
+[22m[36mEOVERFLOW[0m[22m[36m [0m[22m[37m75[0m[22m[36m [0m[22m[36mValue[0m[22m[36m [0m[22m[36mtoo[0m[22m[36m [0m[22m[36mlarge[0m[22m[36m [0m[22m[36mfor[0m[22m[36m [0m[22m[36mdefined[0m[22m[36m [0m[22m[36mdata[0m[22m[36m [0m[22m[36mtype[0m[22m[36m [0m
+[22m[36mEXFULL[0m[22m[36m [0m[22m[37m54[0m[22m[36m [0m[22m[36mExchange[0m[22m[36m [0m[22m[36mfull[0m[22m[36m [0m
+[22m[36mEOWNERDEAD[0m[22m[36m [0m[22m[37m130[0m[22m[36m [0m[22m[36mOwner[0m[22m[36m [0m[22m[36mdied[0m[22m[36m [0m
+[22m[36mENOSYS[0m[22m[36m [0m[22m[37m38[0m[22m[36m [0m[22m[36mFunction[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36mimplemented[0m[22m[36m [0m
+[22m[36mENOTDIR[0m[22m[36m [0m[22m[37m20[0m[22m[36m [0m[22m[1m[33mNot[0m[22m[36m [0m[22m[36ma[0m[22m[36m [0m[22m[36mdirectory[0m[22m[36m [0m
+[22m[36mEFAULT[0m[22m[36m [0m[22m[37m14[0m[22m[36m [0m[22m[36mBad[0m[22m[36m [0m[22m[36maddress[0m[22m[36m [0m
+[22m[36mENFILE[0m[22m[36m [0m[22m[37m23[0m[22m[36m [0m[22m[36mToo[0m[22m[36m [0m[22m[36mmany[0m[22m[36m [0m[22m[1m[32mopen[0m[22m[36m [0m[22m[36mfiles[0m[22m[36m [0m[22m[36min[0m[22m[36m [0m[22m[36msystem[0m[22m[36m [0m
+[22m[36mENOSTR[0m[22m[36m [0m[22m[37m60[0m[22m[36m [0m[22m[36mDevice[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36ma[0m[22m[36m [0m[22m[36mstream[0m[22m[36m [0m
+[22m[36mENOLCK[0m[22m[36m [0m[22m[37m37[0m[22m[36m [0m[22m[36mNo[0m[22m[36m [0m[22m[36mlocks[0m[22m[36m [0m[22m[36mavailable[0m[22m[36m [0m
+[22m[36mEBADE[0m[22m[36m [0m[22m[37m52[0m[22m[36m [0m[22m[1m[31mInvalid[0m[22m[36m [0m[22m[36mexchange[0m[22m[36m [0m
+[22m[36mEIDRM[0m[22m[36m [0m[22m[37m43[0m[22m[36m [0m[22m[1m[36mIdentifier[0m[22m[36m [0m[22m[36mremoved[0m[22m[36m [0m
+[22m[36mEBADFD[0m[22m[36m [0m[22m[37m77[0m[22m[36m [0m[22m[36mFile[0m[22m[36m [0m[22m[36mdescriptor[0m[22m[36m [0m[22m[36min[0m[22m[36m [0m[22m[36mbad[0m[22m[36m [0m[22m[36mstate[0m[22m[36m [0m
+[22m[36mENOTBLK[0m[22m[36m [0m[22m[37m15[0m[22m[36m [0m[22m[36mBlock[0m[22m[36m [0m[22m[36mdevice[0m[22m[36m [0m[22m[36mrequired[0m[22m[36m [0m
+[22m[36mESRMNT[0m[22m[36m [0m[22m[37m69[0m[22m[36m [0m[22m[36mSrmount[0m[22m[36m [0m[22m[1m[31merror[0m[22m[36m [0m
+[22m[36mEISCONN[0m[22m[36m [0m[22m[37m106[0m[22m[36m [0m[22m[36mTransport[0m[22m[36m [0m[22m[1m[33mendpoint[0m[22m[36m [0m[22m[36mis[0m[22m[36m [0m[22m[36malready[0m[22m[36m [0m[22m[1m[32mconnected[0m[22m[36m [0m
+[22m[36mENXIO[0m[22m[36m [0m[22m[37m6[0m[22m[36m [0m[22m[36mNo[0m[22m[36m [0m[22m[36msuch[0m[22m[36m [0m[22m[36mdevice[0m[22m[36m [0m[22m[36mor[0m[22m[36m [0m[22m[36maddress[0m[22m[36m [0m
+[22m[36mEPERM[0m[22m[36m [0m[22m[37m1[0m[22m[36m [0m[22m[36mOperation[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36mpermitted[0m[22m[36m [0m
+[22m[36mEDEADLOCK[0m[22m[36m [0m[22m[37m35[0m[22m[36m [0m[22m[36mResource[0m[22m[36m [0m[22m[36mdeadlock[0m[22m[36m [0m[22m[36mavoided[0m[22m[36m [0m
+[22m[36mEADDRINUSE[0m[22m[36m [0m[22m[37m98[0m[22m[36m [0m[22m[36mAddress[0m[22m[36m [0m[22m[36malready[0m[22m[36m [0m[22m[36min[0m[22m[36m [0m[22m[36muse[0m[22m[36m [0m
+[22m[36mENOTCONN[0m[22m[36m [0m[22m[37m107[0m[22m[36m [0m[22m[36mTransport[0m[22m[36m [0m[22m[1m[33mendpoint[0m[22m[36m [0m[22m[36mis[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[1m[32mconnected[0m[22m[36m [0m
+[22m[36mEKEYREJECTED[0m[22m[36m [0m[22m[37m129[0m[22m[36m [0m[22m[36mKey[0m[22m[36m [0m[22m[36mwas[0m[22m[36m [0m[22m[36mrejected[0m[22m[36m [0m[22m[36mby[0m[22m[36m [0m[22m[36mservice[0m[22m[36m [0m
+[22m[36mENOTNAM[0m[22m[36m [0m[22m[37m118[0m[22m[36m [0m[22m[1m[33mNot[0m[22m[36m [0m[22m[36ma[0m[22m[36m [0m[22m[36mXENIX[0m[22m[36m [0m[22m[36mnamed[0m[22m[36m [0m[22m[36mtype[0m[22m[36m [0m[22m[36mfile[0m[22m[36m [0m
+[22m[36mEL2HLT[0m[22m[36m [0m[22m[37m51[0m[22m[36m [0m[22m[36mLevel[0m[22m[36m [0m[22m[37m2[0m[22m[36m [0m[22m[36mhalted[0m[22m[36m [0m
+[22m[36mEALREADY[0m[22m[36m [0m[22m[37m114[0m[22m[36m [0m[22m[36mOperation[0m[22m[36m [0m[22m[36malready[0m[22m[36m [0m[22m[36min[0m[22m[36m [0m[22m[36mprogress[0m[22m[36m [0m
+[22m[36mENOTTY[0m[22m[36m [0m[22m[37m25[0m[22m[36m [0m[22m[36mInappropriate[0m[22m[36m [0m[22m[36mioctl[0m[22m[36m [0m[22m[36mfor[0m[22m[36m [0m[22m[36mdevice[0m[22m[36m [0m
+[22m[36mEMFILE[0m[22m[36m [0m[22m[37m24[0m[22m[36m [0m[22m[36mToo[0m[22m[36m [0m[22m[36mmany[0m[22m[36m [0m[22m[1m[32mopen[0m[22m[36m [0m[22m[36mfiles[0m[22m[36m [0m
+[22m[36mELIBBAD[0m[22m[36m [0m[22m[37m80[0m[22m[36m [0m[22m[36mAccessing[0m[22m[36m [0m[22m[36ma[0m[22m[36m [0m[22m[36mcorrupted[0m[22m[36m [0m[22m[36mshared[0m[22m[36m [0m[22m[36mlibrary[0m[22m[36m [0m
+[22m[36mEISNAM[0m[22m[36m [0m[22m[37m120[0m[22m[36m [0m[22m[36mIs[0m[22m[36m [0m[22m[36ma[0m[22m[36m [0m[22m[36mnamed[0m[22m[36m [0m[22m[36mtype[0m[22m[36m [0m[22m[36mfile[0m[22m[36m [0m
+[22m[36mESTALE[0m[22m[36m [0m[22m[37m116[0m[22m[36m [0m[22m[36mStale[0m[22m[36m [0m[22m[36mfile[0m[22m[36m [0m[22m[36mhandle[0m[22m[36m [0m
+[22m[36mETIMEDOUT[0m[22m[36m [0m[22m[37m110[0m[22m[36m [0m[22m[1m[32mConnection[0m[22m[36m [0m[22m[36mtimed[0m[22m[36m [0m[22m[36mout[0m[22m[36m [0m
+[22m[36mEAGAIN[0m[22m[36m [0m[22m[37m11[0m[22m[36m [0m[22m[36mResource[0m[22m[36m [0m[22m[36mtemporarily[0m[22m[36m [0m[22m[36munavailable[0m[22m[36m [0m
+[22m[36mEREMOTEIO[0m[22m[36m [0m[22m[37m121[0m[22m[36m [0m[22m[36mRemote[0m[22m[36m [0m[22m[36mI/O[0m[22m[36m [0m[22m[1m[31merror[0m[22m[36m [0m
+[22m[36mELOOP[0m[22m[36m [0m[22m[37m40[0m[22m[36m [0m[22m[36mToo[0m[22m[36m [0m[22m[36mmany[0m[22m[36m [0m[22m[36mlevels[0m[22m[36m [0m[22m[36mof[0m[22m[36m [0m[22m[36msymbolic[0m[22m[36m [0m[22m[36mlinks[0m[22m[36m [0m
+[22m[36mESHUTDOWN[0m[22m[36m [0m[22m[37m108[0m[22m[36m [0m[22m[1m[33mCannot[0m[22m[36m [0m[22m[36msend[0m[22m[36m [0m[22m[36mafter[0m[22m[36m [0m[22m[36mtransport[0m[22m[36m [0m[22m[1m[33mendpoint[0m[22m[36m [0m[22m[36mshutdown[0m[22m[36m [0m
+[22m[36mEHOSTUNREACH[0m[22m[36m [0m[22m[37m113[0m[22m[36m [0m[22m[36mNo[0m[22m[36m [0m[22m[1m[35mroute[0m[22m[36m [0m[22m[36mto[0m[22m[36m [0m[22m[36mhost[0m[22m[36m [0m
+[22m[36mEL3RST[0m[22m[36m [0m[22m[37m47[0m[22m[36m [0m[22m[36mLevel[0m[22m[36m [0m[22m[37m3[0m[22m[36m [0m[22m[36mreset[0m[22m[36m [0m
+[22m[36mEIO[0m[22m[36m [0m[22m[37m5[0m[22m[36m [0m[22m[36mInput/output[0m[22m[36m [0m[22m[1m[31merror[0m[22m[36m [0m
+[22m[36mEADDRNOTAVAIL[0m[22m[36m [0m[22m[37m99[0m[22m[36m [0m[22m[1m[33mCannot[0m[22m[36m [0m[22m[36massign[0m[22m[36m [0m[22m[36mrequested[0m[22m[36m [0m[22m[36maddress[0m[22m[36m [0m
+[22m[36mEDQUOT[0m[22m[36m [0m[22m[37m122[0m[22m[36m [0m[22m[36mDisk[0m[22m[36m [0m[22m[36mquota[0m[22m[36m [0m[22m[36mexceeded[0m[22m[36m [0m
+[22m[36mENETDOWN[0m[22m[36m [0m[22m[37m100[0m[22m[36m [0m[22m[36mNetwork[0m[22m[36m [0m[22m[36mis[0m[22m[36m [0m[22m[1m[33mdown[0m[22m[36m [0m
+[22m[36mECONNREFUSED[0m[22m[36m [0m[22m[37m111[0m[22m[36m [0m[22m[1m[32mConnection[0m[22m[36m [0m[22m[36mrefused[0m[22m[36m [0m
+[22m[36mECONNRESET[0m[22m[36m [0m[22m[37m104[0m[22m[36m [0m[22m[1m[32mConnection[0m[22m[36m [0m[22m[36mreset[0m[22m[36m [0m[22m[36mby[0m[22m[36m [0m[22m[36mpeer[0m[22m[36m [0m
+[22m[36mEPROTONOSUPPORT[0m[22m[36m [0m[22m[37m93[0m[22m[36m [0m[22m[36mProtocol[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36msupported[0m[22m[36m [0m
+[22m[36mELIBEXEC[0m[22m[36m [0m[22m[37m83[0m[22m[36m [0m[22m[1m[33mCannot[0m[22m[36m [0m[22m[1m[35mexec[0m[22m[36m [0m[22m[36ma[0m[22m[36m [0m[22m[36mshared[0m[22m[36m [0m[22m[36mlibrary[0m[22m[36m [0m[22m[36mdirectly[0m[22m[36m [0m
+[22m[36mEBUSY[0m[22m[36m [0m[22m[37m16[0m[22m[36m [0m[22m[36mDevice[0m[22m[36m [0m[22m[36mor[0m[22m[36m [0m[22m[36mresource[0m[22m[36m [0m[22m[36mbusy[0m[22m[36m [0m
+[22m[36mECANCELED[0m[22m[36m [0m[22m[37m125[0m[22m[36m [0m[22m[36mOperation[0m[22m[36m [0m[22m[36mcanceled[0m[22m[36m [0m
+[22m[36mEFBIG[0m[22m[36m [0m[22m[37m27[0m[22m[36m [0m[22m[36mFile[0m[22m[36m [0m[22m[36mtoo[0m[22m[36m [0m[22m[36mlarge[0m[22m[36m [0m
+[22m[36mERANGE[0m[22m[36m [0m[22m[37m34[0m[22m[36m [0m[22m[36mNumerical[0m[22m[36m [0m[22m[36mresult[0m[22m[36m [0m[22m[36mout[0m[22m[36m [0m[22m[36mof[0m[22m[36m [0m[22m[36mrange[0m[22m[36m [0m
+[22m[36mELIBACC[0m[22m[36m [0m[22m[37m79[0m[22m[36m [0m[22m[36mCan[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36maccess[0m[22m[36m [0m[22m[36ma[0m[22m[36m [0m[22m[36mneeded[0m[22m[36m [0m[22m[36mshared[0m[22m[36m [0m[22m[36mlibrary[0m[22m[36m [0m
+[22m[36mENAMETOOLONG[0m[22m[36m [0m[22m[37m36[0m[22m[36m [0m[22m[36mFile[0m[22m[36m [0m[22m[36mname[0m[22m[36m [0m[22m[36mtoo[0m[22m[36m [0m[22m[36mlong[0m[22m[36m [0m
+[22m[36mEBADF[0m[22m[36m [0m[22m[37m9[0m[22m[36m [0m[22m[36mBad[0m[22m[36m [0m[22m[36mfile[0m[22m[36m [0m[22m[36mdescriptor[0m[22m[36m [0m
+[22m[36mEREMCHG[0m[22m[36m [0m[22m[37m78[0m[22m[36m [0m[22m[36mRemote[0m[22m[36m [0m[22m[36maddress[0m[22m[36m [0m[22m[36mchanged[0m[22m[36m [0m
+[22m[36mEL3HLT[0m[22m[36m [0m[22m[37m46[0m[22m[36m [0m[22m[36mLevel[0m[22m[36m [0m[22m[37m3[0m[22m[36m [0m[22m[36mhalted[0m[22m[36m [0m
+[22m[36mEDEADLK[0m[22m[36m [0m[22m[37m35[0m[22m[36m [0m[22m[36mResource[0m[22m[36m [0m[22m[36mdeadlock[0m[22m[36m [0m[22m[36mavoided[0m[22m[36m [0m
+[22m[36mENOPROTOOPT[0m[22m[36m [0m[22m[37m92[0m[22m[36m [0m[22m[36mProtocol[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36mavailable[0m[22m[36m [0m
+[22m[36mEINPROGRESS[0m[22m[36m [0m[22m[37m115[0m[22m[36m [0m[22m[36mOperation[0m[22m[36m [0m[22m[36mnow[0m[22m[36m [0m[22m[36min[0m[22m[36m [0m[22m[36mprogress[0m[22m[36m [0m
+[22m[36mECONNABORTED[0m[22m[36m [0m[22m[37m103[0m[22m[36m [0m[22m[36mSoftware[0m[22m[36m [0m[22m[36mcaused[0m[22m[36m [0m[22m[1m[32mconnection[0m[22m[36m [0m[22m[36mabort[0m[22m[36m [0m
+[22m[36mENOKEY[0m[22m[36m [0m[22m[37m126[0m[22m[36m [0m[22m[36mRequired[0m[22m[36m [0m[22m[36mkey[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36mavailable[0m[22m[36m [0m
+[22m[36mENODEV[0m[22m[36m [0m[22m[37m19[0m[22m[36m [0m[22m[36mNo[0m[22m[36m [0m[22m[36msuch[0m[22m[36m [0m[22m[36mdevice[0m[22m[36m [0m
+[22m[36mEKEYEXPIRED[0m[22m[36m [0m[22m[37m127[0m[22m[36m [0m[22m[36mKey[0m[22m[36m [0m[22m[36mhas[0m[22m[36m [0m[22m[36mexpired[0m[22m[36m [0m
+[22m[36mEMULTIHOP[0m[22m[36m [0m[22m[37m72[0m[22m[36m [0m[22m[36mMultihop[0m[22m[36m [0m[22m[1m[32mattempted[0m[22m[36m [0m
+[22m[36mEACCES[0m[22m[36m [0m[22m[37m13[0m[22m[36m [0m[22m[36mPermission[0m[22m[36m [0m[22m[36mdenied[0m[22m[36m [0m
+[22m[36mEUSERS[0m[22m[36m [0m[22m[37m87[0m[22m[36m [0m[22m[36mToo[0m[22m[36m [0m[22m[36mmany[0m[22m[36m [0m[22m[1m[35musers[0m[22m[36m [0m
+[22m[36mEEXIST[0m[22m[36m [0m[22m[37m17[0m[22m[36m [0m[22m[36mFile[0m[22m[36m [0m[22m[36mexists[0m[22m[36m [0m
+[22m[36mETXTBSY[0m[22m[36m [0m[22m[37m26[0m[22m[36m [0m[22m[36mText[0m[22m[36m [0m[22m[36mfile[0m[22m[36m [0m[22m[36mbusy[0m[22m[36m [0m
+[0m[22m[36mEKEYREVOKED[0m[22m[36m [0m[22m[37m128[0m[22m[36m [0m[22m[36mKey[0m[22m[36m [0m[22m[36mhas[0m[22m[36m [0m[22m[36mbeen[0m[22m[36m [0m[22m[36mrevoked[0m[22m[36m [0m
+[22m[36mECONNREFUSED[0m[22m[36m [0m[22m[37m111[0m[22m[36m [0m[22m[1m[32mConnection[0m[22m[36m [0m[22m[36mrefused[0m[22m[36m [0m
+[22m[36mEL2NSYNC[0m[22m[36m [0m[22m[37m45[0m[22m[36m [0m[22m[36mLevel[0m[22m[36m [0m[22m[37m2[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36msynchronized[0m[22m[36m [0m
+[22m[36mETIMEDOUT[0m[22m[36m [0m[22m[37m110[0m[22m[36m [0m[22m[1m[32mConnection[0m[22m[36m [0m[22m[36mtimed[0m[22m[36m [0m[22m[36mout[0m[22m[36m [0m
+[22m[36mEINTR[0m[22m[36m [0m[22m[37m4[0m[22m[36m [0m[22m[36mInterrupted[0m[22m[36m [0m[22m[36msystem[0m[22m[36m [0m[22m[36mcall[0m[22m[36m [0m
+[22m[36mENOKEY[0m[22m[36m [0m[22m[37m126[0m[22m[36m [0m[22m[36mRequired[0m[22m[36m [0m[22m[36mkey[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36mavailable[0m[22m[36m [0m
+[22m[36mELOOP[0m[22m[36m [0m[22m[37m40[0m[22m[36m [0m[22m[36mToo[0m[22m[36m [0m[22m[36mmany[0m[22m[36m [0m[22m[36mlevels[0m[22m[36m [0m[22m[36mof[0m[22m[36m [0m[22m[36msymbolic[0m[22m[36m [0m[22m[36mlinks[0m[22m[36m [0m
+[22m[36mENOTTY[0m[22m[36m [0m[22m[37m25[0m[22m[36m [0m[22m[36mInappropriate[0m[22m[36m [0m[22m[36mioctl[0m[22m[36m [0m[22m[36mfor[0m[22m[36m [0m[22m[36mdevice[0m[22m[36m [0m
+[22m[36mEL2HLT[0m[22m[36m [0m[22m[37m51[0m[22m[36m [0m[22m[36mLevel[0m[22m[36m [0m[22m[37m2[0m[22m[36m [0m[22m[36mhalted[0m[22m[36m [0m
+[22m[36mEDOM[0m[22m[36m [0m[22m[37m33[0m[22m[36m [0m[22m[36mNumerical[0m[22m[36m [0m[22m[36margument[0m[22m[36m [0m[22m[36mout[0m[22m[36m [0m[22m[36mof[0m[22m[36m [0m[22m[1m[35mdomain[0m[22m[36m [0m
+[22m[36mE2BIG[0m[22m[36m [0m[22m[37m7[0m[22m[36m [0m[22m[36mArgument[0m[22m[36m [0m[22m[1m[33mlist[0m[22m[36m [0m[22m[36mtoo[0m[22m[36m [0m[22m[36mlong[0m[22m[36m [0m
+[22m[36mENXIO[0m[22m[36m [0m[22m[37m6[0m[22m[36m [0m[22m[36mNo[0m[22m[36m [0m[22m[36msuch[0m[22m[36m [0m[22m[36mdevice[0m[22m[36m [0m[22m[36mor[0m[22m[36m [0m[22m[36maddress[0m[22m[36m [0m
+[22m[36mEWOULDBLOCK[0m[22m[36m [0m[22m[37m11[0m[22m[36m [0m[22m[36mResource[0m[22m[36m [0m[22m[36mtemporarily[0m[22m[36m [0m[22m[36munavailable[0m[22m[36m [0m
+[22m[36mENOTDIR[0m[22m[36m [0m[22m[37m20[0m[22m[36m [0m[22m[1m[33mNot[0m[22m[36m [0m[22m[36ma[0m[22m[36m [0m[22m[36mdirectory[0m[22m[36m [0m
+[22m[36mEIDRM[0m[22m[36m [0m[22m[37m43[0m[22m[36m [0m[22m[1m[36mIdentifier[0m[22m[36m [0m[22m[36mremoved[0m[22m[36m [0m
+[22m[36mEISDIR[0m[22m[36m [0m[22m[37m21[0m[22m[36m [0m[22m[36mIs[0m[22m[36m [0m[22m[36ma[0m[22m[36m [0m[22m[36mdirectory[0m[22m[36m [0m
+[22m[36mEBUSY[0m[22m[36m [0m[22m[37m16[0m[22m[36m [0m[22m[36mDevice[0m[22m[36m [0m[22m[36mor[0m[22m[36m [0m[22m[36mresource[0m[22m[36m [0m[22m[36mbusy[0m[22m[36m [0m
+[22m[36mETIME[0m[22m[36m [0m[22m[37m62[0m[22m[36m [0m[22m[36mTimer[0m[22m[36m [0m[22m[36mexpired[0m[22m[36m [0m
+[22m[36mENOEXEC[0m[22m[36m [0m[22m[37m8[0m[22m[36m [0m[22m[1m[35mExec[0m[22m[36m [0m[22m[36mformat[0m[22m[36m [0m[22m[1m[31merror[0m[22m[36m [0m
+[22m[36mEPFNOSUPPORT[0m[22m[36m [0m[22m[37m96[0m[22m[36m [0m[22m[36mProtocol[0m[22m[36m [0m[22m[36mfamily[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36msupported[0m[22m[36m [0m
+[22m[36mEOPNOTSUPP[0m[22m[36m [0m[22m[37m95[0m[22m[36m [0m[22m[36mOperation[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36msupported[0m[22m[36m [0m
+[22m[36mESPIPE[0m[22m[36m [0m[22m[37m29[0m[22m[36m [0m[22m[36mIllegal[0m[22m[36m [0m[22m[36mseek[0m[22m[36m [0m
+[22m[36mERFKILL[0m[22m[36m [0m[22m[37m132[0m[22m[36m [0m[22m[36mOperation[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36mpossible[0m[22m[36m [0m[22m[36mdue[0m[22m[36m [0m[22m[36mto[0m[22m[36m [0m[22m[36mRF-kill[0m[22m[36m [0m
+[22m[36mENODEV[0m[22m[36m [0m[22m[37m19[0m[22m[36m [0m[22m[36mNo[0m[22m[36m [0m[22m[36msuch[0m[22m[36m [0m[22m[36mdevice[0m[22m[36m [0m
+[22m[36mENOTSOCK[0m[22m[36m [0m[22m[37m88[0m[22m[36m [0m[22m[36mSocket[0m[22m[36m [0m[22m[36moperation[0m[22m[36m [0m[22m[36mon[0m[22m[36m [0m[22m[36mnon-socket[0m[22m[36m [0m
+[22m[36mEIO[0m[22m[36m [0m[22m[37m5[0m[22m[36m [0m[22m[36mInput/output[0m[22m[36m [0m[22m[1m[31merror[0m[22m[36m [0m
+[22m[36mENOLINK[0m[22m[36m [0m[22m[37m67[0m[22m[36m [0m[22m[36mLink[0m[22m[36m [0m[22m[36mhas[0m[22m[36m [0m[22m[36mbeen[0m[22m[36m [0m[22m[36msevered[0m[22m[36m [0m
+[22m[36mENOANO[0m[22m[36m [0m[22m[37m55[0m[22m[36m [0m[22m[36mNo[0m[22m[36m [0m[22m[36manode[0m[22m[36m [0m
+[22m[36mELIBMAX[0m[22m[36m [0m[22m[37m82[0m[22m[36m [0m[22m[1m[32mAttempting[0m[22m[36m [0m[22m[36mto[0m[22m[36m [0m[22m[36mlink[0m[22m[36m [0m[22m[36min[0m[22m[36m [0m[22m[36mtoo[0m[22m[36m [0m[22m[36mmany[0m[22m[36m [0m[22m[36mshared[0m[22m[36m [0m[22m[36mlibraries[0m[22m[36m [0m
+[22m[36mERESTART[0m[22m[36m [0m[22m[37m85[0m[22m[36m [0m[22m[36mInterrupted[0m[22m[36m [0m[22m[36msystem[0m[22m[36m [0m[22m[36mcall[0m[22m[36m [0m[22m[36mshould[0m[22m[36m [0m[22m[36mbe[0m[22m[36m [0m[22m[1m[33mrestarted[0m[22m[36m [0m
+[22m[36mEKEYREJECTED[0m[22m[36m [0m[22m[37m129[0m[22m[36m [0m[22m[36mKey[0m[22m[36m [0m[22m[36mwas[0m[22m[36m [0m[22m[36mrejected[0m[22m[36m [0m[22m[36mby[0m[22m[36m [0m[22m[36mservice[0m[22m[36m [0m
+[22m[36mEPROTONOSUPPORT[0m[22m[36m [0m[22m[37m93[0m[22m[36m [0m[22m[36mProtocol[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36msupported[0m[22m[36m [0m
+[22m[36mEEXIST[0m[22m[36m [0m[22m[37m17[0m[22m[36m [0m[22m[36mFile[0m[22m[36m [0m[22m[36mexists[0m[22m[36m [0m
+[22m[36mEMEDIUMTYPE[0m[22m[36m [0m[22m[37m124[0m[22m[36m [0m[22m[36mWrong[0m[22m[36m [0m[22m[36mmedium[0m[22m[36m [0m[22m[36mtype[0m[22m[36m [0m
+[22m[36mEPROTOTYPE[0m[22m[36m [0m[22m[37m91[0m[22m[36m [0m[22m[36mProtocol[0m[22m[36m [0m[22m[36mwrong[0m[22m[36m [0m[22m[36mtype[0m[22m[36m [0m[22m[36mfor[0m[22m[36m [0m[22m[36msocket[0m[22m[36m [0m
+[22m[36mENOPKG[0m[22m[36m [0m[22m[37m65[0m[22m[36m [0m[22m[36mPackage[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36minstalled[0m[22m[36m [0m
+[22m[36mEMLINK[0m[22m[36m [0m[22m[37m31[0m[22m[36m [0m[22m[36mToo[0m[22m[36m [0m[22m[36mmany[0m[22m[36m [0m[22m[36mlinks[0m[22m[36m [0m
+[22m[36mENOTBLK[0m[22m[36m [0m[22m[37m15[0m[22m[36m [0m[22m[36mBlock[0m[22m[36m [0m[22m[36mdevice[0m[22m[36m [0m[22m[36mrequired[0m[22m[36m [0m
+[22m[36mENETDOWN[0m[22m[36m [0m[22m[37m100[0m[22m[36m [0m[22m[36mNetwork[0m[22m[36m [0m[22m[36mis[0m[22m[36m [0m[22m[1m[33mdown[0m[22m[36m [0m
+[22m[36mEISNAM[0m[22m[36m [0m[22m[37m120[0m[22m[36m [0m[22m[36mIs[0m[22m[36m [0m[22m[36ma[0m[22m[36m [0m[22m[36mnamed[0m[22m[36m [0m[22m[36mtype[0m[22m[36m [0m[22m[36mfile[0m[22m[36m [0m
+[22m[36mEBADMSG[0m[22m[36m [0m[22m[37m74[0m[22m[36m [0m[22m[36mBad[0m[22m[36m [0m[22m[36mmessage[0m[22m[36m [0m
+[22m[36mENONET[0m[22m[36m [0m[22m[37m64[0m[22m[36m [0m[22m[36mMachine[0m[22m[36m [0m[22m[36mis[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36mon[0m[22m[36m [0m[22m[36mthe[0m[22m[36m [0m[22m[36mnetwork[0m[22m[36m [0m
+[22m[36mEUNATCH[0m[22m[36m [0m[22m[37m49[0m[22m[36m [0m[22m[36mProtocol[0m[22m[36m [0m[22m[36mdriver[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36mattached[0m[22m[36m [0m
+[22m[36mEXDEV[0m[22m[36m [0m[22m[37m18[0m[22m[36m [0m[22m[1m[31mInvalid[0m[22m[36m [0m[22m[36mcross-device[0m[22m[36m [0m[22m[36mlink[0m[22m[36m [0m
+[22m[36mENOLCK[0m[22m[36m [0m[22m[37m37[0m[22m[36m [0m[22m[36mNo[0m[22m[36m [0m[22m[36mlocks[0m[22m[36m [0m[22m[36mavailable[0m[22m[36m [0m
+[22m[36mEOWNERDEAD[0m[22m[36m [0m[22m[37m130[0m[22m[36m [0m[22m[36mOwner[0m[22m[36m [0m[22m[36mdied[0m[22m[36m [0m
+[22m[36mEAGAIN[0m[22m[36m [0m[22m[37m11[0m[22m[36m [0m[22m[36mResource[0m[22m[36m [0m[22m[36mtemporarily[0m[22m[36m [0m[22m[36munavailable[0m[22m[36m [0m
+[22m[36mEPIPE[0m[22m[36m [0m[22m[37m32[0m[22m[36m [0m[22m[36mBroken[0m[22m[36m [0m[22m[36mpipe[0m[22m[36m [0m
+[22m[36mESTRPIPE[0m[22m[36m [0m[22m[37m86[0m[22m[36m [0m[22m[36mStreams[0m[22m[36m [0m[22m[36mpipe[0m[22m[36m [0m[22m[1m[31merror[0m[22m[36m [0m
+[22m[36mECONNRESET[0m[22m[36m [0m[22m[37m104[0m[22m[36m [0m[22m[1m[32mConnection[0m[22m[36m [0m[22m[36mreset[0m[22m[36m [0m[22m[36mby[0m[22m[36m [0m[22m[36mpeer[0m[22m[36m [0m
+[22m[36mENOTEMPTY[0m[22m[36m [0m[22m[37m39[0m[22m[36m [0m[22m[36mDirectory[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[1m[33mempty[0m[22m[36m [0m
+[22m[36mENFILE[0m[22m[36m [0m[22m[37m23[0m[22m[36m [0m[22m[36mToo[0m[22m[36m [0m[22m[36mmany[0m[22m[36m [0m[22m[1m[32mopen[0m[22m[36m [0m[22m[36mfiles[0m[22m[36m [0m[22m[36min[0m[22m[36m [0m[22m[36msystem[0m[22m[36m [0m
+[22m[36mEBADSLT[0m[22m[36m [0m[22m[37m57[0m[22m[36m [0m[22m[1m[31mInvalid[0m[22m[36m [0m[22m[36mslot[0m[22m[36m [0m
+[22m[36mESRCH[0m[22m[36m [0m[22m[37m3[0m[22m[36m [0m[22m[36mNo[0m[22m[36m [0m[22m[36msuch[0m[22m[36m [0m[22m[36mprocess[0m[22m[36m [0m
+[22m[36mEMULTIHOP[0m[22m[36m [0m[22m[37m72[0m[22m[36m [0m[22m[36mMultihop[0m[22m[36m [0m[22m[1m[32mattempted[0m[22m[36m [0m
+[22m[36mELIBACC[0m[22m[36m [0m[22m[37m79[0m[22m[36m [0m[22m[36mCan[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36maccess[0m[22m[36m [0m[22m[36ma[0m[22m[36m [0m[22m[36mneeded[0m[22m[36m [0m[22m[36mshared[0m[22m[36m [0m[22m[36mlibrary[0m[22m[36m [0m
+[22m[36mENOTUNIQ[0m[22m[36m [0m[22m[37m76[0m[22m[36m [0m[22m[36mName[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36munique[0m[22m[36m [0m[22m[36mon[0m[22m[36m [0m[22m[36mnetwork[0m[22m[36m [0m
+[22m[36mETOOMANYREFS[0m[22m[36m [0m[22m[37m109[0m[22m[36m [0m[22m[36mToo[0m[22m[36m [0m[22m[36mmany[0m[22m[36m [0m[22m[36mreferences[0m[22m[36m:[0m[22m[36m [0m[22m[1m[33mcannot[0m[22m[36m [0m[22m[36msplice[0m[22m[36m [0m
+[22m[36mEPERM[0m[22m[36m [0m[22m[37m1[0m[22m[36m [0m[22m[36mOperation[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36mpermitted[0m[22m[36m [0m
+[22m[36mEHWPOISON[0m[22m[36m [0m[22m[37m133[0m[22m[36m [0m[22m[36mMemory[0m[22m[36m [0m[22m[36mpage[0m[22m[36m [0m[22m[36mhas[0m[22m[36m [0m[22m[36mhardware[0m[22m[36m [0m[22m[1m[31merror[0m[22m[36m [0m
+[22m[36mEADV[0m[22m[36m [0m[22m[37m68[0m[22m[36m [0m[22m[36mAdvertise[0m[22m[36m [0m[22m[1m[31merror[0m[22m[36m [0m
+[22m[36mEUCLEAN[0m[22m[36m [0m[22m[37m117[0m[22m[36m [0m[22m[36mStructure[0m[22m[36m [0m[22m[36mneeds[0m[22m[36m [0m[22m[1m[32mcleaning[0m[22m[36m [0m
+[22m[36mELIBEXEC[0m[22m[36m [0m[22m[37m83[0m[22m[36m [0m[22m[1m[33mCannot[0m[22m[36m [0m[22m[1m[35mexec[0m[22m[36m [0m[22m[36ma[0m[22m[36m [0m[22m[36mshared[0m[22m[36m [0m[22m[36mlibrary[0m[22m[36m [0m[22m[36mdirectly[0m[22m[36m [0m
+[22m[36mEDEADLK[0m[22m[36m [0m[22m[37m35[0m[22m[36m [0m[22m[36mResource[0m[22m[36m [0m[22m[36mdeadlock[0m[22m[36m [0m[22m[36mavoided[0m[22m[36m [0m
+[22m[36mEBADE[0m[22m[36m [0m[22m[37m52[0m[22m[36m [0m[22m[1m[31mInvalid[0m[22m[36m [0m[22m[36mexchange[0m[22m[36m [0m
+[22m[36mEINVAL[0m[22m[36m [0m[22m[37m22[0m[22m[36m [0m[22m[1m[31mInvalid[0m[22m[36m [0m[22m[36margument[0m[22m[36m [0m
+[22m[36mENOSR[0m[22m[36m [0m[22m[37m63[0m[22m[36m [0m[22m[36mOut[0m[22m[36m [0m[22m[36mof[0m[22m[36m [0m[22m[36mstreams[0m[22m[36m [0m[22m[36mresources[0m[22m[36m [0m
+[22m[36mEALREADY[0m[22m[36m [0m[22m[37m114[0m[22m[36m [0m[22m[36mOperation[0m[22m[36m [0m[22m[36malready[0m[22m[36m [0m[22m[36min[0m[22m[36m [0m[22m[36mprogress[0m[22m[36m [0m
+[22m[36mELIBSCN[0m[22m[36m [0m[22m[37m81[0m[22m[36m [0m[22m[36m.[0m[22m[36mlib[0m[22m[36m [0m[22m[36msection[0m[22m[36m [0m[22m[36min[0m[22m[36m [0m[22m[1m[34ma.out[0m[22m[36m [0m[22m[36mcorrupted[0m[22m[36m [0m
+[22m[36mEADDRNOTAVAIL[0m[22m[36m [0m[22m[37m99[0m[22m[36m [0m[22m[1m[33mCannot[0m[22m[36m [0m[22m[36massign[0m[22m[36m [0m[22m[36mrequested[0m[22m[36m [0m[22m[36maddress[0m[22m[36m [0m
+[22m[36mENOTNAM[0m[22m[36m [0m[22m[37m118[0m[22m[36m [0m[22m[1m[33mNot[0m[22m[36m [0m[22m[36ma[0m[22m[36m [0m[22m[36mXENIX[0m[22m[36m [0m[22m[36mnamed[0m[22m[36m [0m[22m[36mtype[0m[22m[36m [0m[22m[36mfile[0m[22m[36m [0m
+[22m[36mEADDRINUSE[0m[22m[36m [0m[22m[37m98[0m[22m[36m [0m[22m[36mAddress[0m[22m[36m [0m[22m[36malready[0m[22m[36m [0m[22m[36min[0m[22m[36m [0m[22m[36muse[0m[22m[36m [0m
+[22m[36mEREMCHG[0m[22m[36m [0m[22m[37m78[0m[22m[36m [0m[22m[36mRemote[0m[22m[36m [0m[22m[36maddress[0m[22m[36m [0m[22m[36mchanged[0m[22m[36m [0m
+[22m[36mECHRNG[0m[22m[36m [0m[22m[37m44[0m[22m[36m [0m[22m[36mChannel[0m[22m[36m [0m[22m[36mnumber[0m[22m[36m [0m[22m[36mout[0m[22m[36m [0m[22m[36mof[0m[22m[36m [0m[22m[36mrange[0m[22m[36m [0m
+[22m[36mEMSGSIZE[0m[22m[36m [0m[22m[37m90[0m[22m[36m [0m[22m[36mMessage[0m[22m[36m [0m[22m[36mtoo[0m[22m[36m [0m[22m[36mlong[0m[22m[36m [0m
+[22m[36mELNRNG[0m[22m[36m [0m[22m[37m48[0m[22m[36m [0m[22m[36mLink[0m[22m[36m [0m[22m[36mnumber[0m[22m[36m [0m[22m[36mout[0m[22m[36m [0m[22m[36mof[0m[22m[36m [0m[22m[36mrange[0m[22m[36m [0m
+[22m[36mEREMOTE[0m[22m[36m [0m[22m[37m66[0m[22m[36m [0m[22m[36mObject[0m[22m[36m [0m[22m[36mis[0m[22m[36m [0m[22m[36mremote[0m[22m[36m [0m
+[22m[36mEHOSTDOWN[0m[22m[36m [0m[22m[37m112[0m[22m[36m [0m[22m[36mHost[0m[22m[36m [0m[22m[36mis[0m[22m[36m [0m[22m[1m[33mdown[0m[22m[36m [0m
+[22m[36mEBADF[0m[22m[36m [0m[22m[37m9[0m[22m[36m [0m[22m[36mBad[0m[22m[36m [0m[22m[36mfile[0m[22m[36m [0m[22m[36mdescriptor[0m[22m[36m [0m
+[22m[36mERANGE[0m[22m[36m [0m[22m[37m34[0m[22m[36m [0m[22m[36mNumerical[0m[22m[36m [0m[22m[36mresult[0m[22m[36m [0m[22m[36mout[0m[22m[36m [0m[22m[36mof[0m[22m[36m [0m[22m[36mrange[0m[22m[36m [0m
+[22m[36mENOTSUP[0m[22m[36m [0m[22m[37m95[0m[22m[36m [0m[22m[36mOperation[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36msupported[0m[22m[36m [0m
+[22m[36mENOMEM[0m[22m[36m [0m[22m[37m12[0m[22m[36m [0m[22m[1m[33mCannot[0m[22m[36m [0m[22m[36mallocate[0m[22m[36m [0m[22m[36mmemory[0m[22m[36m [0m
+[22m[36mECHILD[0m[22m[36m [0m[22m[37m10[0m[22m[36m [0m[22m[36mNo[0m[22m[36m [0m[22m[36mchild[0m[22m[36m [0m[22m[36mprocesses[0m[22m[36m [0m
+[22m[36mESTALE[0m[22m[36m [0m[22m[37m116[0m[22m[36m [0m[22m[36mStale[0m[22m[36m [0m[22m[36mfile[0m[22m[36m [0m[22m[36mhandle[0m[22m[36m [0m
+[22m[36mEPROTO[0m[22m[36m [0m[22m[37m71[0m[22m[36m [0m[22m[36mProtocol[0m[22m[36m [0m[22m[1m[31merror[0m[22m[36m [0m
+[22m[36mEXFULL[0m[22m[36m [0m[22m[37m54[0m[22m[36m [0m[22m[36mExchange[0m[22m[36m [0m[22m[36mfull[0m[22m[36m [0m
+[22m[36mEBADR[0m[22m[36m [0m[22m[37m53[0m[22m[36m [0m[22m[1m[31mInvalid[0m[22m[36m [0m[22m[36mrequest[0m[22m[36m [0m[22m[36mdescriptor[0m[22m[36m [0m
+[22m[36mENOENT[0m[22m[36m [0m[22m[37m2[0m[22m[36m [0m[22m[36mNo[0m[22m[36m [0m[22m[36msuch[0m[22m[36m [0m[22m[36mfile[0m[22m[36m [0m[22m[36mor[0m[22m[36m [0m[22m[36mdirectory[0m[22m[36m [0m
+[22m[36mENOSTR[0m[22m[36m [0m[22m[37m60[0m[22m[36m [0m[22m[36mDevice[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36ma[0m[22m[36m [0m[22m[36mstream[0m[22m[36m [0m
+[22m[36mELIBBAD[0m[22m[36m [0m[22m[37m80[0m[22m[36m [0m[22m[36mAccessing[0m[22m[36m [0m[22m[36ma[0m[22m[36m [0m[22m[36mcorrupted[0m[22m[36m [0m[22m[36mshared[0m[22m[36m [0m[22m[36mlibrary[0m[22m[36m [0m
+[22m[36mEBFONT[0m[22m[36m [0m[22m[37m59[0m[22m[36m [0m[22m[36mBad[0m[22m[36m [0m[22m[36mfont[0m[22m[36m [0m[22m[36mfile[0m[22m[36m [0m[22m[36mformat[0m[22m[36m [0m
+[22m[36mENODATA[0m[22m[36m [0m[22m[37m61[0m[22m[36m [0m[22m[36mNo[0m[22m[36m [0m[22m[36mdata[0m[22m[36m [0m[22m[36mavailable[0m[22m[36m [0m
+[22m[36mEILSEQ[0m[22m[36m [0m[22m[37m84[0m[22m[36m [0m[22m[1m[31mInvalid[0m[22m[36m [0m[22m[36mor[0m[22m[36m [0m[22m[36mincomplete[0m[22m[36m [0m[22m[36mmultibyte[0m[22m[36m [0m[22m[36mor[0m[22m[36m [0m[22m[36mwide[0m[22m[36m [0m[22m[36mcharacter[0m[22m[36m [0m
+[22m[36mESOCKTNOSUPPORT[0m[22m[36m [0m[22m[37m94[0m[22m[36m [0m[22m[36mSocket[0m[22m[36m [0m[22m[36mtype[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36msupported[0m[22m[36m [0m
+[22m[36mEACCES[0m[22m[36m [0m[22m[37m13[0m[22m[36m [0m[22m[36mPermission[0m[22m[36m [0m[22m[36mdenied[0m[22m[36m [0m
+[22m[36mENOTRECOVERABLE[0m[22m[36m [0m[22m[37m131[0m[22m[36m [0m[22m[36mState[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36mrecoverable[0m[22m[36m [0m
+[22m[36mEDEADLOCK[0m[22m[36m [0m[22m[37m35[0m[22m[36m [0m[22m[36mResource[0m[22m[36m [0m[22m[36mdeadlock[0m[22m[36m [0m[22m[36mavoided[0m[22m[36m [0m
+[22m[36mECANCELED[0m[22m[36m [0m[22m[37m125[0m[22m[36m [0m[22m[36mOperation[0m[22m[36m [0m[22m[36mcanceled[0m[22m[36m [0m
+[22m[36mEKEYEXPIRED[0m[22m[36m [0m[22m[37m127[0m[22m[36m [0m[22m[36mKey[0m[22m[36m [0m[22m[36mhas[0m[22m[36m [0m[22m[36mexpired[0m[22m[36m [0m
+[22m[36mEROFS[0m[22m[36m [0m[22m[37m30[0m[22m[36m [0m[22m[36mRead-only[0m[22m[36m [0m[22m[36mfile[0m[22m[36m [0m[22m[36msystem[0m[22m[36m [0m
+[22m[36mENOTCONN[0m[22m[36m [0m[22m[37m107[0m[22m[36m [0m[22m[36mTransport[0m[22m[36m [0m[22m[1m[33mendpoint[0m[22m[36m [0m[22m[36mis[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[1m[32mconnected[0m[22m[36m [0m
+[22m[36mEDOTDOT[0m[22m[36m [0m[22m[37m73[0m[22m[36m [0m[22m[36mRFS[0m[22m[36m [0m[22m[36mspecific[0m[22m[36m [0m[22m[1m[31merror[0m[22m[36m [0m
+[22m[36mESHUTDOWN[0m[22m[36m [0m[22m[37m108[0m[22m[36m [0m[22m[1m[33mCannot[0m[22m[36m [0m[22m[36msend[0m[22m[36m [0m[22m[36mafter[0m[22m[36m [0m[22m[36mtransport[0m[22m[36m [0m[22m[1m[33mendpoint[0m[22m[36m [0m[22m[36mshutdown[0m[22m[36m [0m
+[22m[36mEAFNOSUPPORT[0m[22m[36m [0m[22m[37m97[0m[22m[36m [0m[22m[36mAddress[0m[22m[36m [0m[22m[36mfamily[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36msupported[0m[22m[36m [0m[22m[36mby[0m[22m[36m [0m[22m[36mprotocol[0m[22m[36m [0m
+[22m[36mENOMEDIUM[0m[22m[36m [0m[22m[37m123[0m[22m[36m [0m[22m[36mNo[0m[22m[36m [0m[22m[36mmedium[0m[22m[36m [0m[22m[36mfound[0m[22m[36m [0m
+[22m[36mEL3RST[0m[22m[36m [0m[22m[37m47[0m[22m[36m [0m[22m[36mLevel[0m[22m[36m [0m[22m[37m3[0m[22m[36m [0m[22m[36mreset[0m[22m[36m [0m
+[22m[36mETXTBSY[0m[22m[36m [0m[22m[37m26[0m[22m[36m [0m[22m[36mText[0m[22m[36m [0m[22m[36mfile[0m[22m[36m [0m[22m[36mbusy[0m[22m[36m [0m
+[22m[36mEFAULT[0m[22m[36m [0m[22m[37m14[0m[22m[36m [0m[22m[36mBad[0m[22m[36m [0m[22m[36maddress[0m[22m[36m [0m
+[22m[36mENAVAIL[0m[22m[36m [0m[22m[37m119[0m[22m[36m [0m[22m[36mNo[0m[22m[36m [0m[22m[36mXENIX[0m[22m[36m [0m[22m[36msemaphores[0m[22m[36m [0m[22m[36mavailable[0m[22m[36m [0m
+[22m[36mEINPROGRESS[0m[22m[36m [0m[22m[37m115[0m[22m[36m [0m[22m[36mOperation[0m[22m[36m [0m[22m[36mnow[0m[22m[36m [0m[22m[36min[0m[22m[36m [0m[22m[36mprogress[0m[22m[36m [0m
+[22m[36mEDQUOT[0m[22m[36m [0m[22m[37m122[0m[22m[36m [0m[22m[36mDisk[0m[22m[36m [0m[22m[36mquota[0m[22m[36m [0m[22m[36mexceeded[0m[22m[36m [0m
+[22m[36mEHOSTUNREACH[0m[22m[36m [0m[22m[37m113[0m[22m[36m [0m[22m[36mNo[0m[22m[36m [0m[22m[1m[35mroute[0m[22m[36m [0m[22m[36mto[0m[22m[36m [0m[22m[36mhost[0m[22m[36m [0m
+[22m[36mENETRESET[0m[22m[36m [0m[22m[37m102[0m[22m[36m [0m[22m[36mNetwork[0m[22m[36m [0m[22m[36mdropped[0m[22m[36m [0m[22m[1m[32mconnection[0m[22m[36m [0m[22m[36mon[0m[22m[36m [0m[22m[36mreset[0m[22m[36m [0m
+[22m[36mENAMETOOLONG[0m[22m[36m [0m[22m[37m36[0m[22m[36m [0m[22m[36mFile[0m[22m[36m [0m[22m[36mname[0m[22m[36m [0m[22m[36mtoo[0m[22m[36m [0m[22m[36mlong[0m[22m[36m [0m
+[22m[36mESRMNT[0m[22m[36m [0m[22m[37m69[0m[22m[36m [0m[22m[36mSrmount[0m[22m[36m [0m[22m[1m[31merror[0m[22m[36m [0m
+[22m[36mENOSYS[0m[22m[36m [0m[22m[37m38[0m[22m[36m [0m[22m[36mFunction[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36mimplemented[0m[22m[36m [0m
+[22m[36mEBADRQC[0m[22m[36m [0m[22m[37m56[0m[22m[36m [0m[22m[1m[31mInvalid[0m[22m[36m [0m[22m[36mrequest[0m[22m[36m [0m[22m[36mcode[0m[22m[36m [0m
+[22m[36mEDESTADDRREQ[0m[22m[36m [0m[22m[37m89[0m[22m[36m [0m[22m[36mDestination[0m[22m[36m [0m[22m[36maddress[0m[22m[36m [0m[22m[36mrequired[0m[22m[36m [0m
+[22m[36mENOSPC[0m[22m[36m [0m[22m[37m28[0m[22m[36m [0m[22m[36mNo[0m[22m[36m [0m[22m[36mspace[0m[22m[36m [0m[22m[36mleft[0m[22m[36m [0m[22m[36mon[0m[22m[36m [0m[22m[36mdevice[0m[22m[36m [0m
+[22m[36mEMFILE[0m[22m[36m [0m[22m[37m24[0m[22m[36m [0m[22m[36mToo[0m[22m[36m [0m[22m[36mmany[0m[22m[36m [0m[22m[1m[32mopen[0m[22m[36m [0m[22m[36mfiles[0m[22m[36m [0m
+[22m[36mEBADFD[0m[22m[36m [0m[22m[37m77[0m[22m[36m [0m[22m[36mFile[0m[22m[36m [0m[22m[36mdescriptor[0m[22m[36m [0m[22m[36min[0m[22m[36m [0m[22m[36mbad[0m[22m[36m [0m[22m[36mstate[0m[22m[36m [0m
+[22m[36mENETUNREACH[0m[22m[36m [0m[22m[37m101[0m[22m[36m [0m[22m[36mNetwork[0m[22m[36m [0m[22m[36mis[0m[22m[36m [0m[22m[1m[33munreachable[0m[22m[36m [0m
+[22m[36mEOVERFLOW[0m[22m[36m [0m[22m[37m75[0m[22m[36m [0m[22m[36mValue[0m[22m[36m [0m[22m[36mtoo[0m[22m[36m [0m[22m[36mlarge[0m[22m[36m [0m[22m[36mfor[0m[22m[36m [0m[22m[36mdefined[0m[22m[36m [0m[22m[36mdata[0m[22m[36m [0m[22m[36mtype[0m[22m[36m [0m
+[22m[36mECONNABORTED[0m[22m[36m [0m[22m[37m103[0m[22m[36m [0m[22m[36mSoftware[0m[22m[36m [0m[22m[36mcaused[0m[22m[36m [0m[22m[1m[32mconnection[0m[22m[36m [0m[22m[36mabort[0m[22m[36m [0m
+[22m[36mENOPROTOOPT[0m[22m[36m [0m[22m[37m92[0m[22m[36m [0m[22m[36mProtocol[0m[22m[36m [0m[22m[1m[33mnot[0m[22m[36m [0m[22m[36mavailable[0m[22m[36m [0m
+[22m[36mENOBUFS[0m[22m[36m [0m[22m[37m105[0m[22m[36m [0m[22m[36mNo[0m[22m[36m [0m[22m[36mbuffer[0m[22m[36m [0m[22m[36mspace[0m[22m[36m [0m[22m[36mavailable[0m[22m[36m [0m
+[22m[36mEREMOTEIO[0m[22m[36m [0m[22m[37m121[0m[22m[36m [0m[22m[36mRemote[0m[22m[36m [0m[22m[36mI/O[0m[22m[36m [0m[22m[1m[31merror[0m[22m[36m [0m
+[22m[36mECOMM[0m[22m[36m [0m[22m[37m70[0m[22m[36m [0m[22m[36mCommunication[0m[22m[36m [0m[22m[1m[31merror[0m[22m[36m [0m[22m[36mon[0m[22m[36m [0m[22m[36msend[0m[22m[36m [0m
+[22m[36mEISCONN[0m[22m[36m [0m[22m[37m106[0m[22m[36m [0m[22m[36mTransport[0m[22m[36m [0m[22m[1m[33mendpoint[0m[22m[36m [0m[22m[36mis[0m[22m[36m [0m[22m[36malready[0m[22m[36m [0m[22m[1m[32mconnected[0m[22m[36m [0m
+[22m[36mENOMSG[0m[22m[36m [0m[22m[37m42[0m[22m[36m [0m[22m[36mNo[0m[22m[36m [0m[22m[36mmessage[0m[22m[36m [0m[22m[36mof[0m[22m[36m [0m[22m[36mdesired[0m[22m[36m [0m[22m[36mtype[0m[22m[36m [0m
+[22m[36mEFBIG[0m[22m[36m [0m[22m[37m27[0m[22m[36m [0m[22m[36mFile[0m[22m[36m [0m[22m[36mtoo[0m[22m[36m [0m[22m[36mlarge[0m[22m[36m [0m
+[22m[36mEL3HLT[0m[22m[36m [0m[22m[37m46[0m[22m[36m [0m[22m[36mLevel[0m[22m[36m [0m[22m[37m3[0m[22m[36m [0m[22m[36mhalted[0m[22m[36m [0m
+[22m[36mENOCSI[0m[22m[36m [0m[22m[37m50[0m[22m[36m [0m[22m[36mNo[0m[22m[36m [0m[22m[36mCSI[0m[22m[36m [0m[22m[36mstructure[0m[22m[36m [0m[22m[36mavailable[0m[22m[36m [0m
+[22m[36mEUSERS[0m[22m[36m [0m[22m[37m87[0m[22m[36m [0m[22m[36mToo[0m[22m[36m [0m[22m[36mmany[0m[22m[36m [0m[22m[1m[35musers[0m[22m[36m [0m
+[0m

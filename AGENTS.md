@@ -43,6 +43,9 @@ upstream commit and is not stored here.
 - The `sshart` widget replaces Hollywood's. `sshart-render.py` runs the OpenSSH "drunken bishop" walk with random
   hashes and animates it. Its board matches `ssh-keygen -lv` for the same hash. To check, compare the board it builds
   for the hash of a real key with the `ssh-keygen -lvf key.pub` output.
+- `ccze-rainbow.sh` and `tree-rainbow.sh` are installed as `/usr/local/bin/ccze` and `/usr/local/bin/tree`. They stand
+  in for the real programs so that widgets that call them get `lolcat` colors. Use `/usr/bin/ccze` and `/usr/bin/tree`
+  to reach the real ones, or set `HOLLYWOOD_RAINBOW=0`.
 - Each widget script follows the same pattern:
   - Exit with status 1 if its tool is missing (`command -v ... || exit 1`).
   - Trap TERM and HUP, stop the child, and restore the terminal (alternate screen, cursor, colors). The guard stops
