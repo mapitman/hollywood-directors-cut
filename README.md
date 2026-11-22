@@ -55,7 +55,7 @@ The original works. I wanted it to look better on a big screen and to stop doing
 these:
 
 - The number of panes depends on the size of your terminal. The original makes two panes per CPU, which is 16 tiny
-  panes on an 8-CPU machine. Now the terminal size sets a maximum, and each layout picks a random number up to that.
+  panes on an 8-CPU machine. Now the terminal size sets a maximum, and each layout picks a random number from 3 up to that.
   When the number is even, all the panes are the same size.
 - Each pane swaps its widget on its own timer, 30 to 45 seconds after the last swap. No two panes show the same
   widget. Every 5 minutes the whole window is rebuilt with a new layout and a new number of panes.
@@ -123,6 +123,7 @@ Every setting is an environment variable, because even directors take notes.
 | Setting | Environment variable | Default |
 |---|---|---|
 | Cells per pane (this sets the maximum pane count) | `HOLLYWOOD_CELLS_PER_PANE` | `1400` |
+| Fewest panes, even in a small terminal (the launcher needs at least 2) | `HOLLYWOOD_MIN_PANES` | `3` |
 | Pick a random pane count up to the maximum, at the start and at every rebuild (`0` always uses the maximum) | `HOLLYWOOD_RANDOM_PANES` | `1` |
 | Minimum seconds a pane keeps a widget (the maximum is 1.5 times this) | `HOLLYWOOD_DELAY` | `30` |
 | Seconds between layout rebuilds (`0` turns the rebuild off) | `HOLLYWOOD_REBUILD` | `300` |
@@ -157,8 +158,9 @@ How the movie gets made.
 
 The entrypoint script measures your terminal. Docker passes the size in character cells, so the script divides the
 cell count by 1400 to get the maximum number of panes. Two other limits apply: two panes per CPU, and the number of
-widgets. Then `pane-count.sh` picks a random number from 2 up to that maximum. Some layouts end up with fewer and
-larger panes, and that is when the widgets that need a big pane can run.
+widgets. Then `pane-count.sh` picks a random number from 3 up to that maximum. The minimum wins over the maximum, so
+a small terminal or a machine with one CPU still gets 3 panes. Some layouts end up with fewer and larger panes, and
+that is when the widgets that need a big pane can run.
 
 A full-screen terminal on a 1920x1080 screen is about 161x37 with a typical font, which gives a maximum of 4 panes.
 Set `HOLLYWOOD_RANDOM_PANES=0` to always use the maximum.
