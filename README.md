@@ -131,6 +131,7 @@ Every setting is an environment variable, because even directors take notes.
 | Crop filter for the `mplayer` widget (`scale` shows the whole video) | `HOLLYWOOD_MPLAYER_FILTERS` | `crop=128:64:0:16` |
 | Seconds the `jp2a` widget shows each picture | `HOLLYWOOD_IMAGE_SECONDS` | `3` |
 | Seconds the `man` widget waits after each line (`0` prints a page at once) | `HOLLYWOOD_MAN_DELAY` | `0.04` |
+| Color the text of the `apg`, `errno`, `hexdump`, `logs`, `man`, `portscan`, `stat` and `tree` widgets with `lolcat` (`0` uses the original colors) | `HOLLYWOOD_RAINBOW` | `1` |
 | How the `jp2a` and `map` widgets draw pictures: `auto` asks the terminal, `kitty` forces Kitty graphics, `off` uses half blocks | `HOLLYWOOD_IMAGES` | `auto` |
 | Size of one terminal cell in pixels, such as `9x18`, if the terminal does not report it | `HOLLYWOOD_CELL_PX` | `10x20` |
 | Milliseconds between updates of the `btop` widget (`btop` accepts 100 or more) | `HOLLYWOOD_BTOP_UPDATE_MS` | `100` |
@@ -321,6 +322,15 @@ draws it step by step. Each board types a fake `ssh-keygen -lv` command and a fi
 grows. After the walk the board stays for 2 seconds, and then a new key starts. The pane holds as many boards as fit,
 each on its own schedule. A pane with fewer than 15 rows shows the boards without the typed lines. The finished boards
 are the same as the ones OpenSSH draws for the same hash.
+
+### Rainbow text
+
+`lolcat` colors each character of a text along a rainbow. The `apg`, `errno`, `hexdump`, `logs`, `man` and `stat`
+widgets pipe their text through `ccze -A`, and the `tree` widget prints plain text. The image installs
+`ccze-rainbow.sh` as `/usr/local/bin/ccze` and `tree-rainbow.sh` as `/usr/local/bin/tree`. `/usr/local/bin` comes before
+`/usr/bin` in `PATH`, so those widgets run the stand-ins, and no widget script changes. The stand-in for `ccze` ignores
+the `ccze` options and sends the text through `lolcat`. The stand-in for `tree` uses `lolcat` only when the output goes
+to a terminal. The `portscan` widget pipes `nmap` through `lolcat` itself. Set `HOLLYWOOD_RAINBOW=0` to run the real `ccze` and `tree` again and to print the `nmap` text without colors.
 
 ### Wallpapers
 

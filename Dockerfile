@@ -90,6 +90,13 @@ COPY --chmod=755 man-widget.sh /usr/lib/hollywood/man
 COPY --chmod=755 sshart-widget.sh /usr/lib/hollywood/sshart
 COPY --chmod=755 sshart-render.py /usr/local/bin/hollywood-sshart-render
 
+# Color the text of several widgets with lolcat. The apg, errno, hexdump, logs, man and stat widgets
+# pipe their text through ccze, and the tree widget prints plain text. /usr/local/bin comes before
+# /usr/bin in PATH, so these two scripts stand in for ccze and tree without changing any widget.
+# They run the real programs if HOLLYWOOD_RAINBOW is 0.
+COPY --chmod=755 ccze-rainbow.sh /usr/local/bin/ccze
+COPY --chmod=755 tree-rainbow.sh /usr/local/bin/tree
+
 # Add a btop widget. Hollywood has none. It needs btop, which is in the package list above.
 COPY --chmod=755 btop-widget.sh /usr/lib/hollywood/btop
 
