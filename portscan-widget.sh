@@ -7,6 +7,8 @@
 # This widget was written for hollywood-directors-cut and is licensed under the MIT
 # license. It follows the pattern of the widgets in Hollywood. See LICENSE and
 # THIRD-PARTY.md.
+#
+#   HOLLYWOOD_RAINBOW  0 prints the nmap text without lolcat colors (default 1)
 
 command -v nmap >/dev/null 2>&1 || exit 1
 
@@ -22,7 +24,13 @@ while true; do
 	clear
 	# -sT scans with normal connections, so it needs no special privileges. --packet-trace
 	# prints a line for each probe. -n skips the name lookups.
-	nmap -sT -n --packet-trace --max-rate 20 -p "$first-$((first + 199))" 127.0.0.1 &
+	if [ "${HOLLYWOOD_RAINBOW:-1}" != 0 ] && [ -x /usr/games/lolcat ]; then
+		# Color the text with lolcat. stdbuf makes nmap print each line at once, not in blocks.
+		stdbuf -oL nmap -sT -n --packet-trace --max-rate 20 -p "$first-$((first + 199))" 127.0.0.1 |
+			/usr/games/lolcat -f &
+	else
+		nmap -sT -n --packet-trace --max-rate 20 -p "$first-$((first + 199))" 127.0.0.1 &
+	fi
 	pid=$!
 	wait "$pid"
 	sleep 2
