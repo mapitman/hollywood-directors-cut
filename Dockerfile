@@ -80,6 +80,10 @@ COPY --chmod=755 image-widget.sh /usr/lib/hollywood/jp2a
 COPY --chmod=755 map-widget.sh /usr/lib/hollywood/map
 COPY --chmod=755 image-render.py /usr/local/bin/hollywood-image-render
 
+# Replace the man widget. The one in Hollywood prints a whole manual page at once, so the pane
+# scrolls too fast to read. The replacement prints one line at a time.
+COPY --chmod=755 man-widget.sh /usr/lib/hollywood/man
+
 # Add a btop widget. Hollywood has none. It needs btop, which is in the package list above.
 COPY --chmod=755 btop-widget.sh /usr/lib/hollywood/btop
 

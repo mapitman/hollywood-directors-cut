@@ -21,9 +21,9 @@ The image carries a copy of this file at `/usr/share/doc/hollywood/THIRD-PARTY.m
 - **The launcher** (`bin/hollywood`) is patched during the build with `launcher.patch`. A split that tmux refuses
   is tried again in other panes, and an even number of panes is arranged in a grid of equal sizes with
   `even-layout.sh`. The patched launcher carries a notice that says it was modified.
-- **Three widgets are replaced:** `mplayer`, `jp2a` and `map`. They are `mplayer-widget.sh`, `image-widget.sh` and
-  `map-widget.sh`, with the renderers `soundwave-render.py` and `image-render.py`. Each script says it is based on
-  the Hollywood widget it replaces.
+- **Four widgets are replaced:** `mplayer`, `jp2a`, `map` and `man`. They are `mplayer-widget.sh`,
+  `image-widget.sh`, `map-widget.sh` and `man-widget.sh`, with the renderers `soundwave-render.py` and
+  `image-render.py`. Each script says it is based on the Hollywood widget it replaces.
 - **Eight widgets are added:** `btop`, in `btop-widget.sh`, `gping`, in `gping-widget.sh`, `mtr`, in `mtr-widget.sh`,
   `nms`, in `nms-widget.sh`, `lolcat`, in `lolcat-widget.sh`, `hexyl`, in `hexyl-widget.sh`, `connections`, in
   `connections-widget.sh`, and `portscan`, in `portscan-widget.sh`. Hollywood has none of them,
@@ -43,7 +43,7 @@ The image carries a copy of this file at `/usr/share/doc/hollywood/THIRD-PARTY.m
 
 ### Files in this repository that come from Hollywood
 
-`launcher.patch`, `mplayer-widget.sh`, `image-widget.sh` and `map-widget.sh` contain or follow parts of Hollywood.
+`launcher.patch`, `mplayer-widget.sh`, `image-widget.sh`, `map-widget.sh` and `man-widget.sh` contain or follow parts of Hollywood.
 Those parts stay under the Apache License 2.0. The changes that this project made to them are licensed under the
 MIT license. The other files here, such as `entrypoint.sh`, `widget-guard.sh`, `even-layout.sh`,
 `shrink-jpeg.sh` and the Dockerfile, were written for this project.
