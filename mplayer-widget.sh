@@ -29,8 +29,10 @@ while true; do
 	started=$SECONDS
 	cols=$(($(tput cols 2>/dev/null || echo 80) / 2 * 2))
 	rows=$(tput lines 2>/dev/null || echo 24)
+	# With Kitty graphics the terminal stretches each frame, so mplayer sends the crop as it is.
+	if [ "$HOLLYWOOD_IMAGES" = kitty ]; then filters=$crop; else filters="$crop,scale=$cols:$((rows * 2))"; fi
 	mplayer -really-quiet -noconsolecontrols -nosound -loop 0 -ss $((RANDOM % 100)) \
-		-speed "$speed" -vf "$crop,scale=$cols:$((rows * 2))" \
+		-speed "$speed" -vf "$filters" \
 		-vo yuv4mpeg:file=/dev/stdout "$dir/soundwave.mp4" 2>/dev/null |
 		/usr/local/bin/hollywood-soundwave-render
 	# Status 3 means the pane changed size: start again at the new size. Wait

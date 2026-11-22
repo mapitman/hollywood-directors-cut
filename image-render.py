@@ -6,12 +6,26 @@ the upper half block and the bottom pixel is the background color. The picture
 keeps its shape, is centered, and the rest of the pane is black. Colors come from
 the xterm 256-color palette, which has a 6x6x6 color cube and 24 grays.
 
+When HOLLYWOOD_IMAGES is "kitty", the picture is drawn with the Kitty graphics
+protocol instead, as real pixels. The picture is sent once as a virtual placement,
+and the pane holds Unicode placeholder characters (U+10EEEE with a row and a column
+mark), so a terminal multiplexer such as tmux clips and redraws it like text. Inside
+tmux each graphics command is wrapped in a passthrough sequence. If the Kitty draw
+fails, the half-block draw runs instead.
+
 Usage: image-render.py FILE
+       image-render.py --detect   print "kitty" (and the cell size) if the terminal
+                                  draws Kitty graphics, otherwise print nothing
+       image-render.py --clear    delete this pane's Kitty picture
 """
+import io
 import os
 import sys
 
 from PIL import Image
+
+sys.path.insert(0, "/usr/local/lib/hollywood")
+import hollywood_kitty as kitty
 
 OUT = sys.stdout.fileno()
 BLACK = 16  # xterm-256 color 16 is black
@@ -41,9 +55,55 @@ def nearest(r, g, b, cache={}):
     return index
 
 
+KITTY = os.environ.get("HOLLYWOOD_IMAGES") == "kitty"
+
+
+def draw_kitty(path):
+    cols, rows = os.get_terminal_size(OUT)
+    cols, rows = min(cols, len(kitty.DIACRITICS)), min(rows, len(kitty.DIACRITICS))
+    cell_w, cell_h = kitty.cell_pixels(OUT)
+    picture = Image.open(path).convert("RGB")
+    scale = min(cols * cell_w / picture.width, rows * cell_h / picture.height)
+    width = max(1, min(cols, round(picture.width * scale / cell_w)))
+    height = max(1, min(rows, round(picture.height * scale / cell_h)))
+    shrink = min(1.0, kitty.MAX_PIXELS / max(width * cell_w, height * cell_h))
+    picture = picture.resize(
+        (max(1, round(width * cell_w * shrink)), max(1, round(height * cell_h * shrink))),
+        Image.LANCZOS,
+    )
+    png = io.BytesIO()
+    picture.save(png, "PNG", compress_level=1)
+    number = kitty.image_id()
+    os.write(
+        OUT,
+        b"\x1b[?25l"
+        + kitty.delete(number)
+        + kitty.transmit(png.getvalue(), number, width, height)
+        + kitty.placeholders(number, width, height, (rows - height) // 2, (cols - width) // 2, rows),
+    )
+
+
+def clear_kitty():
+    if KITTY:
+        os.write(OUT, kitty.delete(kitty.image_id()))
+
+
+
 def main():
+    if len(sys.argv) == 2 and sys.argv[1] == "--detect":
+        kitty.detect()
+        return 0
+    if len(sys.argv) == 2 and sys.argv[1] == "--clear":
+        clear_kitty()
+        return 0
     if len(sys.argv) != 2:
         return 2
+    if KITTY:
+        try:
+            draw_kitty(sys.argv[1])
+            return 0
+        except Exception:
+            pass
     cols, rows = os.get_terminal_size(OUT)
     width, height = cols, 2 * rows
     try:

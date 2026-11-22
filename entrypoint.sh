@@ -67,6 +67,19 @@ if [ -z "$has_splits" ]; then
 fi
 args+=(-d "$REBUILD")
 
+# The jp2a and map widgets draw real pixels with the Kitty graphics protocol if the
+# terminal supports it, and half blocks otherwise. Ask the terminal once, here, while
+# nothing else reads the keyboard. The widgets see the result in HOLLYWOOD_IMAGES.
+#   HOLLYWOOD_IMAGES   auto (default) asks the terminal; kitty forces Kitty graphics;
+#                      off uses half blocks
+#   HOLLYWOOD_CELL_PX  cell size in pixels, such as 9x18, if the terminal does not say
+HOLLYWOOD_IMAGES=${HOLLYWOOD_IMAGES:-auto}
+if [ "$HOLLYWOOD_IMAGES" = auto ]; then
+	read -r HOLLYWOOD_IMAGES cell_px < <(/usr/local/bin/hollywood-image-render --detect 2>/dev/null)
+	[ -n "$cell_px" ] && export HOLLYWOOD_CELL_PX=$cell_px
+fi
+export HOLLYWOOD_IMAGES
+
 # Run Hollywood as a child, not with exec, so this script can restore the
 # terminal after it exits. cmatrix and mplayer hide the cursor, switch to the
 # alternate screen and turn on mouse reporting, and they cannot undo that when

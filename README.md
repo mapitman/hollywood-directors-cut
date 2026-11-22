@@ -129,6 +129,8 @@ Every setting is an environment variable, because even directors take notes.
 | Playback speed of the `mplayer` widget (`0.5` is calmer, `1` is normal speed) | `HOLLYWOOD_MPLAYER_SPEED` | `0.75` |
 | Crop filter for the `mplayer` widget (`scale` shows the whole video) | `HOLLYWOOD_MPLAYER_FILTERS` | `crop=128:64:0:16` |
 | Seconds the `jp2a` widget shows each picture | `HOLLYWOOD_IMAGE_SECONDS` | `3` |
+| How the `jp2a` and `map` widgets draw pictures: `auto` asks the terminal, `kitty` forces Kitty graphics, `off` uses half blocks | `HOLLYWOOD_IMAGES` | `auto` |
+| Size of one terminal cell in pixels, such as `9x18`, if the terminal does not report it | `HOLLYWOOD_CELL_PX` | `10x20` |
 | Milliseconds between updates of the `btop` widget (`btop` accepts 100 or more) | `HOLLYWOOD_BTOP_UPDATE_MS` | `100` |
 | Hosts the `gping` widget pings, separated by spaces | `HOLLYWOOD_GPING_HOSTS` | `google.com cloudflare.com github.com wikipedia.org amazon.com 1.1.1.1 8.8.8.8` |
 | Hosts the `mtr` widget traces (it picks one at random), separated by spaces | `HOLLYWOOD_MTR_HOSTS` | the same list as `gping` |
@@ -293,6 +295,10 @@ docker run -it --rm --entrypoint /opt/hollywood/lib/hollywood/mplayer mapitman/h
 
 Press ctrl-c to stop it. Run `reset` afterward if your cursor stays hidden.
 
+The `mplayer` widget uses the same Kitty mode. Instead of half blocks, `soundwave-render.py` sends every frame of the
+video as a PNG picture, and the terminal stretches it over the pane. The placeholder cells are drawn once. Inside
+tmux, tmux redraws the pane after each frame, so the widget sends about 0.5 MB per second.
+
 ### Wallpapers
 
 The `jp2a` widget shows every JPEG it finds under `/usr`, one after another, except the map picture, which the `map`
@@ -304,6 +310,18 @@ The image replaces Hollywood's `jp2a` and `map` widgets. `image-widget.sh` is th
 the `map` widget, and both draw with `image-render.py`. Each picture is scaled to your pane and drawn with half
 blocks in the 256-color palette, so every terminal cell shows two pixels. The picture keeps its shape and sits in
 the middle of the pane, with black bars where the shapes differ.
+
+If your terminal supports the Kitty graphics protocol with Unicode placeholders (Kitty and Ghostty do), the widgets draw the real pixels instead of half blocks. At the start, the entrypoint asks the terminal
+whether it supports the protocol and how big a cell is. `HOLLYWOOD_IMAGES=off` turns the feature off, and
+`HOLLYWOOD_IMAGES=kitty` turns it on without asking. The widget sends each picture once as a PNG with a virtual
+placement, then fills the pane with Unicode placeholder characters (U+10EEEE with a row mark and a column mark).
+Because the picture is text to tmux, tmux clips it to the pane and redraws it with the rest of the screen. Inside
+tmux, the widget wraps each graphics command in a passthrough sequence and sets `allow-passthrough` for its own pane.
+Each pane uses the picture number `1 + pane number % 255`, which is the foreground color of its placeholders, so the
+number survives tmux's color conversion. If the placeholders do not work in your terminal setup, set
+`HOLLYWOOD_IMAGES=off`. A terminal that answers the query but does not support placeholders (WezTerm, for example)
+may show blank panes; use `off` there. A terminal multiplexer between the container and the terminal, such as Herdr, must
+pass Kitty graphics through, and Herdr 0.9.5 has a `kitty_graphics` setting for that.
 
 The `jp2a` widget keeps each picture for 3 seconds. The `map` widget draws the map once. A pane of 120 x 36 cells has
 only 120 x 72 pixels, so the pictures are blocky. When the pane changes size, the widgets draw the picture again.

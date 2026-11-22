@@ -69,6 +69,7 @@ RUN apt-get update \
 # blocks. It needs the renderer script.
 COPY --chmod=755 mplayer-widget.sh /usr/lib/hollywood/mplayer
 COPY --chmod=755 soundwave-render.py /usr/local/bin/hollywood-soundwave-render
+COPY hollywood_kitty.py /usr/local/lib/hollywood/hollywood_kitty.py
 
 # Replace the jp2a and map widgets too. Hollywood's draw pictures as letters in the
 # eight basic terminal colors with the jp2a program. The jp2a widget changes

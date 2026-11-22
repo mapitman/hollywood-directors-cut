@@ -16,7 +16,7 @@
 
 command -v python3 >/dev/null 2>&1 || exit 1
 trap "pkill -f -9 lib/hollywood/ >/dev/null 2>&1; exit" INT
-trap 'printf "\033[0m\033[?25h"; exit 0' TERM HUP
+trap '/usr/local/bin/hollywood-image-render --clear; printf "\033[0m\033[?25h"; exit 0' TERM HUP
 
 seconds=${HOLLYWOOD_IMAGE_SECONDS:-3}
 case "$seconds" in '' | *[!0-9]*) seconds=3 ;; esac
